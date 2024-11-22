@@ -1,7 +1,7 @@
 import Image from "next/image"
 import { Award, Share2, UserCheck, Briefcase } from 'lucide-react'
 
-
+import CertScroll from "./miniComponent/CertScroll"
 
 export default function CertificateComponent() {
   // Sample decorative images data - replace these with your actual image paths
@@ -94,7 +94,7 @@ export default function CertificateComponent() {
               {/* Main certificate image */}
               <div className="relative rounded-lg border-2 border-orange-300 overflow-hidden aspect-[4/3] shadow-xl z-10">
                 <Image
-                  src="/cert.png"
+                  src="/cert.jpeg"
                   alt="Sample Certificate"
                   fill
                   className="object-cover"
@@ -113,7 +113,7 @@ export default function CertificateComponent() {
             <div className="border mt-2 border-gray-200 rounded-xl p-2 shadow-sm bg-white backdrop-blur-sm">
           
             <div className="grid grid-cols-1 gap-8">
-              {/* <CertScroll /> */}
+              <CertScroll />
             </div>
           </div>
           </div>

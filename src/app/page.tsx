@@ -6,6 +6,8 @@ import GalleryCarousel from '@/components/CustomComponent/Carousel'
 import Contact from "@/components/CustomComponent/ContactUs"
 import WhatsAppBot from '@/components/CustomComponent/WhatsAppBot'
 import Testimonials from "@/components/CustomComponent/CourseTestimonials"
+import Faq from '@/components/CustomComponent/Faq'
+import CertificateComponent from '@/components/CustomComponent/Cert'
 export default function Home() {
   return (
       <>
@@ -17,6 +19,9 @@ export default function Home() {
       <Contact/>
       <WhatsAppBot/>
       
+      <CertificateComponent></CertificateComponent>
+      <Faq></Faq>
+
       </>
   )
 }

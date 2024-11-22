@@ -1,3 +1,4 @@
+import HeroImage from "../../../public/vimalsir.png"
 export default function HeroSection() {
     return (
       <div className="min-h-screen bg-[#1A1B1E] flex items-center px-4 md:px-6 lg:px-8">
@@ -38,9 +39,9 @@ export default function HeroSection() {
           </div>
           <div className="flex-1 flex justify-center lg:justify-end">
             <img
-              src="/placeholder.svg?height=600&width=600"
+              src="/vimalsir.png"
               alt="Golden Trophy"
-              className="w-full max-w-[600px] h-auto"
+              className="w-full max-w-[600px] h-84"
             />
           </div>
         </div>

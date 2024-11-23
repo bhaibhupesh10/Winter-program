@@ -8,6 +8,7 @@ import WhatsAppBot from '@/components/CustomComponent/WhatsAppBot'
 import Testimonials from "@/components/CustomComponent/CourseTestimonials"
 import Faq from '@/components/CustomComponent/Faq'
 import CertificateComponent from '@/components/CustomComponent/Cert'
+import Pricing from '@/components/CustomComponent/Pricing'
 export default function Home() {
   return (
       <>
@@ -15,6 +16,7 @@ export default function Home() {
       <MentorProfile/>
       <MentorFeatured />
       <GalleryCarousel></GalleryCarousel>
+      <Pricing></Pricing>
       <Testimonials/>
       <Contact/>
       <WhatsAppBot/>

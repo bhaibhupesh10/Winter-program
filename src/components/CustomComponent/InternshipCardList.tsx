@@ -55,7 +55,7 @@ const EmployeeCards = () => {
         {employees.map((employee, index) => (
           <div
             key={index}
-            className="relative border-2 rounded-lg shadow-lg bg-pink-100 w-[300px] h-[350px] flex flex-col items-center"
+            className="relative border-2 rounded-lg shadow-lg bg-pink-100 w-[300px] h-[320px] flex flex-col items-center"
           >
             {/* Pin Icon */}
             <div className="absolute top-2 right-2 bg-white p-1 rounded-full shadow-md">
@@ -63,7 +63,7 @@ const EmployeeCards = () => {
             </div>
 
             {/* Profile Image and Name */}
-            <div className="flex items-center gap-4 mt-4">
+            <div className="flex items-center gap-4 mt-6">
               {/* Profile Image */}
               <div className="w-20 h-20 rounded-full overflow-hidden border-4 border-red-600">
                 <img

@@ -1,125 +1,51 @@
 "use client"
 import React, { useState } from 'react';
 import { Linkedin } from 'lucide-react';
+import { FaGoogle, FaLinkedin } from "react-icons/fa"
 
 export default function Component() {
   const [isExpanded, setIsExpanded] = useState(false);
 
-  // Example posts data (replace with your actual posts array)
- 
-const posts = [
- 
-  {
-    id: 2,
-    author: {
-      name: "Manikandan Prakash",
-      title: "DevOps Engineer @smallcase",
-      avatar: "https://media.licdn.com/dms/image/v2/D4E03AQFiY07rDFiZ1A/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1698246875639?e=1737590400&v=beta&t=n4sQVUqx1DDJaKh2fEvBUd5l6FR5_k7JEpb1cBS_ZTk",
-      linkedin: "https://www.linkedin.com/in/manikandan-prakash/"
+
+  const posts = [
+    {
+      id: 1,
+      author: {
+        name: "AR-MAAN Ansari",
+        title: "",
+        avatar:
+          "https://lh3.googleusercontent.com/a-/ALV-UjVYQHuwPLi7LXqGQUoZk30XkmqZMwDbYpp79ApFHcS00mlpAVe1=w90-h90-p-rp-mo-br100 ",
+        google: "https://www.google.com/maps/contrib/107567463059127600637/reviews/@26.8663614,75.786043,17z/data=!4m3!8m2!3m1!1e1?hl=en-GB&entry=ttu&g_ep=EgoyMDI0MTExOS4yIKXMDSoASAFQAw%3D%3D",
+      },
+      content: `My 45-day journey at Linux World Summer was transformative. Under the guidance of Mr. Vimal Daga, I explored many Technologies like Python, cloud computing, AI, Linux , DevOps etc . I know about my true potential . One of the standout achievements during the program was the creation of my startup "Service Lane" ,  . We create many friends cum family . Beyond technical growth, the program fostered personal development, leadership, and collaboration. These 45 days laid a strong foundation for my `,
+      timestamp: "⭐⭐⭐⭐⭐ a months ago",
+      source: "Google", // Source of the testimonial
     },
-    content: `
-It was very informative and 100 pratical session by vimal sir ,From that I did learn the bedrock service how to intergrate in any of our own custom requirment ,It was pretty enough to start AWS bedrock thanks for the session Vimal Daga sir 
-`,
-    timestamp: "8 month ago"
-  },
-  {
+    {
+      id: 2,
+      author: {
+        name: "shubham saboo",
+        title: "",
+        avatar: "https://lh3.googleusercontent.com/a-/ALV-UjWReaXAgJezOekd4Q9wV9ODZEffYouVkqiDtalapHTuwZMxvoI=w90-h90-p-rp-mo-br100",
+        google: "https://www.google.com/maps/contrib/102158508351233078985/reviews/@26.8663614,75.786043,17z/data=!4m3!8m2!3m1!1e1?hl=en-GB&entry=ttu&g_ep=EgoyMDI0MTExOS4yIKXMDSoASAFQAw%3D%3D",
+      },
+      content: `If you’re looking for a program that doesn’t just teach you, but shapes you both as a professional and a person, I can’t recommend this enough. The support, the learning, and the growth you’ll experience are simply unmatched. This program is an opportunity to step out of your comfort zone and see just how much you can achieve.
+
+I am deeply grateful to Vimal Daga Sir, Preeti Chandak Ma'am, and the entire LinuxWorld Informatics Pvt Ltd team for making this journey possible. Thank you for creating an environment where growth felt natural, and collaboration was genuinely meaningful.
+
+This summer has truly been life-changing for me. Like many, I initially thought this would be just another typical training program. But I couldn't have been more wrong. The experience was nothing short of unique and transformative.
+
+The holistic approach of this program was like no other. It didn’t just challenge me on a professional level, but it also pushed me to grow personally in ways I hadn’t expected. From technical skills to soft skills, every aspect was covered thoughtfully.
+
+As the final weeks wrapped up, everything started to come together. The hard work, late nights, and the incredible teamwork all culminated in one profound "aha" moment, where everything finally made sense`,
+      timestamp: "⭐⭐⭐⭐⭐ 2 month ago",
+      source: "Google", // Source of the testimonial
+    },
+      {
     id: 3,
     author: {
-      name: "Dibyaraj Datta",
-      title: "Process Associate at Netscribes",
-      avatar: "https://media.licdn.com/dms/image/v2/D5603AQENeos_aDytsw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1711478336339?e=1737590400&v=beta&t=eqdh3QVuz82VyuHWF78Bmif0EVec9xdh47F6VqZmmko",
-      linkedin: "https://www.linkedin.com/in/dibyaraj-datta-b785661a5/"
-    },
-    content: `
-
-    It was truly an amazing masterclass by the one & only Mr. Vimal Daga Sir. 
-    The Wow moment for me was how he explained each and every concept in such an easy manner from basic to advance, like the use of Helm Charts to solve modern world problems with container management.
-    Looking forward to join more such sessions & workshops from LinuxWorld Informatics Pvt Ltd under the guidance of Vimal Daga Sir. `,
-    timestamp: "8 month ago"
-  },
-  {
-    id: 4,
-    author: {
-      name: "Rushikesh Mahindrakar",
-      title: "System Engineering",
-      avatar: "https://media.licdn.com/dms/image/v2/D4D03AQGf6T3ej4bqMA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1686901550352?e=1737590400&v=beta&t=bCqKfqio6arSRNKOqOgDznJav6d1OqbsHzPMZAbK_tQ",
-      linkedin: "https://www.linkedin.com/in/rushikesh-mahindrakar-70b82537/"
-    },
-    content: `
-Your invaluable guidance in this remarkable Kubernetes training program has been truly appreciated. It's a pivotal milestone in my DevOps journey, and I'm deeply grateful for your mentorship, Vimal Daga sir. Your expertise and insights are immensely valuable, propelling my professional growth with each session. Thank you!! 😊 `,
-    timestamp: "3 week ago"
-  },
-  {
-    id: 5,
-    author: {
-      name: "Himanshu Sahu",
-      title: "Java Backend Developer ",
-      avatar: "https://media.licdn.com/dms/image/v2/D4D03AQFqtDCGoMk54g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1673897788931?e=1737590400&v=beta&t=s2TDcsAQ2oqQ_DvoGT8yyUUaGvsfGDwan4Phjo1RFL0",
-      linkedin: "https://www.linkedin.com/in/himanshu-sahu-2aa357237/"
-    },
-    content: `I attended this helm masterclass and it's amazing. The way Vimal Daga sir teaches makes everything so simple and clear and it also helps understand the real time based problem's and use cases. I learned about hashtag#helm chart with examples, artifact hub, docker hub, how to use procreated Helm chart and how to create my own helm chart and upload it, jenkins setup via helm chart etc. Thank u Vimal Daga sir and LinuxWorld Informatics Pvt Ltd Informatics Pvt Ltd for conducting this masterclass. It is always a pleasure to learnt something new always from Vimal Daga sir.`,
-    timestamp: "1 week ago"
-  },
-  {
-    id: 6,
-    author: {
-      name: "Pratibha Kokil",
-      title: "DevOps | Full Stack Developer",
-      avatar: "https://media.licdn.com/dms/image/v2/D4D03AQHspredHFM_Ig/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1729926571919?e=1737590400&v=beta&t=EopKPQqmr1fMBHnO3vVCQ-iI51PNnI8XhKTWumH0CI0",
-      linkedin: "https://www.linkedin.com/in/pratibhakokil/"
-    },
-    content: `Thank u Vimal Daga sir and LinuxWorld Informatics Pvt Ltd for conducting this masterclass.. I learned about hashtag#helm chart with examples, artifact hub, docker hub, how to use procreated Helm chart and how to create my own helm chart and upload it, what's it's requirement, Roll out and Roll back, multi environment setup using helm chart, Jenkins setup via helm chart, jinja template etc.`,
-    timestamp: "2 week ago"
-  }, {
-    id: 1,
-    author: {
-      name: "Akansha chaurasia",
-      title: "Domain Support Specialist @ Ericsson India Global",
-      avatar: "https://media.licdn.com/dms/image/v2/C4D03AQERGZjbVTAnNw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1645726568650?e=1737590400&v=beta&t=V8r_7CfyG-LYaBsbkY7EztvWwig6Z1vRUv9aFeJJ4-k",
-      linkedin: "https://www.linkedin.com/in/akansha-chaurasia-681718119/"
-    },
-    content: `
-It was an amazing class to attend. I liked the way sir delivered the helm content. Helm became so easy for me now. I like to attend these classes as it helps me to elevate my skills. Thank you Vimal sir as well as LinuxWorld Informatics Pvt to share such a good content with us..`,
-    timestamp: "8 month ago"
-  },
-   {
-    id: 7,
-    author: {
-      name: "Sanchita Agrawal",
-      title: "DevOps Engineer at Genus Power Infrastructure Limited",
-      avatar: "https://media.licdn.com/dms/image/v2/D4D03AQHvkoJDpKyN6w/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1664520645818?e=1737590400&v=beta&t=0s-H7cUGZ7347Xo4Zn2GUdJGkO5tlKQjtzNVnJ3mJYw",
-      linkedin: "https://www.linkedin.com/feed/update/urn:li:activity:7239134220567130113/?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7239134220567130113%2C7240708775475601408%29&dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287240708775475601408%2Curn%3Ali%3Aactivity%3A7239134220567130113%29"
-    },
-    content: `
-Another amazing informative workshop by vimal sir. Its always fun learning from you sir. Learned so much of AWS DevOps concepts and how it gets implemented in real-world projects.`,
-    timestamp: "2 month ago"
-  },
-  {
-    id: 8,
-    author: {
-      name: "Rajneesh Pratap Singh",
-      title: "DevOps Engineer || 3x Redhat Certified ||",
-      avatar: "https://media.licdn.com/dms/image/v2/D5603AQFxBq8m8wYj4w/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1720442622903?e=1737590400&v=beta&t=v_dQCEGOIDJ96AV0ZbaA0IQUfLmnWk3m1YPnnwXAOb4",
-      linkedin: "https://www.linkedin.com/in/rajneesh-pratap-singh/"
-    },
-    content: `
-This is my first step towards security with DevOps, and it was a great learning experience
-In this session, we covered:
-Why DevSecOps? Understanding its importance over traditional DevOps.
-Integrating security with DevOps, including SAST and secure coding practices.
-Best practices for writing secure Dockerfiles.
-Setting up and using Docker Scout for vulnerability scanning.
-Strategies for patching and managing vulnerabilities in containers..`,
-    timestamp: "1 month ago"
-  },
-
-
-  
-  {
-    id: 10,
-    author: {
       name: "Aakash Kathunia",
-      title: "Technical Architect at HCLTech | GenAI | LLM | OpenAI | Kubernetes| Automation | Cloud",
+      title: "Technical Architect at HCLTech ",
       avatar: "https://media.licdn.com/dms/image/v2/D5603AQGJi9pe0O-O8A/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1723740692945?e=1737590400&v=beta&t=y2ONfXKp0z5KkZJRcTtg_e1iVUh8rFUn3JxaRqqFOBg",
       linkedin: "https://www.linkedin.com/in/aakash-kathunia-6b618b16/"
     },
@@ -130,10 +56,11 @@ Strategies for patching and managing vulnerabilities in containers..`,
     Before his session, I had tried to understand DevSecOps through various technical channels, but I didn't get a clear picture. However, in just initial hours of Vimal Sir’s session, he made the concept very much clearer. Then, over the next two hours, he simplified DevSecOps further, helping me gain valuable insights that sparked my interest in exploring the topic more deeply.
     
     I am Thankful to Vimal Sir for in-depth course on DevSecOps and looking more indepth session from him, and Im grateful for his teachings for current and upcoming valuable training sessions.`,
-    timestamp: "1 month ago"
+    timestamp: "1 month ago",
+    source:"LinkedIn"
   },
   {
-    id: 11,
+    id: 4,
     author: {
       name: "Alok Kumar Singh ",
       title: "Web Developer(Angular ) | Data Analyst |",
@@ -144,11 +71,12 @@ Strategies for patching and managing vulnerabilities in containers..`,
 
 Attending the System Design workshop by Vimal Daga Sir was a great learning experience. He explained complex topics like scalability, fault tolerance, and load balancing in simple terms, making it easy to understand. The examples he gave helped us see how these concepts are used in real projects. I learned how to make systems more efficient and reliable by balancing important factors like performance and cost. I'm excited to apply these new skills in my future projects!
 .`,
-    timestamp: "1 month ago"
+    timestamp: "1 month ago",
+    source: "LinkedIn",
   },
 
   {
-    id: 12,
+    id: 5,
     author: {
       name: "Mallesh Gangadhar ",
       title: "--",
@@ -160,14 +88,15 @@ Attending the System Design workshop by Vimal Daga Sir was a great learning expe
 Superrrrrrrb Training Enjoyed! This Linux Essentials workshop with Vimal Sir was superb, The workshop provided a solid foundation, covering key concepts like processes, users, file operations, and essential commands. It also gave a glimpse into the power and versatility of Linux for solving real-world problems. I'm excited to learn next skills on Linux with AI.
 to enhance my IT skills in Linux! Thanks
 .`,
-    timestamp: "1 month ago"
+    timestamp: "1 month ago",
+    source: "LinkedIn",
   },
 
   {
-    id: 13,
+    id: 6,
     author: {
       name: "Mohit Agarwal ",
-      title: "Student at NIT Kurukshetra | Additional Secretary of MExperts",
+      title: "Student at NIT Kurukshetra ",
       avatar: "https://media.licdn.com/dms/image/v2/D5603AQFfS5ahFvJB2Q/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1681871987732?e=1737590400&v=beta&t=xyrWG92tvwvBV-V5WSDeucFFSkLx-j8GbZ3e_1lAjw0",
       linkedin: "https://www.linkedin.com/in/mohitagarwal99/"
     },
@@ -176,10 +105,92 @@ to enhance my IT skills in Linux! Thanks
 The workshop was incredibly beneficial! I'm excited about the practical applications of CI/CD and AWS services. I plan to start by working on a personal project to implement a deployment pipeline and use AWS CodeDeploy for automation. Collaborating with others will definitely enhance the learning experience, and I'm eager to stay updated with new DevOps trends to improve my skills continuously.
 I'm really looking forward to applying these insights!
 .`,
-    timestamp: "1 month ago"
+    timestamp: "1 month ago",
+    source: "LinkedIn",
   },
-  
-];
+  {
+    id: 7,
+    author: {
+      name: "Sakshi Shukla ",
+      title: "",
+      avatar: "https://lh3.googleusercontent.com/a/ACg8ocJf8geZ0YRYujHyiGqMz89pyXw11w6xQeHigDTXx2gCTRX8FQ=w90-h90-p-rp-mo-br100",
+      google: "https://www.google.com/maps/contrib/103896485176679661480/reviews/@26.8663614,75.786043,17z/data=!4m3!8m2!3m1!1e1?hl=en-GB&entry=ttu&g_ep=EgoyMDI0MTExOS4yIKXMDSoASAFQAw%3D%3D"
+    },
+    content: `LinuxWorld is an exceptional platform for anyone looking to master cutting-edge technologies like cloud computing, DevOps, AI, and more. The training I received here was nothing short of transformative, thanks to the practical, hands-on approach and the incredible guidance of Mr. Vimal Daga Sir. Every session was insightful, and the blend of technical knowledge with real-world applications made learning exciting and impactful. The environment fosters innovation, and the mentors ensure that every student is equipped with both the skills and confidence to excel in their respective fields. I highly recommend LinuxWorld to anyone serious about advancing their career or startup journey! ⭐⭐⭐⭐⭐.`,
+    timestamp: "⭐⭐⭐⭐⭐ a month ago",
+    source: "Google",
+  },
+  {
+    id: 9,
+    author: {
+      name: "Priyanka Poonia ",
+      title: "",
+      avatar: "https://lh3.googleusercontent.com/a/ACg8ocIhwolUooBMrHKn--Vhu2KdbppiME6sIgh5eD6LYG7HU11JrQ=w90-h90-p-rp-mo-br100",
+      google: "https://www.google.com/maps/contrib/110200980044049560549/reviews/@26.8663614,75.786043,17z/data=!4m3!8m2!3m1!1e1?hl=en-GB&entry=ttu&g_ep=EgoyMDI0MTExOS4yIKXMDSoASAFQAw%3D%3D"
+    },
+    content: `From an individual who always has a phobia and confusion on technical skills to the one who has the confidence to solve any real-life problem through technology, it's an amazing journey of just 45 days but the level of knowledge and experience we gained is much more than anyone can explain in words...It has something that I have never experienced before joining Linuxworld, the working environment it has is something which has power to change the lives. It was such a wonderful experience to part of.
+
+Also, Mr. Vimal Daga Sir was a great personality, and I really felt honor to get a chance to learn from a teacher like him. He is not just a world record holder for learning the technologies but also applying them to solve real life problems. He taught us what it means to be a true engineer. The emotional support he provides is something which is nowhere to be found.`,
+    timestamp: "⭐⭐⭐⭐⭐ 2 month ago",
+    source: "Google",
+  },
+  {
+    id: 10,
+    author: {
+      name: "Riyanshi Verma",
+      title: "",
+      avatar: "https://lh3.googleusercontent.com/a/ACg8ocKr5gjaWkwbUDIjPK2-vZ9tH7aQ8ZylKRprPJ4V8K5qvms6tQ=w90-h90-p-rp-mo-br100",
+      google: "https://www.google.com/maps/reviews/@26.8663614,75.786043,17z/data=!3m1!4b1!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSURuLWV6UXJBRRAB!2m1!1s0x0:0x1641d7840dee1723?hl=en-GB&entry=ttu&g_ep=EgoyMDI0MTExOS4yIKXMDSoASAFQAw%3D%3D"
+    },
+    content: `My 45-day journey at Linux World Summer was nothing short of transformative. Under the visionary guidance of Mr. Vimal Daga, I delved into a vast array of technologies, including Python, Cloud Computing, AI, Linux, and DevOps, discovering my true potential along the way.
+
+One of the standout achievements of this experience was the launch of my startup, Service Lane. This was more than just a technical milestone—it marked the beginning of a new chapter in my entrepreneurial journey. Alongside this, I forged incredible friendships that quickly grew into a supportive, family-like community.
+
+But beyond the technical mastery, this program instilled essential skills in leadership, collaboration, and personal growth. These 45 days have laid a rock-solid foundation for everything to come, setting the stage for my future endeavors.`,
+    timestamp: "⭐⭐⭐⭐⭐ a month ago",
+    source: "Google",
+  },
+  {
+    id: 11,
+    author: {
+      name: "Rahul Pradhan",
+      title: "",
+      avatar: "https://lh3.googleusercontent.com/a-/ALV-UjXflmoNxQQub1rnN9P3ciyd6wRutRUIyUq8XslgSGWfHI5En56k=w90-h90-p-rp-mo-ba3-br100",
+      google: "https://www.google.com/maps/reviews/@26.8663614,75.786043,17z/data=!3m1!4b1!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSUMzdy1fQm13RRAB!2m1!1s0x0:0x1641d7840dee1723?hl=en-GB&entry=ttu&g_ep=EgoyMDI0MTExOS4yIKXMDSoASAFQAw%3D%3D"
+    },
+    content: `"My time at Linux World stands as one of the most cherished moments of my life—a period filled with profound learning, personal growth, and inspiring connections. It is an experience etched deeply in my heart, marking a priceless chapter that I will carry with me forever."`,
+    timestamp: "⭐⭐⭐⭐⭐ 2 weeks ago",
+    source: "Google",
+  },
+  {
+    id: 12,
+    author: {
+      name: "Khushboo Rana",
+      title: "",
+      avatar: "https://lh3.googleusercontent.com/a-/ALV-UjX-r93hkP3gE9Usel7ylqSE9eD2cNHx1MBSoBdX9R1blo9uUrA=w90-h90-p-rp-mo-br100",
+      google: "https://www.google.com/maps/contrib/103843629904167370238/reviews/@26.8663614,75.786043,17z/data=!4m3!8m2!3m1!1e1?hl=en-GB&entry=ttu&g_ep=EgoyMDI0MTExOS4yIKXMDSoASAFQAw%3D%3D"
+    },
+    content: `My time at LinuxWorld was a game-changer! From the day I joined, I was embraced by a vibrant community of brilliant minds, all eager to exchange knowledge and uplift each other. The atmosphere was a hotbed of innovation and teamwork, making it the perfect place for growth.
+
+Guided by my mentor, Vimal Sir, I honed critical technical skills in Python, web development, and tools such as Flask, Twilio, and Boto3. His vast expertise and unwavering support fostered an environment where curiosity and exploration were not only encouraged but celebrated. He urged us to dig deeper, ask questions, and push boundaries, creating a rich learning experience.
+`,
+    timestamp: "⭐⭐⭐⭐⭐ a month ago",
+    source: "Google",
+  },
+  {
+    id: 13,
+    author: {
+      name: "Sameer Khan",
+      title: "",
+      avatar: "https://lh3.googleusercontent.com/a-/ALV-UjXsnrAGe90HsdpkJq5lWYz1eOYs1QlSa-d9odB8dV3iJ_ivSk9n=w90-h90-p-rp-mo-br100",
+      google: "https://www.google.com/maps/contrib/104011238944807550881/reviews/@26.8663614,75.786043,17z/data=!4m3!8m2!3m1!1e1?hl=en-GB&entry=ttu&g_ep=EgoyMDI0MTExOS4yIKXMDSoASAFQAw%3D%3D"
+    },
+    content: `"It was amazing time with the team Linux world .... Great learning from Mr Vimal Daga sir .
+In these 45 days I have learnt many things it is not about learnt it is about enhanced my skills so many other things which would be not be possible without our whole team 💗 thank you so much for this moments Love you and miss you ✨💗"`,
+    timestamp: "⭐⭐⭐⭐⭐ 2 months ago",
+    source: "Google",
+  },
+  ];
 
   // Show only the first 6 posts when not expanded, otherwise show all posts
   const visiblePosts = isExpanded ? posts : posts.slice(0, 6);
@@ -189,7 +200,7 @@ I'm really looking forward to applying these insights!
       <div className="max-w-[920px] mx-auto">
         <h2 className="text-black text-sm sm:text-md">HEAR IT FROM THEM</h2>
         <h2 className="text-black text-2xl sm:text-3xl font-bold mb-6 sm:mb-10 mt-2">
-          Ambitious People ❤️ <span className="text-[#ebff00]">TGS</span>
+          Ambitious People ❤️ <span className="text-[#ff0000]">Linux World</span>
         </h2>
 
         {/* Displaying testimonials in masonry layout */}
@@ -237,11 +248,15 @@ const PostCard: React.FC<{ post: any }> = ({ post }) => {
             <h3 className="text-sm font-semibold">{post.author.name}</h3>
             <p className="text-xs text-gray-400">{post.author.title}</p>
           </div>
-          <a href={post.author.linkedin} target="_blank" rel="noopener noreferrer" aria-label={`Visit ${post.author.name}'s LinkedIn profile`}>
-            <svg className="h-4 w-4 sm:h-5 sm:w-5 text-gray-400 hover:text-blue-600 cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <Linkedin className="h-4 w-4 sm:h-5 sm:w-5 text-gray-400 hover:text-blue-600 cursor-pointer" />
-            </svg>
-          </a>
+          <a
+              href={post.source === "LinkedIn" ? post.author.linkedin : post.author.google}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="icon-link"
+            >
+              {post.source === "LinkedIn" ? <FaLinkedin size={20} /> : <FaGoogle size={20} />}
+            </a>
+          {/* </a> */}
         </div>
       </div>
 

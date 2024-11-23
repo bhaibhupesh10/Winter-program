@@ -48,7 +48,7 @@ const Pricing = () => {
               Access proven strategies that will increase your chances of landing a dev job faster and with less effort.
             </p>
             <img 
-              src="/api/placeholder/200/200" 
+              src="/manrun.webp" 
               alt="Career Growth" 
               className="w-full h-40 object-cover rounded-lg"
             />
@@ -61,15 +61,15 @@ const Pricing = () => {
         <Card className="bg-gray-900 text-white p-8 relative">
           <CardContent className="space-y-6 text-center">
             <div className="w-24 h-24 mx-auto bg-white rounded-2xl flex items-center justify-center">
-              <span className="text-2xl font-bold text-blue-600">{`{JS}`}</span>
+              <span className="text-2xl font-bold text-blue-600">{`{L.W}`}</span>
             </div>
-            <h2 className="text-2xl font-bold">JavaScript Mastery</h2>
+            <h2 className="text-2xl font-bold">Linux World</h2>
             <h3 className="text-xl text-emerald-400">Dev Career Accelerator</h3>
             <p className="text-gray-300 text-sm">
               Comprehensive career support including resume reviews, interview preparation, and job placement assistance.
             </p>
             <button className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors">
-              Learn more about it ↓
+            Participate 3500+Tax ↓
             </button>
           </CardContent>
           {/* Background Circle */}
@@ -110,7 +110,7 @@ const Pricing = () => {
         <Card className="bg-gray-900 text-white p-6">
           <CardContent className="space-y-4">
             <img 
-              src="/api/placeholder/100/100" 
+              src="/discord.png" 
               alt="Discord Logo" 
               className="w-16 h-16"
             />

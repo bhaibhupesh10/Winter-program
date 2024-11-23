@@ -9,10 +9,12 @@ import Testimonials from "@/components/CustomComponent/CourseTestimonials"
 import Faq from '@/components/CustomComponent/Faq'
 import CertificateComponent from '@/components/CustomComponent/Cert'
 import Pricing from '@/components/CustomComponent/Pricing'
+import Roadmap from '@/components/CustomComponent/Roadmap'
 import DoubtAssistance from '@/components/CustomComponent/DoubtAsssistant'
 import InternshipCardsList from '@/components/CustomComponent/InternshipCardList'
 import ProgramCohorts from '@/components/CustomComponent/ProgramCohort'
 import DevOpsCurriculum from '@/components/CustomComponent/CourseCurriculum'
+import RoadMap2 from '@/components/CustomComponent/RoadMap2'
 export default function Home() {
   return (
       <>
@@ -27,6 +29,8 @@ export default function Home() {
       <GalleryCarousel></GalleryCarousel>
       <Pricing></Pricing>
       <Testimonials/>
+      <Roadmap></Roadmap>
+      <RoadMap2></RoadMap2>
       <Contact/>
       <WhatsAppBot/>
       

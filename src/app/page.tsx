@@ -9,6 +9,7 @@ import Testimonials from "@/components/CustomComponent/CourseTestimonials"
 import Faq from '@/components/CustomComponent/Faq'
 import CertificateComponent from '@/components/CustomComponent/Cert'
 import Pricing from '@/components/CustomComponent/Pricing'
+import Roadmap from '@/components/CustomComponent/Roadmap'
 export default function Home() {
   return (
       <>
@@ -18,6 +19,7 @@ export default function Home() {
       <GalleryCarousel></GalleryCarousel>
       <Pricing></Pricing>
       <Testimonials/>
+      <Roadmap></Roadmap>
       <Contact/>
       <WhatsAppBot/>
       

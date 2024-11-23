@@ -19,8 +19,8 @@ export default function CertificateComponent() {
           {/* Left content remains the same */}
           <div className="space-y-8">
             <div className="space-y-4">
-              <h1 className="text-3xl font-bold tracking-tight text-white">Get <span className="text-[#ebff00]">Certified</span> & Recognised</h1>
-              <p className="text-md text-muted-foreground text-white">
+              <h1 className="text-3xl font-bold tracking-tight text-black">Get <span className="text-[#ebff00]">Certified</span> & Recognised</h1>
+              <p className="text-md text-muted-foreground text-black">
               Yes ! You will  be certified  once you complete the <span className="text-[#ffff00]">Capstone Project</span>  towards the end.
               </p>
             </div>
@@ -34,8 +34,8 @@ export default function CertificateComponent() {
                   </div>
                 </div>
                 <div className="space-y-2">
-                  <h3 className="text-xl font-semibold text-white">Official and verified:</h3>
-                  <p className="text-muted-foreground text-white">
+                  <h3 className="text-xl font-semibold text-black">Official and verified:</h3>
+                  <p className="text-muted-foreground text-black">
                     Receive an instructor signed certificate with institution&apos;s logo to verify your achievements and increase your job prospects.
                   </p>
                 </div>
@@ -49,8 +49,8 @@ export default function CertificateComponent() {
                   </div>
                 </div>
                 <div className="space-y-2">
-                  <h3 className="text-xl font-semibold text-white">Easily shareable</h3>
-                  <p className="text-muted-foreground text-white">
+                  <h3 className="text-xl font-semibold text-black">Easily shareable</h3>
+                  <p className="text-muted-foreground text-black">
                     Add the certificate to your CV or your Resume or post it directly on LinkedIn. You can even post it on instagram and twitter.
                   </p>
                 </div>
@@ -64,8 +64,8 @@ export default function CertificateComponent() {
                   </div>
                 </div>
                 <div className="space-y-2">
-                  <h3 className="text-xl font-semibold text-white">Enhances Credibility</h3>
-                  <p className="text-muted-foreground text-white">
+                  <h3 className="text-xl font-semibold text-black">Enhances Credibility</h3>
+                  <p className="text-muted-foreground text-black">
                     Use your certificate to enhance your professional credibility and stand out among your peers as an expert.
                   </p>
                 </div>
@@ -79,8 +79,8 @@ export default function CertificateComponent() {
                   </div>
                 </div>
                 <div className="space-y-2">
-                  <h3 className="text-xl font-semibold text-white">Increase potential opportunities</h3>
-                  <p className="text-muted-foreground text-white">
+                  <h3 className="text-xl font-semibold text-black">Increase potential opportunities</h3>
+                  <p className="text-muted-foreground text-black">
                     By showcasing your achieved skill set using your certificate, attracting the employer for the desired job opportunities becomes easy.
                   </p>
                 </div>

@@ -12,8 +12,8 @@ export default function Home() {
   return (
       <>
       <HeroSection></HeroSection>
+      {/* <MentorFeatured /> */}
       <MentorProfile/>
-      <MentorFeatured />
       <GalleryCarousel></GalleryCarousel>
       <Testimonials/>
       <Contact/>

@@ -12,7 +12,7 @@ export default function Footer() {
         {/* Column 1: Brand Info with Logos */}
         <div>
           <h2 className="text-xl font-bold text-red-500">
-            TGS<span className="text-white"> - The Growth String Initiative </span>
+            Winter Program<span className="text-white"> - The Growth String Initiative </span>
           </h2>
           <p className="text-lg text-blue-400 mt-2 leading-relaxed text-cyan-400">
             “Empowering Growth, Redefining Technical Training”
@@ -40,7 +40,7 @@ export default function Footer() {
 
       {/* Footer Bottom */}
       <div className="text-center mt-8 text-white text-sm">
-        © Copyright 2024 TGS | Designed & Developed with ❤️ by LinuxWorld | All Rights Reserved
+        © Copyright 2024 | Designed & Developed with ❤️ by LinuxWorld | All Rights Reserved
       </div>
     </footer>
   );

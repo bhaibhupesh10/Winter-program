@@ -185,10 +185,10 @@ I'm really looking forward to applying these insights!
   const visiblePosts = isExpanded ? posts : posts.slice(0, 6);
 
   return (
-    <div className="bg-[#000000] p-4 sm:p-6 mx-auto">
+    <div className="bg-[#ffffff] p-4 sm:p-6 mx-auto">
       <div className="max-w-[920px] mx-auto">
-        <h2 className="text-white text-sm sm:text-md">HEAR IT FROM THEM</h2>
-        <h2 className="text-white text-2xl sm:text-3xl font-bold mb-6 sm:mb-10 mt-2">
+        <h2 className="text-black text-sm sm:text-md">HEAR IT FROM THEM</h2>
+        <h2 className="text-black text-2xl sm:text-3xl font-bold mb-6 sm:mb-10 mt-2">
           Ambitious People ❤️ <span className="text-[#ebff00]">TGS</span>
         </h2>
 

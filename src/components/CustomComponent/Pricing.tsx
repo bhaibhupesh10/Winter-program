@@ -64,11 +64,11 @@ const Pricing = () => {
               <span className="text-2xl font-bold text-blue-600">{`{L.W}`}</span>
             </div>
             <h2 className="text-2xl font-bold">Linux World</h2>
-            <h3 className="text-xl text-emerald-400">Dev Career Accelerator</h3>
+            <h3 className="text-xl text-emerald-400 text-[#DC2626]">Dev Career Accelerator</h3>
             <p className="text-gray-300 text-sm">
               Comprehensive career support including resume reviews, interview preparation, and job placement assistance.
             </p>
-            <button className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors">
+            <button className="bg-[#DC2626] text-white px-6 py-3 rounded-lg hover:bg-bg-[#DC2626] transition-colors">
             Participate 3500+Tax ↓
             </button>
           </CardContent>
@@ -98,7 +98,7 @@ const Pricing = () => {
             <div className="p-4 bg-emerald-400 rounded-lg w-12 h-12 flex items-center justify-center">
               <Briefcase className="w-6 h-6 text-gray-900" />
             </div>
-            <h3 className="text-3xl font-bold text-yellow-400">30+</h3>
+            <h3 className="text-3xl font-bold text-[#DC2626]">30+</h3>
             <h4 className="text-xl font-bold">Assignments with Reviews</h4>
             <p className="text-gray-300 text-sm">
               Receive detailed feedback on your dev portfolio and all career profiles by industry professionals.

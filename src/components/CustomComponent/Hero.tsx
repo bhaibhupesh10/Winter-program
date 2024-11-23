@@ -6,16 +6,16 @@ export default function HeroSection() {
           <div className="flex-1 space-y-8">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
               Launch Your{" "}
-              <span className="text-[#FF9776]">Dev</span>
+              <span className="text-[#DC2626]">Dev</span>
               {" "}Career with{" "}
-              <span className="text-[#4DFFD1]">Expert Guidance</span>
+              <span className="text-[#DC2626]">Expert Guidance</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 max-w-2xl">
               Receive job offers within weeks with our proven curriculum,
               market-leading strategies, and expert support.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <button className="px-8 py-4 bg-[#1A91FF] text-white rounded-lg text-lg font-semibold hover:bg-[#1A91FF]/90 transition-colors">
+              <button className="px-8 py-4 bg-[#DC2626] text-white rounded-lg text-lg font-semibold hover:bg-[#-[#DC2626]/90 transition-colors">
                 Enroll now
               </button>
               <button className="px-8 py-4 bg-[#25262B] text-white rounded-lg text-lg font-semibold flex items-center justify-center gap-2 hover:bg-[#25262B]/90 transition-colors">

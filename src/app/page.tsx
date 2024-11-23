@@ -15,9 +15,11 @@ import InternshipCardsList from '@/components/CustomComponent/InternshipCardList
 import ProgramCohorts from '@/components/CustomComponent/ProgramCohort'
 import DevOpsCurriculum from '@/components/CustomComponent/CourseCurriculum'
 import RoadMap2 from '@/components/CustomComponent/RoadMap2'
+import Navbar from '@/components/CustomComponent/Navbar'
 export default function Home() {
   return (
       <>
+         <Navbar/>
       <HeroSection></HeroSection>
       <DevOpsCurriculum/>
       

@@ -9,10 +9,12 @@ import Testimonials from "@/components/CustomComponent/CourseTestimonials"
 import Faq from '@/components/CustomComponent/Faq'
 import CertificateComponent from '@/components/CustomComponent/Cert'
 import Pricing from '@/components/CustomComponent/Pricing'
+import DoubtAssistance from '@/components/CustomComponent/DoubtAsssistant'
 export default function Home() {
   return (
       <>
       <HeroSection></HeroSection>
+      <DoubtAssistance></DoubtAssistance>
       {/* <MentorFeatured /> */}
       <MentorProfile/>
       <GalleryCarousel></GalleryCarousel>

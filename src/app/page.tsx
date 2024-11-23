@@ -10,10 +10,17 @@ import Faq from '@/components/CustomComponent/Faq'
 import CertificateComponent from '@/components/CustomComponent/Cert'
 import Pricing from '@/components/CustomComponent/Pricing'
 import DoubtAssistance from '@/components/CustomComponent/DoubtAsssistant'
+import InternshipCardsList from '@/components/CustomComponent/InternshipCardList'
+import ProgramCohorts from '@/components/CustomComponent/ProgramCohort'
+import DevOpsCurriculum from '@/components/CustomComponent/CourseCurriculum'
 export default function Home() {
   return (
       <>
       <HeroSection></HeroSection>
+      <DevOpsCurriculum/>
+      
+      <InternshipCardsList></InternshipCardsList>
+      <ProgramCohorts/>
       <DoubtAssistance></DoubtAssistance>
       {/* <MentorFeatured /> */}
       <MentorProfile/>

@@ -81,8 +81,8 @@ export default function Component() {
       <div className="container mx-auto max-w-6xl">
         {/* Header Section */}
         <div className="text-center mb-12">
-          <h1 className="text-3xl md:text-3xl font-bold text-[#FFFF00] mb-2">
-            Connect with TGS
+          <h1 className="text-3xl md:text-3xl font-bold text-[#000000] mb-2">
+            Connect with <span className="text-[#ff0000]"> Linux World</span>
           </h1>
           <div className="h-1 w-16 bg-red-500 mb-2 mx-auto"></div>
           <p className="text-gray-900 max-w-3xl mx-auto text-md">

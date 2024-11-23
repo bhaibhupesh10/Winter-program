@@ -11,6 +11,7 @@ import CertificateComponent from '@/components/CustomComponent/Cert'
 import Pricing from '@/components/CustomComponent/Pricing'
 import Roadmap from '@/components/CustomComponent/Roadmap'
 import DoubtAssistance from '@/components/CustomComponent/DoubtAsssistant'
+import RoadMap2 from '@/components/CustomComponent/RoadMap2'
 export default function Home() {
   return (
       <>
@@ -22,6 +23,7 @@ export default function Home() {
       <Pricing></Pricing>
       <Testimonials/>
       <Roadmap></Roadmap>
+      <RoadMap2></RoadMap2>
       <Contact/>
       <WhatsAppBot/>
       

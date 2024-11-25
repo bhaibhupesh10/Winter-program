@@ -4,13 +4,7 @@ import { Award, Share2, UserCheck, Briefcase } from 'lucide-react'
 import CertScroll from "./miniComponent/CertScroll"
 
 export default function CertificateComponent() {
-  // Sample decorative images data - replace these with your actual image paths
-  // const decorativeImages = {
-  //   topLeft: EventImage1.src.toString(),
-  //   topRight: EventImage2.src.toString(),
-  //   bottomLeft: EventImage3.src.toString(),
-  //   bottomRight: EventImage4.src.toString()
-  // }
+ 
 
   return (
     <div className="max-w-6xl mx-auto p-6 lg:px-8">
@@ -19,9 +13,9 @@ export default function CertificateComponent() {
           {/* Left content remains the same */}
           <div className="space-y-8">
             <div className="space-y-4">
-              <h1 className="text-3xl font-bold tracking-tight text-black">Get <span className="text-[#ebff00]">Certified</span> & Recognised</h1>
+              <h1 className="text-3xl font-bold tracking-tight text-black">Get <span className="text-[#ff0000]">Certified</span> & Recognised</h1>
               <p className="text-md text-muted-foreground text-black">
-              Yes ! You will  be certified  once you complete the <span className="text-[#ffff00]">Capstone Project</span>  towards the end.
+              Yes ! You will  be certified  once you complete the <span className="text-[#ff0000]">Capstone Project</span>  towards the end.
               </p>
             </div>
           

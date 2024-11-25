@@ -64,7 +64,7 @@ export default function DevOpsCurriculum() {
         {/* Left Side - Curriculum */}
         <div className="space-y-4">
           <div className="flex items-center justify-between">
-            <h1 className="text-2xl font-semibold">Curriculum Designed by Experts</h1>
+            <h1 className="text-3xl font-semibold">Curriculum Designed by <span className="text-[#ff0000]" >Experts</span></h1>
             <Button variant="outline" size="sm">
               <Download className="mr-2 h-4 w-4" />
               Download Curriculum

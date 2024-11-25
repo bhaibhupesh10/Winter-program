@@ -7,7 +7,7 @@ export default function ProgramCohorts() {
     <div className="container max-w-6xl mx-auto p-6 space-y-6">
       {/* Headers */}
       <div className="space-y-2">
-        <h1 className="text-2xl font-semibold text-gray-900">Program Cohorts</h1>
+        <h1 className="text-3xl font-semibold text-gray-900">Program <span className="text-[#ff0000]">Cohorts</span></h1>
         <h2 className="text-xl text-gray-700">Next Cohort</h2>
       </div>
 

@@ -32,34 +32,37 @@ const Roadmap = () => {
         </div>
 
         {/* Icons Row and Vector Lines */}
-        <div className="relative mb-16">
-          {/* Icons */}
-          <div className="flex justify-between mb-4">
-            {[
-              { icon: Linkedin, label: 'LinkedIn', color: 'bg-blue-500' },
-              { icon: Github, label: 'GitHub', color: 'bg-gray-700' },
-              { icon: Briefcase, label: 'Portfolio', color: 'bg-emerald-500' },
-              { icon: FileText, label: 'Resume', color: 'bg-yellow-500' },
-              { icon: Mail, label: 'Cover Letter', color: 'bg-red-500' }
-            ].map((item, index) => (
-              <div key={index} className="flex flex-col items-center">
-                <div className={`p-4 ${item.color} rounded-lg mb-2`}>
-                  <item.icon className="w-6 h-6" />
-                </div>
-                <span className="text-sm">{item.label}</span>
-              </div>
-            ))}
-          </div>
-
-          {/* Vector Lines Image */}
-          <div className="absolute top-12 left-0 w-full h-24 z-0">
-            <img
-              src="/lines.svg"
-              alt="Connecting Lines"
-              className="w-full h-full object-contain"
-            />
-          </div>
+       {/* Icons Row and Vector Lines */}
+<div className="relative mb-16">
+  {/* Icons */}
+  <div className="flex justify-center gap-x-10 mb-4">
+    {[
+      { icon: Linkedin, label: 'LinkedIn', color: 'bg-blue-500' },
+      { icon: Github, label: 'GitHub', color: 'bg-gray-700' },
+      { icon: Briefcase, label: 'Portfolio', color: 'bg-emerald-500' },
+      { icon: FileText, label: 'Resume', color: 'bg-yellow-500' },
+      { icon: Mail, label: 'Cover Letter', color: 'bg-red-500' }
+    ].map((item, index) => (
+      <div key={index} className="flex flex-col items-center">
+        <div className={`p-2 ${item.color} rounded-lg mb-2`}>
+          <item.icon className="w-6 h-6" />
         </div>
+        <span className="text-sm">{item.label}</span>
+      </div>
+    ))}
+  </div>
+
+  {/* Vector Lines Image */}
+  <div className="absolute top-12 left-0 w-full h-24 z-0">
+    <img
+      src="/lines.svg"
+      alt="Connecting Lines"
+      className="h-full object-contain"
+      style={{ width: '200%' }}
+    />
+  </div>
+</div>
+
 
         {/* JSM Mentor Logo */}
         <div className="flex flex-col items-center mb-16">

@@ -50,7 +50,7 @@ const projects: Project[] = [
 
 const ProjectsSection = () => {
   return (
-    <div className="max-w-7xl mx-auto px-4 py-12 bg-gray-50">
+    <div className="max-w-6xl mx-auto px-4 py-12 bg-gray-50">
       <h1 className="text-center text-4xl font-extrabold text-gray-800 mb-8">
         Build Industry Grade{" "}
         <span className="text-[#DC2626]">Projects</span>

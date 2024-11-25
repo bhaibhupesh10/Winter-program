@@ -4,7 +4,7 @@ export default function LeftHero() {
         <>
         <div className="overflow-hidden">
         <div className="flex-1 space-y-8">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
+            <h1 className="text-3xl md:text-3xl lg:text-5xl font-bold text-white leading-tight">
               Launch Your{" "}
               <span className="text-[#DC2626]">Dev</span>
               {" "}Career with{" "}

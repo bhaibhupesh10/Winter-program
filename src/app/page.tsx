@@ -17,7 +17,7 @@ import DevOpsCurriculum from '@/components/CustomComponent/CourseCurriculum'
 import RoadMap2 from '@/components/CustomComponent/RoadMap2'
 import ProjectsSection from '@/components/CustomComponent/Projects'
 import Tools from '@/components/CustomComponent/Tools'
-
+import CourseDetails from '@/components/CustomComponent/CourseDetails'
 
 export default function Home() {
   return (
@@ -25,7 +25,9 @@ export default function Home() {
      
       <HeroSection></HeroSection>
       <DevOpsCurriculum/>
+
       <ProjectsSection></ProjectsSection>
+      <CourseDetails></CourseDetails>
       <InternshipCardsList></InternshipCardsList>
       <ProgramCohorts/>
       <DoubtAssistance></DoubtAssistance>

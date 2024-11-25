@@ -1,7 +1,11 @@
 'use client';
 
+
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
+import DiscordImage03 from "../../../public/assets/discord-images/discord01.jpg"
+import DiscordImage02 from "../../../public/assets/discord-images/discord02.jpg"
+import DiscordImage01 from "../../../public/assets/discord-images/discord03.jpg"
 
 export default function DoubtAssistance() {
   // Intersection Observer hook logic
@@ -46,7 +50,7 @@ export default function DoubtAssistance() {
         <div className="relative col-span-2">
           {/* First card */}
           <Image
-            src="/placeholder.svg?height=400&width=300"
+            src={DiscordImage01}
             alt="Code editor screenshot"
             width={200}
             height={220}
@@ -56,7 +60,7 @@ export default function DoubtAssistance() {
           />
           {/* Second card */}
           <Image
-            src="/placeholder.svg?height=300&width=300"
+            src={DiscordImage02}
             alt="Code editor screenshot"
             width={200}
             height={220}
@@ -66,7 +70,7 @@ export default function DoubtAssistance() {
           />
           {/* Third card */}
           <Image
-            src="/placeholder.svg?height=300&width=300"
+            src={DiscordImage03}
             alt="Code editor screenshot"
             width={200}
             height={220}

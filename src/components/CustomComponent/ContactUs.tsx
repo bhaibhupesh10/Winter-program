@@ -86,7 +86,7 @@ export default function Component() {
           </h1>
           <div className="h-1 w-16 bg-red-500 mb-2 mx-auto"></div>
           <p className="text-gray-900 max-w-3xl mx-auto text-md">
-            Curious about TGS? Let&apos;s talk! Fill out the form or contact us — we&apos;re excited to help you take the next step in your journey!
+            Curious about Winter Program? Let&apos;s talk! Fill out the form or contact us — we&apos;re excited to help you take the next step in your journey!
           </p>
         </div>
 
@@ -94,26 +94,14 @@ export default function Component() {
         <div className="grid md:grid-cols-2 gap-0 items-start">
           {/* Contact Info */}
           <div className="space-y-6">
-            {/* <div className="flex items-center space-x-4">
-              <div className="bg-white rounded-full p-3">
-                <Home className="w-6 h-6 text-zinc-900" />
-              </div>
-              <div>
-                <h3 className="text-cyan-400 text-xl font-semibold mb-1">Address</h3>
-                <p className="text-white">
-                  Krishna Tower, Plot No. 5,
-                  <br />
-                  Jaipur, Rajasthan 302015
-                </p>
-              </div>
-            </div> */}
+      
 
             <div className="flex items-center space-x-4">
               <div className="bg-white rounded-full p-3">
                 <Phone className="w-6 h-6 text-zinc-900" />
               </div>
               <div>
-                <h3 className="text-cyan-400 text-xl font-semibold mb-1">Phone</h3>
+                <h3 className="text-black text-xl font-semibold mb-1">Phone</h3>
                 <a href="tel:+919773353561" className="text-blackhover:underline">
                   +91 9773353561
                 </a>
@@ -129,7 +117,7 @@ export default function Component() {
                 <Mail className="w-6 h-6 text-zinc-900" />
               </div>
               <div>
-                <h3 className="text-cyan-400 text-xl font-semibold mb-1">Email</h3>
+                <h3 className="text-black text-xl font-semibold mb-1">Email</h3>
                 <a href="mailto:preeti@lwindia.com" className="text-black hover:underline">
                   preeti@lwindia.com
                 </a>
@@ -190,7 +178,7 @@ export default function Component() {
                 </div>
                 <Button
                   type="submit"
-                  className={`w-full bg-cyan-400 hover:bg-cyan-500 text-black text-lg ${loading ? "cursor-wait" : ""}`}
+                  className={`w-full bg-[#ff0000] hover:bg-red-500 text-black text-lg ${loading ? "cursor-wait" : ""}`}
                   style={{ letterSpacing: "2px" }}
                   disabled={loading} // Disable the button while loading
                 >

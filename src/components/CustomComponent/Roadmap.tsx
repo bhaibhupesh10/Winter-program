@@ -1,7 +1,3 @@
-
-
-
-
 import React from 'react';
 import { Card, CardContent } from "@/components/ui/card";
 import { 
@@ -15,12 +11,12 @@ import {
 
 const Roadmap = () => {
   return (
-    <div className="max-w-7xl mx-auto bg-gray-900 text-white  overflow-hiden">
+    <div className="w-full mx-auto bg-gray-900 text-white  overflow-hiden">
       {/* Inner Container */}
-      <div className="w-full max-w-4xl mx-auto p-8">
+      <div className="w-full   max-w-4xl mx-auto p-8">
         {/* Header */}
         <div className="text-center mb-12">
-          <h2 className="text-2xl font-bold mb-2">
+          <h2 className="text-3xl font-bold mb-2">
             Career Assignments with Personalized Reviews
           </h2>
           <p className="text-gray-300">
@@ -53,7 +49,7 @@ const Roadmap = () => {
   </div>
 
   {/* Vector Lines Image */}
-  <div className="absolute top-12 left-0 w-full h-24 z-0">
+  <div className="absolute top-12 left-0 w-full h-20 z-0">
     <img
       src="/lines.svg"
       alt="Connecting Lines"
@@ -77,7 +73,7 @@ const Roadmap = () => {
           <CardContent className="p-6 space-y-6">
             <div className="flex items-center gap-2">
               <Crown className="w-6 h-6 text-yellow-400" />
-              <h3 className="text-xl font-bold">Detailed review</h3>
+              <h3 className="text-xl font-bold text-[#ffffff]">Detailed review</h3>
             </div>
 
             <div className="space-y-6">

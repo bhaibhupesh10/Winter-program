@@ -13,7 +13,7 @@ import {
 
 const Pricing = () => {
   return (
-    <div className="w-full max-w-6xl mx-auto p-6 grid grid-cols-3 gap-6">
+    <div className="w-full max-w-6xl mx-auto mt-20 mb-20 p-6 grid grid-cols-3 gap-6">
       {/* Left Column */}
       <div className="space-y-6">
         {/* Learning Platform Card */}

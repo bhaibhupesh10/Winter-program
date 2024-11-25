@@ -88,9 +88,10 @@ const Pricing = () => {
               <div className="p-2 bg-pink-500 rounded-lg flex items-center justify-center">
                 <Mail className="w-5 h-5" />
               </div>
-              <div className="p-2 bg-blue-600 rounded-lg flex items-center justify-center">
+            <a href="https://www.linkedin.com/company/linuxworld-informatics-pvt-ltd/?originalSubdomain=in" target='__blank'>  <div className="p-2 bg-blue-600 rounded-lg flex items-center justify-center">
                 <LinkedinIcon className="w-5 h-5" />
               </div>
+              </a>
               <div className="p-2 bg-purple-500 rounded-lg flex items-center justify-center">
                 <MessageSquare className="w-5 h-5" />
               </div>

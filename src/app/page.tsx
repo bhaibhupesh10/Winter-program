@@ -17,11 +17,11 @@ import DevOpsCurriculum from '@/components/CustomComponent/CourseCurriculum'
 import RoadMap2 from '@/components/CustomComponent/RoadMap2'
 import ProjectsSection from '@/components/CustomComponent/Projects'
 import Tools from '@/components/CustomComponent/Tools'
-import Navbar from '@/components/CustomComponent/Navbar'
+
 export default function Home() {
   return (
       <>
-         <Navbar/>
+     
       <HeroSection></HeroSection>
       <DevOpsCurriculum/>
       <ProjectsSection></ProjectsSection>

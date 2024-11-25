@@ -18,6 +18,7 @@ import RoadMap2 from '@/components/CustomComponent/RoadMap2'
 import ProjectsSection from '@/components/CustomComponent/Projects'
 import Tools from '@/components/CustomComponent/Tools'
 
+
 export default function Home() {
   return (
       <>
@@ -33,13 +34,13 @@ export default function Home() {
       <MentorProfile/>
       <GalleryCarousel></GalleryCarousel>
       <Pricing></Pricing>
-      <Testimonials/>
       <Roadmap></Roadmap>
       <RoadMap2></RoadMap2>
+      <CertificateComponent></CertificateComponent>
+      <Testimonials/>
       <Contact/>
       <WhatsAppBot/>
       
-      <CertificateComponent></CertificateComponent>
       <Faq></Faq>
 
       </>

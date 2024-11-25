@@ -29,7 +29,7 @@ export default function Home() {
       <ProgramCohorts/>
       <DoubtAssistance></DoubtAssistance>
       <Tools></Tools>
-      {/* <MentorFeatured /> */}
+      <MentorFeatured />
       <MentorProfile/>
       <GalleryCarousel></GalleryCarousel>
       <Pricing></Pricing>

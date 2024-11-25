@@ -15,7 +15,7 @@ import {
 
 const Roadmap = () => {
   return (
-    <div className="w-screen bg-gray-900 text-white">
+    <div className="max-w-7xl mx-auto bg-gray-900 text-white  overflow-hiden">
       {/* Inner Container */}
       <div className="w-full max-w-4xl mx-auto p-8">
         {/* Header */}

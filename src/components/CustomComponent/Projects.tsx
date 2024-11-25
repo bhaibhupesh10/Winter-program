@@ -12,27 +12,27 @@ interface Project {
 const projects: Project[] = [
   {
     icon: <Code className="w-8 h-8 text-red-600" />,
-    title: "Airbnb",
-    subtitle: "(Travel & Listing)",
-    description: "Build your own version of full stack Airbnb with user authentication, property listings, and more.",
+    title: "Healthcare AI",
+    subtitle: "(Healthcare  & Diagnostic )",
+    description: "Using Amazon Rekognition for analyzing medical images and identifying conditions such as tumors or anomalies in X-rays or MRIs.",
   },
   {
     icon: <LineChart className="w-8 h-8 text-red-600" />,
-    title: "Zerodha",
-    subtitle: "(Investing & Stocks)",
-    description: "Build your own version of MERN stack Zerodha with Restful APIs & AWS Deployment.",
+    title: "Retail AI",
+    subtitle: "(Ecommerce &Recommendation )",
+    description: "Using AWS SageMaker to build machine learning models that predict what products a customer might be interested in based on past purchase history and browsing behavior.",
   },
   {
     icon: <MessageCircle className="w-8 h-8 text-red-600" />,
-    title: "ChatGPT",
-    subtitle: "(OpenAI APIs)",
-    description: "We'll explore the OpenAI APIs to build our own chatbot.",
+    title: " Finance AI:",
+    subtitle: "( Fraud Detection )",
+    description: "Using AWS SageMaker to train models for fraud detection by analyzing transaction data and customer behavior. AWS Lambda is used for real-time processing of incoming transactions",
   },
   {
     icon: <Users className="w-8 h-8 text-red-600" />,
-    title: "Linkedin",
-    subtitle: "(Social Media)",
-    description: "Build a MERN stack social media platform to connect & share with your network.",
+    title: "AI-Powered Chatbots",
+    subtitle: "(chatbot & AI)",
+    description: "Building a customer support chatbot using Amazon Lex, which interacts with customers in a natural, conversational manner.",
   },
   {
     icon: <Github className="w-8 h-8 text-red-600" />,
@@ -52,8 +52,7 @@ const ProjectsSection = () => {
   return (
     <div className="max-w-6xl mx-auto px-4 py-12 bg-gray-50">
       <h1 className="text-center text-4xl font-extrabold text-gray-800 mb-8">
-        Build Industry Grade{" "}
-        <span className="text-[#DC2626]">Projects</span>
+      From Learning to <span className='text-[#DC2626]'>Implementation:</span>Capstone Projects That <span className='text-[#DC2626]'>Matter</span> 
       </h1>
       
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">

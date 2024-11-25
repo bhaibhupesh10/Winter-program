@@ -37,11 +37,11 @@ export default function DoubtAssistance() {
   const isIntersecting = useIntersectionObserver(ref, { threshold: 0.1 });
 
   return (
-    <div className="container min-h-screen mt-[4%] mx-auto px-4 py-12 grid lg:grid-cols-2 gap-4 items-center">
+    <div className="container  mt-[4%] mb-[4%] mx-auto py-20 grid lg:grid-cols-2 gap-4 items-center max-w-6xl">
       {/* Left side with code screenshots */}
       <div
         ref={ref}
-        className={`relative grid grid-cols-2 gap-4 transition-transform duration-1000 ease-out`}
+        className={`relative grid grid-cols-2 gap-4 mt-20 mb-20 transition-transform duration-1000 ease-out`}
       >
         <div className="relative col-span-2">
           {/* First card */}

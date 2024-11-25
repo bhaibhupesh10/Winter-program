@@ -24,7 +24,7 @@ const FloatingShape = ({ children, className, left, top, animationDuration = 8 }
 // Image component
 const ImageTile = ({ imageUrl }: { imageUrl: string }) => {
   return (
-    <div className="relative aspect-square rounded-lg overflow-hidden">
+    <div className="relative aspect-square rounded-lg overflow-hidden max-w-6xl">
       <Image
         src={imageUrl}
         alt="Ad image"
@@ -75,7 +75,7 @@ export default function Hero() {
       `}</style>
 
       {/* Main content */}
-      <main className="max-w-7xl mx-auto px-6 lg:px-14 pt-4 md:pt-8 pb-8 flex flex-col md:flex-row items-center relative z-10">
+      <main className="max-w-6xl mt-0 mx-auto px-6 lg:px-14 pt-4 md:pt-8 pb-8 flex flex-col md:flex-row items-center relative z-10">
         {/* Left content */}
         <div className="md:w-1/2 mb-8 md:mb-0">
           <LeftHero />

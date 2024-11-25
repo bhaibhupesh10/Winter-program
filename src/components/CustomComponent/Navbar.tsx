@@ -43,11 +43,11 @@ const Navbar: React.FC = () => {
   return (
     <header
       className={cn(
-        "sticky top-0 z-50 w-full transition-colors duration-300",
+        "sticky top-0 z-50 w-full bg-black transition-colors duration-300 ",
         scrolled ? "bg-black bg-opacity-50" : "bg-transparent"
       )}
     >
-      <div className="container max-w-6xl mx-auto flex items-center justify-between py-4 px-6">
+      <div className="container  mx-auto flex bg-black bg-opacity-100  items-center justify-between py-4 px-6">
         {/* Logo */}
         <a href="/" className="flex items-center space-x-2">
           <Image

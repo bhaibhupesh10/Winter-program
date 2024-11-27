@@ -9,7 +9,7 @@ import Link from "next/link";
 import Collapsible from "@/components/ui/collapsible";
 
 interface CollapsibleProps {
-  
+  // ...
   topics: { title: string; lectures?: number; isHandsOn?: boolean }[];
 }
 
@@ -146,13 +146,12 @@ export default function DevOpsCurriculum() {
       <div className="grid md:grid-cols-[2fr,1fr] gap-6">
         {/* Left Side - Curriculum */}
         <div className="space-y-4">
-          <div className="flex items-center justify-between">
-            <h1 className="text-3xl  text-[#000000] font-semibold"> From Fundamentals to Building a <span className="text-[#ff0000]">Live Project :</span> Your 10-Day Technical Learning Journey
- 
-            </h1>
-          
-          </div>
-  
+  {/* Top Section with Heading and Button */}
+  <div className="flex flex-col sm:flex-row items-start sm:items-center sm:justify-between space-y-4 sm:space-y-0">
+    <h1 className="text-3xl sm:text-2xl md:text-3xl text-[#000000] font-semibold leading-snug">
+      From Fundamentals to Building a <span className="text-[#ff0000]">Live Project:</span> Your 10-Day Technical Learning Journey
+    </h1>
+  </div>
 
   {/* Collapsible Sections */}
   <div className="space-y-2">

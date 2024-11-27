@@ -44,7 +44,7 @@ const Navbar: React.FC = () => {
     <header
       className={cn(
         "sticky top-0 z-50 w-full bg-black transition-colors duration-300 ",
-        scrolled ? "bg-black bg-opacity-50" : "bg-transparent"
+        scrolled ? "bg-black " : "bg-black"
       )}
     >
       <div className="container  mx-auto flex bg-black bg-opacity-100  items-center justify-between py-4 px-6">

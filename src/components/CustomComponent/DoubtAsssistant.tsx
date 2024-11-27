@@ -45,7 +45,7 @@ export default function DoubtAssistance() {
       {/* Left side with code screenshots */}
       <div
         ref={ref}
-        className={`relative grid grid-cols-2 gap-4 mt-20 mb-20 transition-transform duration-1000 ease-out`}
+        className={`relative grid grid-cols-2 gap-4 mt-20 mb-32 transition-transform duration-1000 ease-out`}
       >
         <div className="relative col-span-2">
           {/* First card */}

@@ -147,7 +147,7 @@ export default function DevOpsCurriculum() {
         {/* Left Side - Curriculum */}
         <div className="space-y-4">
           <div className="flex items-center justify-between">
-            <h1 className="text-2xl font-semibold">From Fundamentals to Building a Live Project : Your 10-Day Technical Learning Journey
+            <h1 className="text-2xl  text-[#DC2626] font-semibold"> From Fundamentals to Building a Live Project : Your 10-Day Technical Learning Journey
  
             </h1>
             <Button variant="outline" size="sm">

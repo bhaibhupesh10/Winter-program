@@ -82,7 +82,7 @@ export default function DoubtAssistance() {
       </div>
 
       {/* Right side with content */}
-      <div className="space-y-6">
+      <div className="space-y-6 text-center">
         <h1 className="text-3xl font-bold">
           Exclusive{" "}
           <span className="text-[#ff0000]">Doubt Assistance</span>
@@ -90,7 +90,7 @@ export default function DoubtAssistance() {
         <p className="text-xl text-gray-600">
           Get 1:1 doubt support from exclusive TAs and the batch community
         </p>
-        <button className="bg-red-500 text-white px-6 py-3 rounded-lg text-lg hover:bg-red-700 transition-all flex items-center">
+        <button className="bg-red-500 ml-[35%] text-white px-6 py-3 rounded-lg text-lg hover:bg-red-700 transition-all flex items-center">
           Enroll Now
           <span className="ml-2">→</span>
         </button>

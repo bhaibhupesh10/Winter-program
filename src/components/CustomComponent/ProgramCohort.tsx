@@ -46,18 +46,19 @@ export default function ProgramCohorts() {
               <div></div>
             </div>
 
-            {/* Regular Classes Row */}
             <div className="grid grid-cols-3 text-sm items-center">
               <div>
                 <div className="font-medium">Regular Classes</div>
                 <div>14 Dec, 2024 - 30 Sep, 2025</div>
               </div>
               <div>19:30 - 23:30 IST</div>
-              <div className="flex items-center justify-between">
+              <div className="flex flex-col sm:flex-row items-start sm:items-center">
                 <span>Weekend (Sat - Sun)</span>
-                <Button className="bg-red-500 hover:bg-red-600">
+                <Button className="bg-red-500 hover:bg-red-600 mt-2 sm:mt-0 sm:ml-4">
                   Apply Now
                 </Button>
+              
+
               </div>
             </div>
           </div>

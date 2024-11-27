@@ -146,6 +146,7 @@ export default function DevOpsCurriculum() {
       <div className="grid md:grid-cols-[2fr,1fr] gap-6">
         {/* Left Side - Curriculum */}
         <div className="space-y-4">
+<<<<<<< HEAD
           <div className="flex items-center justify-between">
             <h1 className="text-3xl  text-[#000000] font-semibold"> From Fundamentals to Building a <span className="text-[#ff0000]">Live Project :</span> Your 10-Day Technical Learning Journey
  
@@ -155,22 +156,36 @@ export default function DevOpsCurriculum() {
               Download Curriculum
             </Button> */}
           </div>
+=======
+  {/* Top Section with Heading and Button */}
+  <div className="flex flex-col sm:flex-row items-start sm:items-center sm:justify-between space-y-4 sm:space-y-0">
+    <h1 className="text-xl sm:text-2xl text-[#DC2626] font-semibold leading-snug">
+      From Fundamentals to Building a Live Project: Your 10-Day Technical Learning Journey
+    </h1>
+    <Button variant="outline" size="sm" className="w-full sm:w-auto">
+      <Download className="mr-2 h-4 w-4" />
+      Download Curriculum
+    </Button>
+  </div>
 
-          <div className="space-y-2">
-            {sections.map((section, index) => (
-              <Collapsible
-                key={index}
-                title={section.title}
-                 topics={section.topics}
-                isOpen={openSection === index}
-                onToggle={() => handleCollapsibleToggle(index)}
-              />
-            ))}
-            <Button variant="link" className="w-full mt-4">
-              View More
-            </Button>
-          </div>
-        </div>
+  {/* Collapsible Sections */}
+  <div className="space-y-2">
+    {sections.map((section, index) => (
+      <Collapsible
+        key={index}
+        title={section.title}
+        topics={section.topics}
+        isOpen={openSection === index}
+        onToggle={() => handleCollapsibleToggle(index)}
+      />
+    ))}
+    <Button variant="link" className="w-full mt-4">
+      View More
+    </Button>
+  </div>
+</div>
+>>>>>>> dbddca623223bf4627a3efe3972c87bed350dc27
+
 
         {/* Right Side - Career Counselling Form */}
         <div className="sticky top-6">

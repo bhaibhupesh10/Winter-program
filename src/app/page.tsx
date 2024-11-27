@@ -35,7 +35,7 @@ export default function Home() {
       <MentorFeatured />
       <MentorProfile/>
       <GalleryCarousel></GalleryCarousel>
-      <Pricing></Pricing>
+      {/* <Pricing></Pricing> */}
       <Roadmap></Roadmap>
       <RoadMap2></RoadMap2>
       <CertificateComponent></CertificateComponent>

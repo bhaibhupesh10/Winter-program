@@ -113,70 +113,71 @@ const Navbar: React.FC = () => {
         </a>
       </div>
 
-      {/* Mobile Menu */}
-      {isMobileMenuOpen && (
-        <div
-          ref={menuRef}
-          className="lg:hidden fixed inset-0 bg-gray-900 bg-opacity-50 z-40 w-1/2 ml-auto mr-[20%] mt-[15%]"
-        >
-          <div className="relative bg-white p-6 ">
-            <ul className="space-y-4 ">
-              <li className="">
-                <a
-                  href="#hero"
-                  className="block hover:text-blue-600"
-                  onClick={closeMobileMenu}
-                >
-                  Home
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#schedule"
-                  className="block hover:text-blue-600"
-                  onClick={closeMobileMenu}
-                >
-                  Schedule
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#venue"
-                  className="block hover:text-blue-600"
-                  onClick={closeMobileMenu}
-                >
-                  Venue
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#gallery"
-                  className="block hover:text-blue-600"
-                  onClick={closeMobileMenu}
-                >
-                  Gallery
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#contact"
-                  className="block hover:text-blue-600"
-                  onClick={closeMobileMenu}
-                >
-                  Contact
-                </a>
-              </li>
-            </ul>
-            <a
-              href="#buy-tickets"
-              className="block mt-4 bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 text-center"
-              onClick={closeMobileMenu}
-            >
-              Participate now
-            </a>
-          </div>
-        </div>
-      )}
+{/* Mobile Menu */}
+{isMobileMenuOpen && (
+  <div
+    ref={menuRef}
+    className="lg:hidden absolute right-4 top-full bg-white w-64 shadow-md z-40"
+  >
+    <div className="p-4">
+      <ul className="space-y-4">
+        <li>
+          <a
+            href="#hero"
+            className="block hover:text-blue-600"
+            onClick={closeMobileMenu}
+          >
+            Home
+          </a>
+        </li>
+        <li>
+          <a
+            href="#schedule"
+            className="block hover:text-blue-600"
+            onClick={closeMobileMenu}
+          >
+            Schedule
+          </a>
+        </li>
+        <li>
+          <a
+            href="#venue"
+            className="block hover:text-blue-600"
+            onClick={closeMobileMenu}
+          >
+            Venue
+          </a>
+        </li>
+        <li>
+          <a
+            href="#gallery"
+            className="block hover:text-blue-600"
+            onClick={closeMobileMenu}
+          >
+            Gallery
+          </a>
+        </li>
+        <li>
+          <a
+            href="#contact"
+            className="block hover:text-blue-600"
+            onClick={closeMobileMenu}
+          >
+            Contact
+          </a>
+        </li>
+      </ul>
+      <a
+        href="#buy-tickets"
+        className="block mt-4 bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 text-center"
+        onClick={closeMobileMenu}
+      >
+        Participate now
+      </a>
+    </div>
+  </div>
+)}
+
     </header>
   );
 };

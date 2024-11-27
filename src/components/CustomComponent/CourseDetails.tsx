@@ -169,7 +169,10 @@ const CourseDetails = () => {
                     {course.difficulty}
                   </Badge>
                 </div>
-                <p className="text-gray-300 leading-relaxed">{course.description}</p>
+                <p className="text-gray-300 text-sm sm:text-base leading-normal sm:leading-relaxed">
+  {course.description}
+</p>
+
               </div>
 
               {/* Mentor Card with Enhanced Design */}

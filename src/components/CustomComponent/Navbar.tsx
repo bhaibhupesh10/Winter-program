@@ -47,7 +47,7 @@ const Navbar: React.FC = () => {
         scrolled ? "bg-black " : "bg-black"
       )}
     >
-      <div className="container  mx-auto flex bg-black bg-opacity-100  items-center justify-between py-4 px-6">
+      <div className="container max-w-6xl mx-auto flex bg-black bg-opacity-100  items-center justify-between py-4 px-6">
         {/* Logo */}
         <a href="/" className="flex items-center space-x-2">
           {/* <Image
@@ -69,14 +69,14 @@ const Navbar: React.FC = () => {
               </a>
             </li>
             <li>
-              <a href="#schedule" className="text-white hover:text-blue-600">
-                Agenda
+              <a href="#project" className="text-white hover:text-blue-600">
+                Project
               </a>
             </li>
             <li>
-              <a href="#venue" className="text-white hover:text-blue-600">
+              {/* <a href="#venue" className="text-white hover:text-blue-600">
                 Cities on Tour
-              </a>
+              </a> */}
             </li>
             <li>
               <a href="#gallery" className="text-white hover:text-blue-600">
@@ -109,7 +109,7 @@ const Navbar: React.FC = () => {
           href="#buy-tickets"
           className="hidden lg:block bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700"
         >
-          Participate Now
+          Enroll Now
         </a>
       </div>
 
@@ -121,51 +121,36 @@ const Navbar: React.FC = () => {
   >
     <div className="p-4">
       <ul className="space-y-4">
-        <li>
-          <a
-            href="#hero"
-            className="block hover:text-blue-600"
-            onClick={closeMobileMenu}
-          >
-            Home
-          </a>
-        </li>
-        <li>
-          <a
-            href="#schedule"
-            className="block hover:text-blue-600"
-            onClick={closeMobileMenu}
-          >
-            Schedule
-          </a>
-        </li>
-        <li>
-          <a
-            href="#venue"
-            className="block hover:text-blue-600"
-            onClick={closeMobileMenu}
-          >
-            Venue
-          </a>
-        </li>
-        <li>
-          <a
-            href="#gallery"
-            className="block hover:text-blue-600"
-            onClick={closeMobileMenu}
-          >
-            Gallery
-          </a>
-        </li>
-        <li>
-          <a
-            href="#contact"
-            className="block hover:text-blue-600"
-            onClick={closeMobileMenu}
-          >
-            Contact
-          </a>
-        </li>
+      <li>
+              <a href="#hero" className="text-black hover:text-blue-600">
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="#project" className="text-black hover:text-blue-600">
+                Project
+              </a>
+            </li>
+            <li>
+              {/* <a href="#venue" className="text-black hover:text-blue-600">
+                Cities on Tour
+              </a> */}
+            </li>
+            <li>
+              <a href="#gallery" className="text-black hover:text-blue-600">
+                Gallery
+              </a>
+            </li>
+            <li>
+              <a href="#contact" className="text-black hover:text-blue-600">
+                Contact
+              </a>
+            </li>
+            <li>
+              <a href="#contact" className="text-black hover:text-blue-600">
+                Inquire Now
+              </a>
+            </li>
       </ul>
       <a
         href="#buy-tickets"

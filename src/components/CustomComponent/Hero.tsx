@@ -24,7 +24,7 @@ const FloatingShape = ({ children, className, left, top, animationDuration = 8 }
 // Image component
 const ImageTile = ({ imageUrl }: { imageUrl: string }) => {
   return (
-    <div className="relative aspect-square rounded-lg overflow-hidden max-w-6xl">
+    <div className="relative aspect-square rounded-lg overflow-hidden max-w-6xl" id="hero">
       <Image
         src={imageUrl}
         alt="Ad image"

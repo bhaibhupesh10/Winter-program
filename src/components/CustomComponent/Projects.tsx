@@ -50,7 +50,7 @@ const projects: Project[] = [
 
 const ProjectsSection = () => {
   return (
-    <div className="max-w-6xl mx-auto px-4 py-12 bg-gray-50">
+    <div className="max-w-6xl mx-auto px-4 py-12 bg-gray-50" id="project">
      <h1 className="text-center text-2xl sm:text-3xl md:text-4xl font-extrabold text-gray-800 mb-4 sm:mb-6 md:mb-8">
   From Learning to <span className="text-[#DC2626]">Implementation:</span> Capstone Projects That <span className="text-[#DC2626]">Matter</span>
 </h1>

@@ -105,8 +105,8 @@ export default function Faq() {
               className={`p-4 rounded-lg border shadow-sm cursor-pointer transition-all duration-300 
               ${
                 selectedItem === key
-                  ? "bg-red-200 border-red-500 text-red-600"
-                  : "bg-[#FFFAF0] text-gray-600"
+                  ? "bg-gray-200 border-red-500 text-white"
+                  : "bg-[#000000] text-gray-600"
               }`}
               onClick={() => setSelectedItem(key as keyof typeof faqContent)}
             >
@@ -127,7 +127,7 @@ export default function Faq() {
             <AccordionItem
               key={index}
               value={`item-${index}`}
-              className="border rounded-lg shadow-sm hover:shadow-md transition-all duration-300 bg-[#FFFFF0]"
+              className="border rounded-lg shadow-sm hover:shadow-md transition-all duration-300 bg-[#000000]"
             >
               <AccordionTrigger className="text-base sm:text-md text-left items-start font-semibold px-4 sm:px-6 py-3 sm:py-4 [&[data-state=open]]:text-[#ff0000]">
                 {item.question}

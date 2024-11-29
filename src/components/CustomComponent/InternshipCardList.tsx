@@ -3,16 +3,24 @@ import React from "react";
 import arpitJindal from "../../../public/assets/placed-students-photos/arpitjindal.png";
 import akanshAgarwal from "../../../public/assets/placed-students-photos/akanshagarwal.png";
 import mannansiddiqui from "../../../public/assets/placed-students-photos/mannansiddhiqui.png";
-import tcs from "../../../public/assets/internshiplogo/Tata_Consultancy_Services_Logo.svg.png";
-import NPCI from "../../../public/assets/internshiplogo/NPCI_logo.png";
-import redhat from "../../../public/assets/internshiplogo/Red_Hat_Logo_2019.svg";
-import mercedes from "../../../public/assets/internshiplogo/Mercedes-Benz_Logo_2010.svg.png";
-import paytm from "../../../public/assets/internshiplogo/Paytm-Logo.wine.png";
-import searce from "../../../public/assets/internshiplogo/searce-Photoroom.png";
-import quantiphi from "../../../public/assets/internshiplogo/quantfi.png";
+
 import unthinkable from "../../../public/assets/internshiplogo/logo_unthinkable_dbd9877981.png";
-import sonata from "../../../public/assets/internshiplogo/Sonata_Software_Logo.png";
+import mercedes from "../../../public/assets/internshiplogo/Mercedes-Benz_Logo_2010.svg.png";
+import NPCI from "../../../public/assets/internshiplogo/NPCI_logo.png";
+import quantiphi from "../../../public/assets/internshiplogo/quantfi.png";
 import peerxp from "../../../public/assets/internshiplogo/peerXp-Photoroom.png";
+import paytm2 from "../../../public/assets/companyLogo/paytm.png"
+import searce2 from "../../../public/assets/companyLogo/searce.png"
+import redhat2 from "../../../public/assets/companyLogo/redhat.png"
+import tcs2 from "../../../public/assets/companyLogo/tcs.png"
+
+
+
+
+
+
+
+
 
 const EmployeeCards = () => {
   const employees = [
@@ -37,7 +45,7 @@ const EmployeeCards = () => {
           college: "Madhyanchal Professional University Bhopal",
           designation: "Associate Software Engineer",
           package: "10 LPA",
-          companyLogo: redhat.src.toString(),
+          companyLogo: redhat2.src.toString(),
           photo: "https://media.licdn.com/dms/image/v2/D4D03AQFOm1Et-F6_Zg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1696063474166?e=1738195200&v=beta&t=3jQQM1IkM4arj9WBwEAg3WlUKDVW3DIhNNxZk2SWMag"
         },
         {
@@ -71,7 +79,7 @@ const EmployeeCards = () => {
                   "college": "UPES, Uttarakhand",
                   "designation": "Associate Technical Engineer",
                   "package": "9 LPA",
-                  "companyLogo":redhat.src.toString(),
+                  "companyLogo":redhat2.src.toString(),
                   photo: "https://media.licdn.com/dms/image/v2/C4E03AQG80zPrzb5DNA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1632662096352?e=1738195200&v=beta&t=nlQWrEjHRlYAobCUHM_pYxFr4nonJmY62N1kp4vY3D4"
                 },
                 {
@@ -79,7 +87,7 @@ const EmployeeCards = () => {
                   "college": "Revo University, Bangalore",
                   "designation": "DevSecOps Engineer",
                   "package": "10 LPA",
-                  "companyLogo": paytm.src.toString(),
+                  "companyLogo": paytm2.src.toString(),
                   photo: arpitJindal.src.toString(),
                 },
                 {
@@ -111,7 +119,7 @@ const EmployeeCards = () => {
                   "college": "LNCT University, Bhopal",
                   "designation": "System Engineer",
                   "package": "6 LPA",
-                  "companyLogo": searce.src.toString(),
+                  "companyLogo": searce2.src.toString(),
                   photo: "https://media.licdn.com/dms/image/v2/D4D03AQEJreXf2bPQ2Q/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1700913649608?e=1738195200&v=beta&t=LVGismW4SsIq7RUkktttzQPmpYXk-HcfvZnhrU7sWGk"
                 },
                 {
@@ -127,7 +135,7 @@ const EmployeeCards = () => {
                   "college": "KIIT University, Bhubaneswar, Odisha",
                   "designation": "DevOps Consultant",
                   "package": "8 LPA",
-                  "companyLogo": redhat.src.toString(),
+                  "companyLogo": redhat2.src.toString(),
                   photo: "https://media.licdn.com/dms/image/v2/D5603AQFY_HUQibo-0Q/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1708231242198?e=1738195200&v=beta&t=QabBi1UJbpFrq96QIDgYatSx7w7JoPp1V36JtSGAaqo"
                 },
                 {
@@ -135,7 +143,7 @@ const EmployeeCards = () => {
                   "college": "Gautam Buddha University",
                   "designation": "DevOps Engineer",
                   "package": "10 LPA",
-                  "companyLogo": tcs.src.toString(),
+                  "companyLogo": tcs2.src.toString(),
                   photo: "https://media.licdn.com/dms/image/v2/D5603AQHdz88Mb13AyQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1678216176636?e=1738195200&v=beta&t=zqzFzpfnTiT-8zJkx1EvfBfKtH5vCmiLIZoKYr5QjsU"
                 } ,
                ];

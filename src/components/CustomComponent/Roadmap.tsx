@@ -31,7 +31,7 @@ const Roadmap = () => {
        {/* Icons Row and Vector Lines */}
 <div className="relative mb-16">
   {/* Icons */}
-  <div className="flex justify-center gap-x-10 mb-4">
+  <div className="flex justify-center gap-x-36 mb-4 z-0">
     {[
       { icon: Linkedin, label: 'LinkedIn', color: 'bg-blue-500' },
       { icon: Github, label: 'GitHub', color: 'bg-gray-700' },
@@ -41,7 +41,7 @@ const Roadmap = () => {
     ].map((item, index) => (
       <div key={index} className="flex flex-col items-center">
         <div className={`p-2 ${item.color} rounded-lg mb-2`}>
-          <item.icon className="w-6 h-6" />
+          <item.icon className="w-8 h-8" />
         </div>
         <span className="text-sm">{item.label}</span>
       </div>
@@ -49,19 +49,19 @@ const Roadmap = () => {
   </div>
 
   {/* Vector Lines Image */}
-  <div className="absolute top-12 left-0 w-full h-20 z-0">
-    <img
-      src="/lines.svg"
-      alt="Connecting Lines"
-      className="h-full object-contain"
-      style={{ width: '200%' }}
-    />
-  </div>
+  <div className="absolute top-[80px] left-0 w-full ">
+  <img
+    src="/lines.svg"
+    alt="Connecting Lines"
+    className="h-[200px] w-full object-contain" // Increase the height to 300px (or any value)
+  />
+</div>
+
 </div>
 
 
         {/* JSM Mentor Logo */}
-        <div className="flex flex-col items-center mb-16">
+        <div className="flex flex-col items-center mb-16 mt-48">
           <div className="w-20 h-20 bg-white rounded-xl flex items-center justify-center mb-2">
             <span className="text-2xl font-bold text-blue-600">{`{JS}`}</span>
           </div>

@@ -6,15 +6,13 @@
 import { useEffect, useState, useRef, useCallback } from "react";
 import Image from "next/image";
 import { cn } from "@/lib/utils"; // Helper for conditional classes
-import Event1Image from "../../../public/assets/event-gallery/event-gallery-1.jpg";
-import Event2Image from "../../../public/assets/event-gallery/event-gallery-2.jpg";
-import Event3Image from "../../../public/assets/event-gallery/event-gallery-3.jpg";
-import Event4Image from "../../../public/assets/event-gallery/event-gallery-4.jpg";
-import Event5Image from "../../../public/assets/event-gallery/event-gallery-5.jpg";
-import Event6Image from "../../../public/assets/event-gallery/event-gallery-6.jpg";
-import Event7Image from "../../../public/assets/event-gallery/event-gallery-7.jpg";
-import Event8Image from "../../../public/assets/event-gallery/event-gallery-8.jpg";
-import Event9Image from "../../../public/assets/event-gallery/event-gallery-9.jpg";
+import Event1Image from "../../../public/assets/event-gallery/summer1.jpg";
+import Event2Image from "../../../public/assets/event-gallery/summer2.jpg";
+import Event3Image from "../../../public/assets/event-gallery/summer3.jpg";
+import Event4Image from "../../../public/assets/event-gallery/summer4.jpg";
+import Event5Image from "../../../public/assets/event-gallery/summer5.jpg";
+import Event6Image from "../../../public/assets/event-gallery/summer6.jpg";
+
 
 // Define your image type and data array for gallery images
 interface ImageData {
@@ -29,9 +27,8 @@ const galleryImages: ImageData[] = [
   { src: Event4Image.src, alt: "Gallery Image 4" },
   { src: Event5Image.src, alt: "Gallery Image 5" },
   { src: Event6Image.src, alt: "Gallery Image 6" },
-  { src: Event7Image.src, alt: "Gallery Image 7" },
-  { src: Event8Image.src, alt: "Gallery Image 8" },
-  { src: Event9Image.src, alt: "Gallery Image 9" },
+  
+
 ];
 
 export default function GalleryCarousel() {

@@ -47,11 +47,11 @@ export default function Hero() {
     "/assets/backLogo/back5.jpg",
     "/assets/backLogo/back6.jpg",
     "/assets/backLogo/back7.jpg",
-    "/assets/backLogo/back1.jpg",
-    "/assets/backLogo/back1.jpg",
-    "/assets/backLogo/back2.jpg",
-    "/assets/backLogo/back3.jpg",
-    "/assets/backLogo/back3.jpg",
+    "/assets/backLogo/back8.jpg",
+    "/assets/backLogo/back9.jpg",
+    "/assets/backLogo/back10.jpg",
+    "/assets/backLogo/bac11.jpg",
+    "/assets/backLogo/back12.jpg",
 
   ];
 

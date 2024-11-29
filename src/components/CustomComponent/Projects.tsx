@@ -59,25 +59,25 @@ const ProjectsSection = () => {
       
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
         {projects.map((project, index) => (
-          <Card 
-            key={index}
-            className="bg-[#181A1B] shadow-md hover:shadow-lg hover:scale-105 transition-transform duration-300 border border-gray-500 rounded-lg"
-          >
-            <CardContent className="p-6">
-              <div className="w-16 h-16 rounded-full bg-[#FEE2E2] mx-auto flex items-center justify-center mb-4 shadow-sm text-center">
-                {project.icon}
-              </div>
-              <h3 className="text-lg text-center font-bold text-white mb-2">
-                {project.title}
-                <span className="block text-sm text-gray-600">
-                  {project.subtitle}
-                </span>
-              </h3>
-              <p className="text-sm text-center text-gray-500 leading-relaxed">
-                {project.description}
-              </p>
-            </CardContent>
-          </Card>
+       <Card
+       key={index}
+       className="bg-[#131516] shadow-lg hover:shadow-2xl hover:scale-105 hover:bg-opacity-90 hover:border-gray-400 transition-transform transition-shadow duration-300 ease-in-out border border-gray-600 rounded-xl"
+     >
+       <CardContent className="p-8">
+         <div className="w-16 h-16 rounded-full bg-[#FEE2E2] mx-auto flex items-center justify-center mb-4 shadow-lg hover:rotate-3 hover:shadow-xl transition-transform duration-300">
+           {project.icon}
+         </div>
+         <h3 className="text-lg text-center font-bold text-white mb-2">
+           {project.title}
+           <span className="block text-sm text-white">{project.subtitle}</span>
+         </h3>
+         <p className="text-sm text-center text-white text-gray-500 leading-relaxed">
+           {project.description}
+         </p>
+       </CardContent>
+     </Card>
+     
+       
         ))}
       </div>
     </div>

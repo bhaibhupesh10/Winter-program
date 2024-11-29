@@ -198,8 +198,8 @@ export default function DevOpsCurriculum() {
         <div className="space-y-4">
   {/* Top Section with Heading and Button */}
   <div className="flex flex-col sm:flex-row items-start sm:items-center sm:justify-between space-y-4 sm:space-y-0">
-    <div className="shadow-lg hover:shadow-xl hover:shadow-white border border-gray-800 p-4 rounded-xl shadow-white">
-    <h1 className="text-3xl sm:text-2xl md:text-5xl text-white font-semibold leading-snug">
+    <div className="shadow-md hover:shadow-lg hover:shadow-white border border-gray-800 p-4 rounded-xl shadow-white">
+    <h1 className="text-2xl sm:text-2xl md:text-2xl text-white font-semibold leading-snug">
       From  <span className="text-[#ff0000]"> Fundamentals </span> to Building a <span className="text-[#ff0000]">Live Project:</span>Your 10-Day Technical Learning    <span className="text-[#ff0000]">Journey </span> 
     </h1>
     </div>

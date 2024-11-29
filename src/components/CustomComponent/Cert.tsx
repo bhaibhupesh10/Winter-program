@@ -89,7 +89,7 @@ export default function CertificateComponent() {
               {/* Main certificate image */}
               <div className="relative rounded-lg border-2 border-orange-300 overflow-hidden aspect-[4/3] shadow-xl z-10">
                 <Image
-                  src="/cert.jpeg"
+                  src="/cert.png"
                   alt="Sample Certificate"
                   fill
                   className="object-cover"

@@ -87,6 +87,7 @@ export default function Faq() {
   );
 
   return (
+    <div className="bg-[#181A1B]">
     <div className="container mx-auto max-w-6xl px-4 py-12">
       {/* Header */}
       <h1 className="sm:text-3xl lg:text-3xl font-bold mb-8 sm:mb-12 text-center sm:text-left">
@@ -138,6 +139,7 @@ export default function Faq() {
           ))}
         </Accordion>
       </div>
+    </div>
     </div>
   );
 }

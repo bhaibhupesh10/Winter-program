@@ -140,9 +140,10 @@ const EmployeeCards = () => {
                 } ,
                ];
   return (
-    <div className="flex flex-col items-center min-h-screen p-12 bg-gray-100">
+    <div className="bg-[#181A1B]">
+    <div className="flex flex-col items-center min-h-screen p-12 bg-[#181A1B]">
       {/* Component Title */}
-      <h1 className="text-3xl font-bold text-gray-800 mb-8">
+      <h1 className="text-3xl font-bold text-white mb-8">
         Our <span className="text-[#ff0000]">Placed </span>Students
       </h1>
 
@@ -199,6 +200,7 @@ const EmployeeCards = () => {
           </div>
         ))}
       </div>
+    </div>
     </div>
   );
 };

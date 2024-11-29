@@ -104,7 +104,8 @@ const MentorProfile = () => {
   ];
 
   return (
-    <div ref={profileRef} className="max-w-6xl mt-6 mx-auto p-6 lg:px-8">
+    <div className='bg-[#181A1B]'>
+    <div ref={profileRef} className="max-w-6xl pt-12 mx-auto p-6 lg:px-8">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {/* Left Column - Image Carousel and Mentor Details */}
         <div className="space-y-6">
@@ -129,7 +130,7 @@ const MentorProfile = () => {
           <div className="bg-blue-50 rounded-xl p-6 shadow-sm border border-blue-100">
             <div className="flex items-center gap-3 mb-3">
               <div className="w-2 h-2 rounded-full bg-blue-500 animate-pulse"></div>
-              <span className="text-blue-800 md:text-sm  font-medium bg-blue-100/50 px-3 py-1 rounded-full">
+              <span className="text-blue-800 md:text-sm   font-medium bg-blue-100/50 px-3 py-1 rounded-full">
                 Internationally Recognised Industry Expert
               </span>
             </div>
@@ -143,22 +144,22 @@ const MentorProfile = () => {
         {/* Right Column - Content */}
         <div className="space-y-8">
           <div className="space-y-6 -mb-3">
-            <h1 className="text-3xl font-bold text-black leading-extra-tight -mb-4">
+            <h1 className="text-3xl font-bold text-white leading-extra-tight -mb-4">
               The Visionary Behind <span className="text-[#ff0000]">Winter Program</span> 
             </h1>
             <div className="space-y-4 text-black-800">
               <ul className="grid md:grid-cols-2 gap-y-2 list-disc pl-5 text-black -mb-1 list-none sm:grid-cols-1">
-                <li className="leading-relaxed text-sm leading-tight"><CircleCheck className='inline text-green-400 ml-2' /> World Record Holder</li>
-                <li className="leading-relaxed text-sm leading-tight"><CircleCheck className='inline text-green-400 ml-2' /> Two-Time TEDx Speaker</li>
-                <li className="leading-relaxed text-sm leading-tight"><CircleCheck className='inline text-green-400 ml-2' /> Senior Principal IT Consultant</li>
-                <li className="leading-relaxed text-sm leading-tight"><CircleCheck className='inline text-green-400 ml-2' /> Philanthropist</li>
-                <li className="leading-relaxed text-sm leading-tight"><CircleCheck className='inline text-green-400 ml-2' /> 22+ Years of Rich Experience</li>
+                <li className="leading-relaxed text-sm text-white leading-tight"><CircleCheck className='inline text-green-400 ml-2' /> World Record Holder</li>
+                <li className="leading-relaxed text-sm text-white leading-tight"><CircleCheck className='inline text-green-400 ml-2' /> Two-Time TEDx Speaker</li>
+                <li className="leading-relaxed text-sm text-white leading-tight"><CircleCheck className='inline text-green-400 ml-2' /> Senior Principal IT Consultant</li>
+                <li className="leading-relaxed text-sm text-white leading-tight"><CircleCheck className='inline text-green-400 ml-2' /> Philanthropist</li>
+                <li className="leading-relaxed text-sm text-white leading-tight"><CircleCheck className='inline text-green-400 ml-2' /> 22+ Years of Rich Experience</li>
               </ul>
 
-              <p className="text-black text-md -mb-2 pl-6">
+              <p className="text-white text-md -mb-2 pl-6">
                 Mr. Vimal Daga, the driving force behind TGS, is on an exclusive India Tour, visiting cities across the country to re-invent technical training. His mission is not only to provide hands-on learning but to bring together industry expert interactions, real-world capstone projects, and valuable industry insights&mdash;all in one place
               </p>
-              <p className="text-black pl-6">
+              <p className="text-white pl-6">
                 He firmly believes that networking and collaboration are the key to personal and professional growth, and this tour is designed to foster both. His vision of &ldquo;Making India, Future Ready&rdquo; goes beyond skills training&mdash;it&apos;s about creating a thriving ecosystem where learners and professionals can collaborate, innovate, and succeed together.
               </p>
             </div>
@@ -180,12 +181,13 @@ const MentorProfile = () => {
           </div>
 
           {/* Enhanced Featured Section */}
-          <div className="border border-gray-200 rounded-xl p-4 shadow-sm bg-white backdrop-blur-sm">
-            <p className="text-black text-sm mb-2">Companies benefited with his trainings & consultancy</p>
+          <div className="border bg-[#181A1B] border-gray-200 rounded-xl p-4 shadow-sm bg-white backdrop-blur-sm">
+            <p className="text-white text-sm mb-2">Companies benefited with his trainings & consultancy</p>
             <MentorFeatured />
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };

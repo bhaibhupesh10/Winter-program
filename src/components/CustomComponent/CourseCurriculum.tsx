@@ -7,11 +7,60 @@ import { Input } from "@/components/ui/input";
 import Link from "next/link";
 
 import Collapsible from "@/components/ui/collapsible";
+import { BeakerIcon, BookOpen, Clock, Sparkles, GraduationCap } from "lucide-react";
 
 interface CollapsibleProps {
   // ...
   topics: { title: string; lectures?: number; isHandsOn?: boolean }[];
 }
+
+interface TopicProps {
+  topic: {
+    title: string;
+    lectures?: number;
+    isHandsOn?: boolean;
+  };
+}
+
+const TopicItem = ({ topic }: TopicProps) => {
+  if (topic.isHandsOn) {
+    return (
+      <div className="mb-6">
+        <div className="flex items-center gap-3 bg-blue-50/70 p-4 rounded-xl border-l-4 border-blue-500 shadow-sm hover:shadow-md transition-all duration-200">
+          <div className="bg-blue-100 p-2.5 rounded-lg">
+            <BeakerIcon className="w-6 h-6 text-blue-600" />
+          </div>
+          <div>
+            <h4 className="font-semibold text-blue-800 text-lg">{topic.title}</h4>
+            <div className="flex items-center gap-2 text-blue-600 mt-1">
+              <Sparkles className="w-4 h-4" />
+              <p className="text-sm">Hands-on Practice Session</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <div className="ml-10 mb-4">
+      <div className="flex items-center justify-between group hover:bg-gray-50 p-3.5 rounded-xl transition-all duration-200 border border-gray-100 hover:border-gray-200 hover:shadow-sm">
+        <div className="flex items-center gap-3">
+          <div className="bg-gray-100 p-2 rounded-lg group-hover:bg-white group-hover:shadow-sm transition-all duration-200">
+            <BookOpen className="w-5 h-5 text-white" />
+          </div>
+          <span className="text-white group-hover:text-white font-medium">{topic.title}</span>
+        </div>
+        {topic.lectures && (
+          <div className="flex items-center gap-2 text-sm text-white bg-gray-100 py-1.5 px-4 rounded-full group-hover:bg-white group-hover:shadow-sm transition-all duration-200">
+            <Clock className="w-4 h-4" />
+            <span>{topic.lectures} lectures</span>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+};
 
 const sections = [
   {
@@ -142,21 +191,25 @@ export default function DevOpsCurriculum() {
   };
 
   return (
-    <div className="container mx-auto p-6 max-w-6xl">
+    <div className="bg-[#181A1B]">
+    <div className="container mx-auto p-6 max-w-6xl bg-[#181A1B]">
       <div className="grid md:grid-cols-[2fr,1fr] gap-6">
         {/* Left Side - Curriculum */}
         <div className="space-y-4">
   {/* Top Section with Heading and Button */}
   <div className="flex flex-col sm:flex-row items-start sm:items-center sm:justify-between space-y-4 sm:space-y-0">
-    <h1 className="text-3xl sm:text-2xl md:text-3xl text-[#000000] font-semibold leading-snug">
-      From Fundamentals to Building a <span className="text-[#ff0000]">Live Project:</span> Your 10-Day Technical Learning Journey
+    <div className="shadow-lg hover:shadow-xl hover:shadow-white border border-gray-800 p-4 rounded-xl shadow-white">
+    <h1 className="text-3xl sm:text-2xl md:text-5xl text-white font-semibold leading-snug">
+      From  <span className="text-[#ff0000]"> Fundamentals </span> to Building a <span className="text-[#ff0000]">Live Project:</span>Your 10-Day Technical Learning    <span className="text-[#ff0000]">Journey </span> 
     </h1>
+    </div>
   </div>
 
   {/* Collapsible Sections */}
-  <div className="space-y-2">
+  <div className="space-y-4 text-white hover:text-black">
     {sections.map((section, index) => (
       <Collapsible
+      className="text-white"
         key={index}
         title={section.title}
         topics={section.topics}
@@ -172,24 +225,24 @@ export default function DevOpsCurriculum() {
 
 
         {/* Right Side - Career Counselling Form */}
-        <div className="sticky top-20 h-fit max-h-[calc(100vh-4rem)]">
-          <Card>
+        <div className="sticky top-20 h-fit bg-[#181A1B] max-h-[calc(100vh-4rem)]">
+          <Card className="bg-[#181A1B]">
             <CardHeader>
-              <CardTitle className="text-xl">Free Career Counselling</CardTitle>
-              <p className="text-sm text-gray-500">We are happy to help you 24/7</p>
+              <CardTitle className="text-xl text-white">Free Career Counselling</CardTitle>
+              <p className="text-sm text-white">We are happy to help you 24/7</p>
             </CardHeader>
             <CardContent>
               <form className="space-y-4">
                 <div className="space-y-2">
-                  <Input placeholder="Name" />
+                  <Input className="text-white" placeholder="Name" />
                 </div>
                 <div className="space-y-2">
-                  <Input placeholder="Phone Number" />
+                  <Input className="text-white" placeholder="Phone Number" />
                 </div>
                 <Button className="w-full bg-red-600 hover:bg-red-700">
                   Submit
                 </Button>
-                <p className="text-xs text-gray-500 text-center">
+                <p className="text-xs text-white text-center">
                   By continuing, you agree to our{" "}
                   <Link href="/terms" className="text-blue-600 hover:underline">
                     Terms & Conditions
@@ -204,6 +257,7 @@ export default function DevOpsCurriculum() {
           </Card>
         </div>
       </div>
+    </div>
     </div>
   );
 }

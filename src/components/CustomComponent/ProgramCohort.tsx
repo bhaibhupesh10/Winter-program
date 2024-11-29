@@ -4,19 +4,20 @@ import { Calendar, Clock, GraduationCap, Briefcase, Code } from 'lucide-react'
 
 export default function ProgramCohorts() {
   return (
+    <div className="bg-[#181A1B]">
     <div className="container max-w-6xl mx-auto p-6 space-y-6">
       {/* Headers */}
       <div className="space-y-2">
-        <h1 className="text-3xl font-semibold text-gray-900">Program <span className="text-[#ff0000]">Cohorts</span></h1>
-        <h2 className="text-xl text-gray-700">Next Cohort</h2>
+        <h1 className="text-3xl font-semibold text-white">Program <span className="text-[#ff0000]">Cohorts</span></h1>
+        <h2 className="text-xl text-white">Next Cohort</h2>
       </div>
 
       {/* Cohort Card */}
-      <Card className="p-6">
+      <Card className="p-6 bg-[#181A1B]">
         <div className="space-y-6">
           {/* Card Header */}
           <div className="flex items-center gap-3">
-            <h3 className="text-lg font-medium">PGP DO DEC 2024 Cohort 1</h3>
+            <h3 className="text-lg  text-white font-medium">PGP DO DEC 2024 Cohort 1</h3>
             <span className="px-3 py-1 bg-orange-100 text-orange-600 text-sm rounded-full">
               Limited Seats Left
             </span>
@@ -25,33 +26,33 @@ export default function ProgramCohorts() {
           {/* Schedule Table */}
           <div className="space-y-4">
             <div className="grid grid-cols-3 text-sm text-gray-500 pb-2">
-              <div className="flex items-center gap-2">
-                <Calendar className="w-4 h-4" />
+              <div className="flex items-center text-white gap-2">
+                <Calendar className="w-4 text-white h-4" />
                 Date
               </div>
-              <div className="flex items-center gap-2">
-                <Clock className="w-4 h-4" />
+              <div className="flex text-white items-center gap-2">
+                <Clock className="w-4 text-white h-4" />
                 Time
               </div>
-              <div>Batch Type</div>
+              <div className="text-white">Batch Type</div>
             </div>
 
             {/* Program Induction Row */}
             <div className="grid grid-cols-3 text-sm border-b pb-4">
               <div>
-                <div className="font-medium">Program Induction</div>
-                <div>27 Nov, 2024</div>
+                <div className="font-medium text-white">Program Induction</div>
+                <div className="text-white">27 Nov, 2024</div>
               </div>
-              <div>19:00 IST</div>
+              <div className="text-white">19:00 IST</div>
               <div></div>
             </div>
 
             <div className="grid grid-cols-3 text-sm items-center">
               <div>
-                <div className="font-medium">Regular Classes</div>
-                <div>14 Dec, 2024 - 30 Sep, 2025</div>
+                <div className="font-medium text-white">Regular Classes</div>
+                <div className="text-white">14 Dec, 2024 - 30 Sep, 2025</div>
               </div>
-              <div>19:30 - 23:30 IST</div>
+              <div className="text-white">19:30 - 23:30 IST</div>
               <div className="flex flex-col sm:flex-row items-start sm:items-center">
                 <span>Weekend (Sat - Sun)</span>
                 <Button className="bg-red-500 hover:bg-red-600 mt-2 sm:mt-0 sm:ml-4">
@@ -68,24 +69,24 @@ export default function ProgramCohorts() {
       {/* Bottom Grid */}
       <div className="grid md:grid-cols-2 gap-6">
         {/* Eligibility Criteria */}
-        <Card className="p-6">
-          <h3 className="text-lg font-medium mb-4">Eligibility Criteria</h3>
+        <Card className="p-6 bg-[#181A1B]">
+          <h3 className="text-lg text-white font-medium mb-4">Eligibility Criteria</h3>
           <div className="space-y-4">
             <div className="flex gap-3">
               <GraduationCap className="w-5 h-5 text-orange-500 flex-shrink-0" />
-              <p className="text-sm text-gray-600">
+              <p className="text-sm text-white">
                 Bachelor's degree with an average of 50% or higher marks
               </p>
             </div>
             <div className="flex gap-3">
               <Briefcase className="w-5 h-5 text-orange-500 flex-shrink-0" />
-              <p className="text-sm text-gray-600">
+              <p className="text-sm text-white">
                 One year of prior work experience (preferred)
               </p>
             </div>
             <div className="flex gap-3">
               <Code className="w-5 h-5 text-orange-500 flex-shrink-0" />
-              <p className="text-sm text-gray-600">
+              <p className="text-sm text-white">
                 Can be from a programming or non-programming background
               </p>
             </div>
@@ -93,8 +94,8 @@ export default function ProgramCohorts() {
         </Card>
 
         {/* Best Suited For */}
-        <Card className="p-6">
-          <h3 className="text-lg font-medium mb-4">Best Suited For</h3>
+        <Card className="p-6 bg-[#181A1B]">
+          <h3 className="text-lg font-medium mb-4 text-white">Best Suited For</h3>
           <div className="grid grid-cols-2 gap-3">
             {[
               "DevOps Engineers",
@@ -106,12 +107,13 @@ export default function ProgramCohorts() {
             ].map((role, index) => (
               <div key={index} className="flex items-center gap-2">
                 <div className="w-1.5 h-1.5 bg-orange-500 rounded-full" />
-                <span className="text-sm text-gray-600">{role}</span>
+                <span className="text-sm text-gray-600 text-white">{role}</span>
               </div>
             ))}
           </div>
         </Card>
       </div>
+    </div>
     </div>
   )
 }

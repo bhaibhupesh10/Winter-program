@@ -143,7 +143,7 @@ const EmployeeCards = () => {
     <div className="flex flex-col items-center min-h-screen p-12 bg-gray-100">
       {/* Component Title */}
       <h1 className="text-3xl font-bold text-gray-800 mb-8">
-        Our Placed Students
+        Our <span className="text-[#ff0000]">Placed </span>Students
       </h1>
 
       {/* Employee Cards */}

@@ -12,6 +12,9 @@ import Event3Image from "../../../public/assets/event-gallery/summer3.jpg";
 import Event4Image from "../../../public/assets/event-gallery/summer4.jpg";
 import Event5Image from "../../../public/assets/event-gallery/summer5.jpg";
 import Event6Image from "../../../public/assets/event-gallery/summer6.jpg";
+import Event7Image from "../../../public/assets/event-gallery/summer7.png";
+import Event8Image from "../../../public/assets/event-gallery/summer8.png";
+import Event9Image from "../../../public/assets/event-gallery/summer9.png";
 
 
 // Define your image type and data array for gallery images
@@ -27,6 +30,9 @@ const galleryImages: ImageData[] = [
   { src: Event4Image.src, alt: "Gallery Image 4" },
   { src: Event5Image.src, alt: "Gallery Image 5" },
   { src: Event6Image.src, alt: "Gallery Image 6" },
+  { src: Event7Image.src, alt: "Gallery Image 7" },
+  { src: Event8Image.src, alt: "Gallery Image 8" },
+  { src: Event9Image.src, alt: "Gallery Image 9" },
   
 
 ];

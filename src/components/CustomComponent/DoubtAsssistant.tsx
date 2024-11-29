@@ -41,7 +41,8 @@ export default function DoubtAssistance() {
   const isIntersecting = useIntersectionObserver(ref, { threshold: 0.1 });
 
   return (
-    <div className="container  mt-[4%] mb-[4%] mx-auto py-20 grid lg:grid-cols-2 gap-4 items-center max-w-6xl">
+    <div className="bg-[#181A1B]">
+    <div className="container  pt-[4%] pb-[4%] mx-auto py-20 grid lg:grid-cols-2 gap-4 items-center max-w-6xl">
       {/* Left side with code screenshots */}
       <div
         ref={ref}
@@ -95,6 +96,7 @@ export default function DoubtAssistance() {
           <span className="ml-2">→</span>
         </button>
       </div>
+    </div>
     </div>
   );
 }

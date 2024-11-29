@@ -32,7 +32,12 @@ const MentorFeatured = () => {
   
 
   return (
-    <div className="relative overflow-hidden bg-white">
+    <div className="relative bg-[#181A1B] overflow-hidden bg-white">
+<div className='flex w-full  align-center justify-center mx-auto'>
+<h1 className="text-3xl  align-center font-bold text-white mb-8">
+        Our <span className="text-[#ff0000]">Placed </span>Students
+      </h1>
+      </div>
       <div className="w-full overflow-hidden whitespace-nowrap">
         {/* Animated scrolling container */}
         <div className="inline-flex items-center animate-scroll w-max">
@@ -51,7 +56,7 @@ const MentorFeatured = () => {
           ))}
         </div>
         {/* Duplicate list for seamless scrolling */}
-        <div className="inline-flex items-center animate-scroll w-max" aria-hidden="true">
+        <div className="inline-flex bg-[#181A1B] items-center animate-scroll w-max" aria-hidden="true">
           {logos.map((logo, index) => (
             <div key={`duplicate-${index}`} className="mx-4 w-32 flex-shrink-0">
               <div className="w-28 h-12 flex items-center justify-center">

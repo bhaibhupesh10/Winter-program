@@ -10,10 +10,11 @@ import {
   LinkedinIcon,
   MessageSquare
 } from 'lucide-react';
-
+import lwlogo from "../../../public/assets/LW-white.png";
 const Pricing = () => {
   return (
-    <div className="w-full max-w-6xl mx-auto mt-20 mb-20 p-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div className='bg-[#181A1B]'>
+    <div className="w-full bg-[#181A1B] max-w-6xl mx-auto pt-20 pb-20 p-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
   {/* Left Column */}
   <div className="space-y-6">
     {/* Learning Platform Card */}
@@ -60,8 +61,11 @@ const Pricing = () => {
   <div className="flex flex-col items-center justify-center">
     <Card className="bg-gray-900 text-white p-6 sm:p-8 relative">
       <CardContent className="space-y-6 text-center">
-        <div className="w-20 h-20 sm:w-24 sm:h-24 mx-auto bg-white rounded-2xl flex items-center justify-center">
-          <span className="text-lg sm:text-2xl font-bold text-blue-600">{`{L.W}`}</span>
+        <div className="w-20 h-20  sm:w-24 sm:h-24 mx-auto bg-black p-2 rounded-2xl flex items-center justify-center">
+          <span className="text-lg bg-black sm:text-2xl font-bold text-blue-600">
+
+          <span className='bg-black'>  <img src={lwlogo.src.toString()} width={110} height={48} alt="Logo" /></span>
+          </span>
         </div>
         <h2 className="text-lg sm:text-2xl font-bold">Linux World</h2>
         <h3 className="text-md sm:text-xl text-emerald-400 text-[#DC2626]">Dev Career Accelerator</h3>
@@ -123,6 +127,7 @@ const Pricing = () => {
       </CardContent>
     </Card>
   </div>
+</div>
 </div>
 
   );

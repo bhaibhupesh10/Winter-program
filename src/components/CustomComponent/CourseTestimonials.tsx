@@ -196,15 +196,15 @@ In these 45 days I have learnt many things it is not about learnt it is about en
   const visiblePosts = isExpanded ? posts : posts.slice(0, 6);
 
   return (
-    <div className="bg-[#ffffff] p-4 sm:p-6 mx-auto">
+    <div className="bg-[#181A1B] p-4 sm:p-6 mx-auto">
       <div className="max-w-[920px] mx-auto">
-        <h2 className="text-black text-sm sm:text-md">HEAR IT FROM THEM</h2>
-        <h2 className="text-black text-2xl sm:text-3xl font-bold mb-6 sm:mb-10 mt-2">
+        <h2 className="text-white text-sm sm:text-md">HEAR IT FROM THEM</h2>
+        <h2 className="text-white text-2xl sm:text-3xl font-bold mb-6 sm:mb-10 mt-2">
           Ambitious People ❤️ <span className="text-[#ff0000]">Linux World</span>
         </h2>
 
         {/* Displaying testimonials in masonry layout */}
-        <div className="sm:columns-2 lg:columns-3 gap-4 sm:gap-6 space-y-4 sm:space-y-0">
+        <div className="sm:columns-2 lg:columns-3 bg-[#181A1B] gap-4 sm:gap-6 space-y-4 sm:space-y-0">
           {visiblePosts.map((post) => (
             <div key={post.id} className="break-inside-avoid mb-4 sm:mb-6">
               <PostCard post={post} />
@@ -238,7 +238,7 @@ const PostCard: React.FC<{ post: any }> = ({ post }) => {
   };
 
   return (
-    <div className="bg-[#ffffff] text-black mt-4 shadow-md w-full p-4 rounded-lg">
+    <div className="bg-[#181A1B] text-white mt-4 shadow-md w-full p-4 rounded-lg">
       <div className="pb-2">
         <div className="flex items-center space-x-3 sm:space-x-4">
           <div className="h-10 w-10 sm:h-12 sm:w-12 rounded-full bg-gray-300">

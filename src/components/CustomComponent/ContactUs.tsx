@@ -77,15 +77,15 @@ export default function Component() {
   };
 
   return (
-    <div className="bg-white px-4 py-12" id="contact">
+    <div className="bg-[#181A1B] px-4 py-12" id="contact">
       <div className="container mx-auto max-w-6xl">
         {/* Header Section */}
         <div className="text-center mb-12">
-          <h1 className="text-3xl md:text-3xl font-bold text-[#000000] mb-2">
+          <h1 className="text-3xl md:text-3xl font-bold text-white mb-2">
             Connect with <span className="text-[#ff0000]"> Linux World</span>
           </h1>
           <div className="h-1 w-16 bg-red-500 mb-2 mx-auto"></div>
-          <p className="text-gray-900 max-w-3xl mx-auto text-md">
+          <p className="text-white max-w-3xl mx-auto text-md">
             Curious about Winter Program? Let&apos;s talk! Fill out the form or contact us — we&apos;re excited to help you take the next step in your journey!
           </p>
         </div>
@@ -101,12 +101,12 @@ export default function Component() {
                 <Phone className="w-6 h-6 text-zinc-900" />
               </div>
               <div>
-                <h3 className="text-black text-xl font-semibold mb-1">Phone</h3>
-                <a href="tel:+919773353561" className="text-blackhover:underline">
+                <h3 className="text-white text-xl font-semibold mb-1">Phone</h3>
+                <a href="tel:+919773353561" className="text-white hover:underline">
                   +91 9773353561
                 </a>
                 <br />
-                <a href="tel:+919829105960" className="text-blackhover:underline">
+                <a href="tel:+919829105960" className="text-white hover:underline">
                   +91 9829105960
                 </a>
               </div>
@@ -117,8 +117,8 @@ export default function Component() {
                 <Mail className="w-6 h-6 text-zinc-900" />
               </div>
               <div>
-                <h3 className="text-black text-xl font-semibold mb-1">Email</h3>
-                <a href="mailto:preeti@lwindia.com" className="text-black hover:underline">
+                <h3 className="text-white text-xl font-semibold mb-1">Email</h3>
+                <a href="mailto:preeti@lwindia.com" className="text-white hover:underline">
                   preeti@lwindia.com
                 </a>
               </div>
@@ -126,25 +126,25 @@ export default function Component() {
           </div>
 
           {/* Contact Form */}
-          <Card className="bg-white m-4">
+          <Card className="bg-[#181A1B] m-4">
             <CardHeader>
               <CardTitle className="text-2xl text-white">Send Message</CardTitle>
             </CardHeader>
             <CardContent>
               <form className="space-y-4" onSubmit={handleSubmit}>
                 <div className="space-y-2">
-                  <label htmlFor="fullName" className="text-sm font-medium text-black">
+                  <label htmlFor="fullName" className="text-sm font-medium text-white">
                     Full Name
                   </label>
                   <Input
                     id="fullName"
                     value={fullName}
                     onChange={(e) => setFullName(e.target.value)}
-                    className="border-0 border-b border-zinc-200 rounded-none px-0 py-2 focus-visible:ring-0 focus-visible:border-black text-black"
+                    className="border-0 border-b border-zinc-200 rounded-none px-0 py-2 focus-visible:ring-0 focus-visible:border-black text-white"
                   />
                 </div>
                 <div className="space-y-2">
-                  <label htmlFor="email" className="text-sm font-medium text-black">
+                  <label htmlFor="email" className="text-sm font-medium text-white">
                     Email
                   </label>
                   <Input
@@ -152,11 +152,11 @@ export default function Component() {
                     type="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    className="border-0 border-b border-zinc-200 rounded-none px-0 py-2 focus-visible:ring-0 focus-visible:border-black text-black"
+                    className="border-0 border-b border-zinc-200 rounded-none px-0 py-2 focus-visible:ring-0 focus-visible:border-black text-white"
                   />
                 </div>
                 <div className="space-y-2">
-                  <label htmlFor="whatsapp" className="text-sm font-medium text-black">
+                  <label htmlFor="whatsapp" className="text-sm font-medium text-white">
                     WhatsApp No.
                   </label>
                   <Input
@@ -164,7 +164,7 @@ export default function Component() {
                     type="text"
                     value={whatsappNumber}
                     onChange={(e) => setWhatsappNumber(e.target.value)}
-                    className="border-0 border-b border-zinc-200 rounded-none px-0 py-2 focus-visible:ring-0 focus-visible:border-black text-black"
+                    className="border-0 border-b border-zinc-200 rounded-none px-0 py-2 focus-visible:ring-0 focus-visible:border-black text-white"
                   />
                 </div>
                 <div className="space-y-2">
@@ -172,13 +172,13 @@ export default function Component() {
                     id="message"
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
-                    className="min-h-[100px] border-0 border-b border-zinc-200 rounded-none px-0 py-2 focus-visible:ring-0 focus-visible:border-black resize-none text-black"
+                    className="min-h-[100px] border-0 border-b border-zinc-200 rounded-none px-0 py-2 focus-visible:ring-0 focus-visible:border-black resize-none text-white"
                     placeholder="Type your message"
                   />
                 </div>
                 <Button
                   type="submit"
-                  className={`w-full bg-[#ff0000] hover:bg-red-500 text-black text-lg ${loading ? "cursor-wait" : ""}`}
+                  className={`w-full bg-[#ff0000] hover:bg-red-500 text-white text-lg ${loading ? "cursor-wait" : ""}`}
                   style={{ letterSpacing: "2px" }}
                   disabled={loading} // Disable the button while loading
                 >

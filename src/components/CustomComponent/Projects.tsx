@@ -50,8 +50,9 @@ const projects: Project[] = [
 
 const ProjectsSection = () => {
   return (
-    <div className="max-w-6xl mx-auto px-4 py-12 bg-gray-50" id="project">
-     <h1 className="text-center text-2xl sm:text-3xl md:text-4xl font-extrabold text-gray-800 mb-4 sm:mb-6 md:mb-8">
+    <div className=' bg-[#181A1B]'>
+    <div className="max-w-6xl mx-auto px-4 py-12 bg-gray-50 bg-[#181A1B]"  id="project">
+     <h1 className="text-center text-2xl sm:text-3xl md:text-4xl font-extrabold text-white mb-4 sm:mb-6 md:mb-8">
   From Learning to <span className="text-[#DC2626]">Implementation:</span> Capstone Projects That <span className="text-[#DC2626]">Matter</span>
 </h1>
 
@@ -60,13 +61,13 @@ const ProjectsSection = () => {
         {projects.map((project, index) => (
           <Card 
             key={index}
-            className="bg-white shadow-md hover:shadow-lg hover:scale-105 transition-transform duration-300 border border-gray-100 rounded-lg"
+            className="bg-[#181A1B] shadow-md hover:shadow-lg hover:scale-105 transition-transform duration-300 border border-gray-500 rounded-lg"
           >
             <CardContent className="p-6">
               <div className="w-16 h-16 rounded-full bg-[#FEE2E2] mx-auto flex items-center justify-center mb-4 shadow-sm text-center">
                 {project.icon}
               </div>
-              <h3 className="text-lg text-center font-bold text-gray-800 mb-2">
+              <h3 className="text-lg text-center font-bold text-white mb-2">
                 {project.title}
                 <span className="block text-sm text-gray-600">
                   {project.subtitle}
@@ -79,6 +80,7 @@ const ProjectsSection = () => {
           </Card>
         ))}
       </div>
+    </div>
     </div>
   );
 };

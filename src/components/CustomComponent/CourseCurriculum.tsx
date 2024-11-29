@@ -44,15 +44,15 @@ const TopicItem = ({ topic }: TopicProps) => {
 
   return (
     <div className="ml-10 mb-4">
-      <div className="flex items-center justify-between group hover:bg-gray-50 p-3.5 rounded-xl transition-all duration-200 border border-gray-100 hover:border-gray-200 hover:shadow-sm">
+      <div className="flex items-center justify-between group hover:bg-black p-3.5 rounded-xl transition-all duration-200 border border-gray-100 hover:border-gray-200 hover:shadow-sm">
         <div className="flex items-center gap-3">
-          <div className="bg-gray-100 p-2 rounded-lg group-hover:bg-white group-hover:shadow-sm transition-all duration-200">
+          <div className="bg-gray-100 p-2 rounded-lg  group-hover:shadow-sm transition-all duration-200">
             <BookOpen className="w-5 h-5 text-white" />
           </div>
-          <span className="text-white group-hover:text-white font-medium">{topic.title}</span>
+          <span className="text-white font-medium">{topic.title}</span>
         </div>
         {topic.lectures && (
-          <div className="flex items-center gap-2 text-sm text-white bg-gray-100 py-1.5 px-4 rounded-full group-hover:bg-white group-hover:shadow-sm transition-all duration-200">
+          <div className="flex items-center gap-2 text-sm text-white bg-gray-800 py-1.5 px-4 rounded-full  group-hover:shadow-sm transition-all duration-200">
             <Clock className="w-4 h-4" />
             <span>{topic.lectures} lectures</span>
           </div>
@@ -206,10 +206,10 @@ export default function DevOpsCurriculum() {
   </div>
 
   {/* Collapsible Sections */}
-  <div className="space-y-4 text-white hover:text-black">
+  <div className="space-y-4 text-white ">
     {sections.map((section, index) => (
       <Collapsible
-      className="text-white"
+      className="text-white bg-black hover:bg-black"
         key={index}
         title={section.title}
         topics={section.topics}

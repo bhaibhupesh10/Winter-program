@@ -84,11 +84,11 @@ export default function DoubtAssistance() {
 
       {/* Right side with content */}
       <div className="space-y-6 text-center">
-        <h1 className="text-3xl font-bold">
+        <h1 className="text-3xl text-white font-bold">
           Exclusive{" "}
           <span className="text-[#ff0000]">Doubt Assistance</span>
         </h1>
-        <p className="text-xl text-gray-600">
+        <p className="text-xl  text-white">
           Get 1:1 doubt support from exclusive TAs and the batch community
         </p>
         <button className="bg-red-500 ml-[35%] text-white px-6 py-3 rounded-lg text-lg hover:bg-red-700 transition-all flex items-center">

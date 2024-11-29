@@ -47,7 +47,7 @@ const Navbar: React.FC = () => {
         scrolled ? "bg-black " : "bg-black"
       )}
     >
-      <div className="container  mx-auto flex bg-black bg-opacity-100  items-center justify-between py-4 px-6">
+      <div className="container max-w-6xl mx-auto flex bg-black bg-opacity-100  items-center justify-between py-4 px-6">
         {/* Logo */}
         <a href="/" className="flex items-center space-x-2">
           {/* <Image

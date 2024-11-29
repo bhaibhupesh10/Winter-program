@@ -14,7 +14,7 @@ import DoubtAssistance from '@/components/CustomComponent/DoubtAsssistant'
 import InternshipCardsList from '@/components/CustomComponent/InternshipCardList'
 import ProgramCohorts from '@/components/CustomComponent/ProgramCohort'
 import DevOpsCurriculum from '@/components/CustomComponent/CourseCurriculum'
-import RoadMap2 from '@/components/CustomComponent/RoadMap2'
+
 import ProjectsSection from '@/components/CustomComponent/Projects'
 import Tools from '@/components/CustomComponent/Tools'
 import CourseDetails from '@/components/CustomComponent/CourseDetails'
@@ -37,7 +37,7 @@ export default function Home() {
       <GalleryCarousel></GalleryCarousel>
        <Pricing></Pricing> 
       <Roadmap></Roadmap>
-      <RoadMap2></RoadMap2>
+
       <CertificateComponent></CertificateComponent>
       <Testimonials/>
       <Contact/>

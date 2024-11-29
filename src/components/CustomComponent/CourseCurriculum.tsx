@@ -172,7 +172,7 @@ export default function DevOpsCurriculum() {
 
 
         {/* Right Side - Career Counselling Form */}
-        <div className="sticky top-6">
+        <div className="sticky top-20 h-fit max-h-[calc(100vh-4rem)]">
           <Card>
             <CardHeader>
               <CardTitle className="text-xl">Free Career Counselling</CardTitle>

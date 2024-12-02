@@ -27,11 +27,11 @@ const Section: React.FC<SectionProps> = ({ icon, title, description }) => {
 // Main DataScienceTools Component
 const Tools: React.FC = () => {
   return (
-    <div className="bg-[#181A1B]">
-    <div className="flex bg-[#181A1B] flex-col pt-4 lg:flex-row items-center max-w-6xl justify-between bg-white p-4 sm:p-6 lg:p-8 mx-auto">
+    <div className="bg-[#181A1B] h-auto"> {/* Use h-auto to let content dictate height */}
+    <div className="flex flex-col lg:flex-row items-center max-w-6xl justify-between mx-auto p-4 sm:p-6 lg:p-8">
       {/* Left Text Content */}
       <div className="lg:w-1/2 space-y-6 sm:space-y-8">
-        <h2 className="text-gray-700 text-sm text-white font-semibold">
+        <h2 className="text-gray-700 text-sm font-semibold text-white">
           Most Hands-On Data Program
         </h2>
         <h1 className="text-2xl sm:text-2xl lg:text-3xl font-bold text-white">
@@ -40,7 +40,7 @@ const Tools: React.FC = () => {
 
         {/* Tool Sections */}
         <Section
-          icon={<TrendingUp size={24} color="white " />}
+          icon={<TrendingUp size={24} color="white" />}
           title="Data Management and Development Tools"
           description="Tools: Python, SQL"
         />
@@ -57,18 +57,19 @@ const Tools: React.FC = () => {
       </div>
 
       {/* Right Image Section */}
-      <div className="lg:w-1/2 flex items-center justify-center mt-8 lg:mt-0">
-        <div className="relative bg-gray-100 p-4 sm:p-8 rounded-lg shadow-lg">
-          {/* Replace this image tag with your actual image */}
+      <div className="lg:w-1/2 flex items-center justify-center lg:pt-0"> {/* Removed pt-8 */}
+        <div className="relative p-4 sm:p-8 rounded-lg shadow-lg bg-[#242526]">
           <img
             src="/tools.jpeg"
             alt="Data Science Tools"
-            className="w-full h-auto"
+            className="w-full h-auto rounded-lg"
           />
         </div>
       </div>
     </div>
-    </div>
+  </div>
+
+
   );
 };
 

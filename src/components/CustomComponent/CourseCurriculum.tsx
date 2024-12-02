@@ -200,7 +200,11 @@ export default function DevOpsCurriculum() {
   <div className="flex flex-col sm:flex-row items-start sm:items-center sm:justify-between space-y-4 sm:space-y-0">
     <div className="shadow-md hover:shadow-lg hover:shadow-white border border-gray-800 p-4 rounded-xl shadow-white">
     <h1 className="text-2xl sm:text-2xl md:text-2xl text-white font-semibold leading-snug">
-      From  <span className="text-[#ff0000]"> Fundamentals </span> to Building a <span className="text-[#ff0000]">Live Project:</span>Your 10-Day Technical Learning    <span className="text-[#ff0000]">Journey </span> 
+
+    What will you learn at the <span className="text-[#ff0000]">Winter Industrial Training </span>  Program ?
+    From Fundamentals to Building a Live Project:  <span className="text-[#ff0000]"> 10-Day Technical Learning </span>Your Journey
+
+      {/* From  <span className="text-[#ff0000]"> Fundamentals </span> to Building a <span className="text-[#ff0000]">Live Project:</span>Your 10-Day Technical Learning    <span className="text-[#ff0000]">Journey </span>  */}
     </h1>
     </div>
   </div>
@@ -228,8 +232,9 @@ export default function DevOpsCurriculum() {
         <div className="sticky top-20 h-fit bg-[#181A1B] max-h-[calc(100vh-4rem)]">
           <Card className="bg-[#181A1B]">
             <CardHeader>
-              <CardTitle className="text-xl text-white">Free Career Counselling</CardTitle>
-              <p className="text-sm text-white">We are happy to help you 24/7</p>
+              <CardTitle className="text-xl text-white">Confused 🤔about Winter Training ?
+              </CardTitle>
+              <p className="text-sm text-white">Speak to our Counsellor for guidance</p>
             </CardHeader>
             <CardContent>
               <form className="space-y-4">
@@ -237,7 +242,10 @@ export default function DevOpsCurriculum() {
                   <Input className="text-white" placeholder="Name" />
                 </div>
                 <div className="space-y-2">
-                  <Input className="text-white" placeholder="Phone Number" />
+                  <Input className="text-white" placeholder="WhatsApp No" />
+                </div>
+                <div className="space-y-2">
+                  <Input className="text-white" placeholder="College Name" />
                 </div>
                 <Button className="w-full bg-red-600 hover:bg-red-700">
                   Submit

@@ -3,9 +3,9 @@
 
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
-import DiscordImage03 from "../../../public/assets/discord-images/discord01.jpg"
-import DiscordImage02 from "../../../public/assets/discord-images/discord02.jpg"
-import DiscordImage01 from "../../../public/assets/discord-images/discord03.jpg"
+import DiscordImage03 from "../../../public/dis4.png"
+import DiscordImage02 from "../../../public/dis2.png"
+import DiscordImage01 from "../../../public/dis3.png"
 
 export default function DoubtAssistance() {
   // Intersection Observer hook logic
@@ -86,10 +86,12 @@ export default function DoubtAssistance() {
       <div className="space-y-6 text-center">
         <h1 className="text-3xl text-white font-bold">
           Exclusive{" "}
-          <span className="text-[#ff0000]">Doubt Assistance</span>
+          <span className="text-[#ff0000]">Discord Community
+          </span>
         </h1>
         <p className="text-xl  text-white">
-          Get 1:1 doubt support from exclusive TAs and the batch community
+        Get 1:1 technical doubt support from our team & elite Discord community for lifetime
+
         </p>
         <button className="bg-red-500 ml-[35%] text-white px-6 py-3 rounded-lg text-lg hover:bg-red-700 transition-all flex items-center">
           Enroll Now

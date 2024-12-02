@@ -6,15 +6,15 @@
 import { useEffect, useState, useRef, useCallback } from "react";
 import Image from "next/image";
 import { cn } from "@/lib/utils"; // Helper for conditional classes
-import Event1Image from "../../../public/assets/event-gallery/summer1.jpg";
-import Event2Image from "../../../public/assets/event-gallery/summer2.jpg";
-import Event3Image from "../../../public/assets/event-gallery/summer3.jpg";
-import Event4Image from "../../../public/assets/event-gallery/summer4.jpg";
-import Event5Image from "../../../public/assets/event-gallery/summer5.jpg";
-import Event6Image from "../../../public/assets/event-gallery/summer6.jpg";
-import Event7Image from "../../../public/assets/event-gallery/summer7.png";
-import Event8Image from "../../../public/assets/event-gallery/summer8.png";
-import Event9Image from "../../../public/assets/event-gallery/summer9.png";
+import Event1Image from "../../../public/sqop/1.png";
+import Event2Image from "../../../public/sqop/2.png";
+import Event3Image from "../../../public/sqop/3.png";
+import Event4Image from "../../../public/sqop/4.png";
+import Event5Image from "../../../public/sqop/5.png";
+import Event6Image from "../../../public/sqop/6.png";
+import Event7Image from "../../../public/sqop/7.png";
+import Event8Image from "../../../public/sqop/8.png";
+import Event9Image from "../../../public/sqop/9.png";
 
 
 // Define your image type and data array for gallery images

@@ -14,7 +14,7 @@ import DoubtAssistance from '@/components/CustomComponent/DoubtAsssistant'
 import InternshipCardsList from '@/components/CustomComponent/InternshipCardList'
 import ProgramCohorts from '@/components/CustomComponent/ProgramCohort'
 import DevOpsCurriculum from '@/components/CustomComponent/CourseCurriculum'
-
+import SupportContact from '@/components/CustomComponent/Support'
 import ProjectsSection from '@/components/CustomComponent/Projects'
 import Tools from '@/components/CustomComponent/Tools'
 import CourseDetails from '@/components/CustomComponent/CourseDetails'
@@ -24,26 +24,45 @@ export default function Home() {
       <>
      
       <HeroSection></HeroSection>
-      <DevOpsCurriculum/>
-
-      <ProjectsSection></ProjectsSection>
-      <CourseDetails></CourseDetails>
-      <InternshipCardsList></InternshipCardsList>
+      {/* Program  cohort */}
       <ProgramCohorts/>
-      <DoubtAssistance></DoubtAssistance>
-      <Tools></Tools>
-      <MentorFeatured />
+      {/* Technical content */}
+      <DevOpsCurriculum/>
+      {/* cap stone project */}
+      <CourseDetails></CourseDetails>
+      {/* About mentor */}
       <MentorProfile/>
-      <GalleryCarousel></GalleryCarousel>
-       <Pricing></Pricing> 
-      <Roadmap></Roadmap>
-
+{/* Discord community */}
+      <DoubtAssistance></DoubtAssistance>
+      {/* Our placed student s */}
+      <InternshipCardsList></InternshipCardsList>
+{/* Master 15+ project */}
+      <Tools></Tools>
+{/* Pricing real skills real project section */}
+      <Pricing></Pricing> 
+{/* get Certified  */}
       <CertificateComponent></CertificateComponent>
+{/* Gallary */}
+      <GalleryCarousel></GalleryCarousel>
+{/* Testimoniols */}
       <Testimonials/>
-      <Contact/>
+{/* Faq */}
+      <Faq></Faq>
+{/* Our alumini working at */}
+      <MentorFeatured />
+{/* Contact details */}
+      <SupportContact></SupportContact>
+      
+       
+      {/* <Roadmap></Roadmap> */}
+
+
+
+      {/* <Contact/> */}
+
       <WhatsAppBot/>
       
-      <Faq></Faq>
+
 
       </>
   )

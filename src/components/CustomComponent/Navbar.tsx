@@ -50,14 +50,14 @@ const Navbar: React.FC = () => {
       <div className="container max-w-6xl mx-auto flex bg-black bg-opacity-100  items-center justify-between py-4 px-6">
         {/* Logo */}
         <a href="/" className="flex items-center space-x-2">
-          {/* <Image
-            src={""}
+          <Image
+            src="/logo.png"
             alt="Logo"
-            width={112} // You can set the width
-            height={64} // You can set the height
+            width={80} // You can set the width
+            height={50} // You can set the height
             className="object-contain" // Ensures the logo doesn't get distorted
-          /> */}
-          <h2 className="text-white font-bold">Winter Program</h2>
+          />
+          {/* <h2 className="text-white font-bold">Winter Program</h2> */}
         </a>
 
         {/* Navigation Menu */}

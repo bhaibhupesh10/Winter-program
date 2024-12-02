@@ -135,7 +135,14 @@ const CourseDetails = () => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <div className="space-y-6 p-4 bg-gradient-to-br from-gray-900 to-gray-800 min-h-screen">
+    <div className="space-y-6 p-4 bg-gradient-to-br from-gray-900 to-gray-800 min-h-screen" id="liveProjects">
+<div className="p-2">
+<h1 className="text-center text-2xl sm:text-3xl md:text-4xl pb-4 font-extrabold text-white pb-0">
+
+Build Live Project : <span className="text-[#DC2626]"> From Learning to Implementation</span> 
+        
+      </h1>
+      </div>
       {courseData.map((course) => (
         <Card
           key={course.id}

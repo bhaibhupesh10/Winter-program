@@ -8,6 +8,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/autoplay';
 import MentorFeatured from './MentorFeatured';
+import CompaniesBefefited from './CompanyBenifited';
 
 import { CircleCheck } from 'lucide-react';
 import mentor1 from "../../../public/assets/mentor-with-VIPS/mentor-gallery-1.jpeg";
@@ -127,7 +128,7 @@ const MentorProfile = () => {
           </div>
 
           {/* Mentor Details Card */}
-          <div className="bg-blue-50 rounded-xl p-6 shadow-sm border border-blue-100">
+          {/* <div className="bg-blue-50 rounded-xl p-6 shadow-sm border border-blue-100">
             <div className="flex items-center gap-3 mb-3">
               <div className="w-2 h-2 rounded-full bg-blue-500 animate-pulse"></div>
               <span className="text-blue-800 md:text-sm   font-medium bg-blue-100/50 px-3 py-1 rounded-full">
@@ -138,34 +139,7 @@ const MentorProfile = () => {
               <h2 className="md:text-2xl  font-bold text-gray-900">Mr. Vimal Daga</h2>
               <p className="text-gray-600 font-sm">Founder of LinuxWorld | #13 | IIEC | JAZBAA </p>
             </div>
-          </div>
-        </div>
-
-        {/* Right Column - Content */}
-        <div className="space-y-8">
-          <div className="space-y-6 -mb-3">
-            <h1 className="text-3xl font-bold text-white leading-extra-tight -mb-4">
-              The Visionary Behind <span className="text-[#ff0000]">Winter Program</span> 
-            </h1>
-            <div className="space-y-4 text-black-800">
-              <ul className="grid md:grid-cols-2 gap-y-2 list-disc pl-5 text-black -mb-1 list-none sm:grid-cols-1">
-                <li className="leading-relaxed text-sm text-white leading-tight"><CircleCheck className='inline text-green-400 ml-2' /> World Record Holder</li>
-                <li className="leading-relaxed text-sm text-white leading-tight"><CircleCheck className='inline text-green-400 ml-2' /> Two-Time TEDx Speaker</li>
-                <li className="leading-relaxed text-sm text-white leading-tight"><CircleCheck className='inline text-green-400 ml-2' /> Senior Principal IT Consultant</li>
-                <li className="leading-relaxed text-sm text-white leading-tight"><CircleCheck className='inline text-green-400 ml-2' /> Philanthropist</li>
-                <li className="leading-relaxed text-sm text-white leading-tight"><CircleCheck className='inline text-green-400 ml-2' /> 22+ Years of Rich Experience</li>
-              </ul>
-
-              <p className="text-white text-md -mb-2 pl-6">
-                Mr. Vimal Daga, the driving force behind TGS, is on an exclusive India Tour, visiting cities across the country to re-invent technical training. His mission is not only to provide hands-on learning but to bring together industry expert interactions, real-world capstone projects, and valuable industry insights&mdash;all in one place
-              </p>
-              <p className="text-white pl-6">
-                He firmly believes that networking and collaboration are the key to personal and professional growth, and this tour is designed to foster both. His vision of &ldquo;Making India, Future Ready&rdquo; goes beyond skills training&mdash;it&apos;s about creating a thriving ecosystem where learners and professionals can collaborate, innovate, and succeed together.
-              </p>
-            </div>
-          </div>
-
-          {/* Social Stats with Counter */}
+          </div> */}
           <div className="grid grid-cols-3 gap-4">
             {socialStats.map((stat, index) => (
               <div key={index} className="bg-blue-50 rounded-xl p-2 text-center border border-blue-100 shadow-sm hover:shadow-md transition-all duration-200 -mb-2">
@@ -179,12 +153,96 @@ const MentorProfile = () => {
               </div>
             ))}
           </div>
+        </div>
+
+        {/* Right Column - Content */}
+        <div className="space-y-8">
+          <div className="space-y-6 -mb-3">
+            <h1 className="text-3xl font-bold text-white leading-extra-tight -mb-4">
+            Know Your Mentor for Winter Training : <span className="text-[#ff0000]"> Mr Vimal Daga </span>
+              {/* The Visionary Behind <span className="text-[#ff0000]">Winter Program</span>  */}
+            </h1>
+            <div className="space-y-4 text-black-800">
+             
+
+              <p className="text-white text-md -mb-2 pl-6">
+              Mr. Vimal Daga, a World Record Holder, Technologist, Philanthropist, and 2x TEDx Speaker, is passionately dedicated to his vision of “Making India Future-Ready.
+              </p>
+
+              <ul className="grid md:grid-cols-1 gap-y-2 list-disc pl-5 text-black -mb-1 list-none sm:grid-cols-1">
+                <li className="leading-relaxed text-sm text-white leading-tight">
+                  
+                  <CircleCheck className='inline text-green-400 ml-2' />
+
+                <div className='p-2 inline border-lg border-red inline flext item-center '>
+RedHat Certified Architect Level 25 and Enterprise Application Level 11 a global first.
+
+                </div>
+
+                </li>
+
+                <li className="leading-relaxed text-sm text-white leading-tight">
+                  
+                  <CircleCheck className='inline text-green-400 ml-2' />
+
+                <div className='p-2 inline border-lg border-red inline flext item-center '>
+                Achieved 11 AWS Global Certifications in just 11 days, a feat others take years to accomplish.
+
+                </div>
+
+                </li>
+
+                
+                <li className="leading-relaxed text-sm text-white leading-tight">
+                  
+                  <CircleCheck className='inline text-green-400 ml-2' />
+
+                <div className='p-2 inline border-lg border-red inline flext item-center '>
+                Known as the “Integration Guru,” mastering 152+ tools and technologies with unmatched expertise in integrating them seamlessly.
+
+
+                </div>
+
+                </li>
+
+                <li className="leading-relaxed text-sm text-white leading-tight">
+                  
+                  <CircleCheck className='inline text-green-400 ml-2' />
+
+                <div className='p-2 inline border-lg border-red inline flext item-center '>
+                A mentor and consultant to Fortune 500 companies, having trained CIOs and CTOs in cutting-edge technologies.
+
+
+
+                </div>
+
+                </li>
+               
+                
+
+              </ul>
+
+              <p className="text-white pl-6">
+              His expertise spans Machine Learning, Deep Learning, Delphix, AppDynamics, Docker, DevOps, Cloud Computing, AWS, and more ensuring that every learner is equipped to tackle real-world challenges.
+              </p>
+
+              <p className="text-white pl-6">
+              Join Mr. Vimal Daga in this life-changing Winter Training Program and experience firsthand how he transforms potential into industry-ready excellence
+              </p>
+            </div>
+          </div>
+
+          {/* Social Stats with Counter */}
+          
 
           {/* Enhanced Featured Section */}
-          <div className="border bg-[#181A1B] border-gray-200 rounded-xl p-4 shadow-sm bg-white backdrop-blur-sm">
-            <p className="text-white text-sm mb-2">Companies benefited with his trainings & consultancy</p>
-            <MentorFeatured />
-          </div>
+          <div className="border bg-[#181A1B] border-gray-700 rounded-xl p-4 shadow-sm">
+  <p className="text-white text-sm mb-2">
+    
+  </p>
+  <CompaniesBefefited />
+  {/* <MentorFeatured /> */}
+</div>
         </div>
       </div>
     </div>

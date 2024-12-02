@@ -11,11 +11,10 @@ export default function SupportContact() {
           <h3 className="text-[2.25rem] font-semibold leading-tight md:text-[2rem] sm:text-md text-white">
 
           connect with <span className="text-[#ff0000]">LinuxWorld</span> 
-            {/* <span className="text-[#FF0000]">#13</span>{' '}
-            <span className="text-white">Learner Support</span> */}
+
           </h3>
           <p className="text-lg md:text-[1.25rem] text-gray-400 font-normal">
-            Talk to our experts. We're available 24/7.
+            Talk to our experts. We&apos;re available 24/7.
           </p>
         </div>
 

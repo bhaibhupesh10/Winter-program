@@ -20,9 +20,9 @@ const Roadmap = () => {
             Career Assignments with Personalized Reviews
           </h2>
           <p className="text-gray-300">
-            Your <span className="text-purple-400">submissions</span> will be{' '}
-            <span className="text-blue-400">reviewed</span> and{' '}
-            <span className="text-green-400">optimized</span> by{' '}
+            Your <span className="text-purple-400">submissions</span> will 
+            <span className="text-blue-400">reviewed</span> and
+            <span className="text-green-400">optimized</span> by
             <span className="text-yellow-400">expert mentors</span>.
           </p>
         </div>
@@ -82,14 +82,14 @@ const Roadmap = () => {
                   Experience Section Detailing:
                 </h4>
                 <p className="text-gray-300">
-                  Each role should have a detailed description that includes the{' '}
+                  Each role should have a detailed description that includes the
                   <span className="text-blue-400">context of work</span>. 
-                  Mention the team size, the approach you took, the{' '}
+                  Mention the team size, the approach you took the
                   <span className="text-green-400">technologies</span> you used, 
-                  and the outcome. For instance, "Led a team of 5 developers in 
+                  and the outcome. For instance &quot;Led a team of 5 developers in 
                   migrating a legacy monolithic application to a microservice architecture 
-                  using Docker and Kubernetes, resulting in a 40% reduction in deployment 
-                  time and improved system scalability."
+                  using Docker and Kubernetes resulting in a 40% reduction in deployment 
+                  time and improved system scalability.&quot;
                 </p>
               </div>
 
@@ -98,11 +98,11 @@ const Roadmap = () => {
                   Skill Endorsements and Validations:
                 </h4>
                 <p className="text-gray-300">
-                  Go beyond the basic skills list. Add niche and advanced skills like{' '}
-                  <span className="text-purple-400">"System Design"</span> and{' '}
-                  <span className="text-green-400">"CI/CD pipelines"</span> and 
+                  Go beyond the basic skills list. Add niche and advanced skills like
+                  <span className="text-purple-400">System Design</span> and
+                  <span className="text-green-400">CI/CD pipelines</span> and 
                   ensure they are endorsed by reputable figures in your network. 
-                  Validate these skills through LinkedIn's skill assessments to stand out.
+                  Validate these skills through LinkedIns skill assessments to stand out.
                 </p>
               </div>
             </div>

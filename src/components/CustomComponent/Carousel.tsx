@@ -6,15 +6,15 @@
 import { useEffect, useState, useRef, useCallback } from "react";
 import Image from "next/image";
 import { cn } from "@/lib/utils"; // Helper for conditional classes
-import Event1Image from "../../../public/sqop/1.png";
-import Event2Image from "../../../public/sqop/2.png";
-import Event3Image from "../../../public/sqop/3.png";
-import Event4Image from "../../../public/sqop/4.png";
-import Event5Image from "../../../public/sqop/5.png";
-import Event6Image from "../../../public/sqop/6.png";
-import Event7Image from "../../../public/sqop/7.png";
-import Event8Image from "../../../public/sqop/8.png";
-import Event9Image from "../../../public/sqop/9.png";
+import Event1Image from "../../../public/gall/1.png";
+import Event2Image from "../../../public/gall/2.png";
+import Event3Image from "../../../public/gall/3.png";
+import Event4Image from "../../../public/gall/4.png";
+import Event5Image from "../../../public/gall/5.png";
+import Event6Image from "../../../public/gall/6.png";
+import Event7Image from "../../../public/gall/7.png";
+import Event8Image from "../../../public/gall/8.png";
+import Event9Image from "../../../public/gall/9.png";
 
 
 // Define your image type and data array for gallery images
@@ -94,7 +94,7 @@ export default function GalleryCarousel() {
 
   return (
     <div className="flex flex-col bg-[#181A1B] items-center" id="gallery">
-      <h2 className="text-3xl font-bold text-white text-center mb-0 mt-12">Our Story in <span className="text-[#ff0000]">Frames</span></h2>
+      <h2 className="text-2xl font-bold text-white text-center mb-0 mt-12">Our Story in <span className="text-[#ff0000]">Frames</span></h2>
       <div className="h-1 w-16 bg-red-500 mt-2 mb-6 mx-auto"></div>
       <div className="relative w-full max-w-6xl flex overflow-hidden justify-center">
         <div className="flex transition-transform duration-500 ease-in-out">

@@ -8,13 +8,13 @@ export default function ProgramCohorts() {
     <div className="container max-w-6xl mx-auto p-6 space-y-6">
       {/* Headers */}
       <div className="space-y-2">
-        <h1 className="text-3xl font-semibold text-white"> 
+        <h1 className="text-2xl font-semibold text-white"> 
         Winter Industrial <span className="text-[#ff0000]"> Training Program Details
         </span>
           {/* Program <span className="text-[#ff0000]">Cohorts</span> */}
           
           </h1>
-        <h2 className="text-xl text-white">
+        <h2 className="text-lg text-white">
         {/* Chance to learn in person with Mr Vimal Daga  */}
 
         Chance to learn in person with  <span className="text-[#ff0000]">Mr Vimal Daga </span> 
@@ -29,7 +29,7 @@ export default function ProgramCohorts() {
         <div className="space-y-6">
           {/* Card Header */}
           <div className="flex items-center gap-3">
-            <h3 className="text-lg  text-white font-medium">LW Winter Industrial Training Program 2024</h3>
+            <h3 className="text-md  text-white font-medium">LW Winter Industrial Training Program 2024</h3>
             <span className="px-3 py-1 bg-orange-100 text-orange-600 text-sm rounded-full">
             Limited Seats available
             </span>
@@ -37,100 +37,46 @@ export default function ProgramCohorts() {
 
           {/* Schedule Table */}
           <div className="space-y-4">
-            <div className="grid grid-cols-3 text-sm text-gray-500 pb-2">
-              <div className="flex items-center text-white gap-2">
-              Duration 
-              </div>
+            <div className="grid grid-cols-4 text-sm text-gray-500 pb-2">
+              <div className="flex items-center text-white gap-2">Duration</div>
               <div className="flex text-white items-center gap-2">
                 <Clock className="w-4 text-white h-4" />
                 Time
               </div>
-              <div className="text-white">Location </div>
-
-
+              <div className="text-white">Location</div>
+              <div className="text-white">Action</div>
             </div>
 
             {/* Program Induction Row */}
-            <div className="grid grid-cols-3 text-sm border-b pb-4">
+            <div className="grid grid-cols-4 text-sm border-b pb-4">
               <div>
-                <div className="font-medium text-white"> 26th Dec, 2024 - 5th Jan, 2025
-                </div>
-
+                <div className="font-medium text-white">26th Dec, 2024 - 5th Jan, 2025</div>
               </div>
-              <div className="text-white">10:00 am - 3:00 pm IST 
-              </div>
-              <div className="text-white">Jaipur
-             
-              </div>
-              <div className="flex  mt-4 flex-col sm:flex-row items-center sm:items-center">
-               
-               <Button className="bg-red-500   hover:bg-red-600 mt-2 sm:mt-0 sm:ml-4">
-                 Apply Now
-               </Button>
-             
-
-             </div>
-             
-              {/* <div className="w-1/2 mx-auto">
-              <Button className="bg-red-500  hover:bg-red-600 mt-2 sm:mt-0 sm:ml-4">
+              <div className="text-white">10:00 am - 3:00 pm IST</div>
+              <div className="text-white">Jaipur</div>
+              <div>
+                <a href="#bookyourseat">
+                <Button className="bg-red-500 hover:bg-red-600">
                   Apply Now
                 </Button>
-              </div> */}
-              {/* <div>df</div> */}
-            </div>
-          
-           
-
-            
-
-            {/* <div className="grid grid-cols-3 text-sm items-center">
-              <div>
-                <div className="font-medium text-white">Regular Classes</div>
-                <div className="text-white">14 Dec, 2024 - 30 Sep, 2025</div>
+                </a>
               </div>
-              <div className="text-white">19:30 - 23:30 IST</div>
-              <div className="flex flex-col sm:flex-row items-start sm:items-center">
-                <span>Weekend (Sat - Sun)</span>
-                <Button className="bg-red-500 hover:bg-red-600 mt-2 sm:mt-0 sm:ml-4">
+            </div>
+
+            {/* Second Program Row */}
+            <div className="grid grid-cols-4 text-sm border-b pb-4">
+              <div>
+                <div className="font-medium text-white">26th Dec, 2024 - 5th Jan, 2025</div>
+              </div>
+              <div className="text-white">4:00 pm - 9:00 pm IST</div>
+              <div className="text-white">Jaipur</div>
+              <div>
+              <a href="#bookyourseat">
+                <Button className="bg-red-500 hover:bg-red-600">
                   Apply Now
                 </Button>
-              
-
+                </a>
               </div>
-            </div> */}
-
-<div className="grid grid-cols-3 text-sm text-gray-500 pb-2">
-              <div className="flex items-center text-white gap-2">
-              Duration 
-              </div>
-              <div className="flex text-white items-center gap-2">
-                <Clock className="w-4 text-white h-4" />
-                Time
-              </div>
-              <div className="text-white">Location </div>
-             
-            </div>
-
-            {/* Program Induction Row */}
-            <div className="grid grid-cols-3 text-sm border-b pb-4">
-              <div>
-                <div className="font-medium text-white"> 26th Dec, 2024 - 5th Jan, 2025
-                </div>
-
-              </div>
-              <div className="text-white">4:00 pm - 9:00 pm IST 
-
-              </div>
-              <div className="text-white">Jaipur
-              </div>
-              <div className="flex  mt-4 flex-col sm:flex-row items-center sm:items-center">
-               
-               <Button className="bg-red-500   hover:bg-red-600 mt-2 sm:mt-0 sm:ml-4">
-                 Apply Now
-               </Button>
-             
-
-             </div>
             </div>
           </div>
         </div>

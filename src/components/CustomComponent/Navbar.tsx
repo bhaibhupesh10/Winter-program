@@ -61,7 +61,7 @@ const Navbar: React.FC = () => {
         </a>
 
         {/* Navigation Menu */}
-        <nav className="hidden lg:flex space-x-6">
+        <nav className="hidden lg:flex space-x-4">
           <ul className="flex space-x-4">
             <li>
               <a href="#hero" className="text-white hover:text-blue-600">
@@ -69,27 +69,22 @@ const Navbar: React.FC = () => {
               </a>
             </li>
             <li>
-              <a href="#project" className="text-white hover:text-blue-600">
-                Project
+              <a href="#trainingcontent" className="text-white hover:text-blue-600">
+                Training Content
               </a>
             </li>
             <li>
-              {/* <a href="#venue" className="text-white hover:text-blue-600">
-                Cities on Tour
-              </a> */}
-            </li>
-            <li>
-              <a href="#gallery" className="text-white hover:text-blue-600">
-                Gallery
+              <a href="#liveProjects" className="text-white hover:text-blue-600">
+                Live Project
               </a>
             </li>
             <li>
-              <a href="#contact" className="text-white hover:text-blue-600">
-                Contact
+              <a href="#successstories" className="text-white hover:text-blue-600">
+                Success Stories
               </a>
             </li>
             <li>
-              <a href="#contact" className="text-white hover:text-blue-600">
+              <a href="#Inquire" className="text-white hover:text-blue-600">
                 Inquire Now
               </a>
             </li>
@@ -106,10 +101,10 @@ const Navbar: React.FC = () => {
 
         {/* Call to Action Button */}
         <a
-          href="#buy-tickets"
+          href="#bookyourseat"
           className="hidden lg:block bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700"
         >
-          Enroll Now
+          Book Your Seat
         </a>
       </div>
 
@@ -147,7 +142,7 @@ const Navbar: React.FC = () => {
               </a>
             </li>
             <li>
-              <a href="#contact" className="text-black hover:text-blue-600">
+              <a href="#Inquire" className="text-black hover:text-blue-600">
                 Inquire Now
               </a>
             </li>

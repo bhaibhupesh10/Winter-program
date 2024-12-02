@@ -13,7 +13,7 @@ import {
 import lwlogo from "../../../public/assets/LW-white.png";
 const Pricing = () => {
   return (
-    <div className='bg-[#181A1B]'>
+    <div className='bg-[#181A1B]' id="bookyourseat">
        <h2 className="text-3xl font-bold text-white text-center mb-0 pt-12">
         
  Real Skills, Real Projects: <span className='text-[#ff0000]'>The Winter Training You Need</span> 
@@ -42,17 +42,18 @@ const Pricing = () => {
             <Box className="w-4 h-4 sm:w-5 sm:h-5" />
           </div>
         </div> */}
+        {/* basic to advance image */}
                         <img 
-          src="/bta.png" 
+          src="/bta2.png" 
           alt="Discord Logo" 
-          className="w-20 h-10 sm:w-20 sm:h-20"
+          className="w-36 h-10 sm:w-36 sm:h-20"
         />
         {/* <div className="p-4 bg-emerald-400 rounded-lg w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center">
           <BarChart3 className="w-5 h-5 sm:w-6 sm:h-6 text-gray-900" />
         </div> */}
-        <h3 className="text-lg sm:text-xl font-bold">From Basic to Advance Level 
+        <h3 className="text-md sm:text-md font-bold">From Basic to Advance Level 
         </h3>
-        <p className="text-gray-300 text-xs sm:text-sm">
+        <p className="text-gray-300 text-sm sm:text-sm">
         Best part about this Winter Training Program, no prior knowledge required, learn from the Best Mentor & 100% practical training
 
         </p>
@@ -93,9 +94,9 @@ const Pricing = () => {
         Best Industry Relevant Training Content with real use case based application. In just 10 days with 50+ hours of learning, get to learn what industry is looking for 
 
         </p>
-        <a href='https://rzp.io/rzp/t8oh138D' target='blank'>
-        <button className="bg-[#DC2626] mt-2 text-white px-4 py-2 sm:px-6 sm:py-3 rounded-lg hover:bg-[#DC2626] transition-colors">
-          Participate 3500+Tax ↓
+        <a href='https://rzp.io/rzp/K4d2QqC' target='blank'>
+        <button className="bg-[#DC2626] mt-2 text-sm text-white px-4 py-2 sm:px-6 sm:py-3 rounded-lg hover:bg-[#DC2626] transition-colors">
+        Just @ INR 3,500 + Taxes
         </button>
         </a>
       </CardContent>

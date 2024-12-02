@@ -1,14 +1,14 @@
 "use client";
 import { Card } from "@/components/ui/card";
-
+import { MailCheck } from 'lucide-react';
 export default function SupportContact() {
   return (
 <>
-<Card className="w-full min-h-[20rem] bg-[#181A1B] font-sans p-8 rounded-lg shadow-lg">
+<Card className="w-full min-h-[20rem] bg-[#181A1B] font-sans p-8 shadow-lg border-0 rounded-none" id="Inquire">
       <div className="max-w-6xl mx-auto">
         {/* Header Section */}
         <div className="space-y-2 pb-8">
-          <h3 className="text-[2.25rem] font-semibold leading-tight md:text-[2.25rem] sm:text-3xl text-white">
+          <h3 className="text-[2.25rem] font-semibold leading-tight md:text-[2rem] sm:text-md text-white">
 
           connect with <span className="text-[#ff0000]">LinuxWorld</span> 
             {/* <span className="text-[#FF0000]">#13</span>{' '}
@@ -36,10 +36,11 @@ export default function SupportContact() {
               href="tel:18002102020"
               className="inline-flex items-center gap-3 px-4 py-2 rounded-[0.375rem] text-[1.375rem] font-semibold text-white hover:bg-[#3D0707] transition-colors"
             >
-              <svg className="w-5 h-5" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              {/* <svg className="w-5 h-5" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <path d="M2 3C2 2.44772 2.44772 2 3 2H5.15287C5.64171 2 6.0589 2.35341 6.13927 2.8356L6.87858 7.27147C6.95075 7.70451 6.73206 8.13397 6.3394 8.3303L4.79126 9.10437C5.90756 11.8783 8.12168 14.0924 10.8956 15.2087L11.6697 13.6606C11.866 13.2679 12.2955 13.0492 12.7285 13.1214L17.1644 13.8607C17.6466 13.9411 18 14.3583 18 14.8471V17C18 17.5523 17.5523 18 17 18H15C7.8203 18 2 12.1797 2 5V3Z" />
-              </svg>
-              1800 210 2020
+              </svg> */}
+                                          <MailCheck className="w-5 h-5"/>
+              support@lwindia.com
             </a>
           </div>
 
@@ -55,6 +56,7 @@ export default function SupportContact() {
                   fill="#059669"
                 />
               </svg>
+
               <span className="text-[1.275rem] text-white font-semibold">Technical queries</span>
             </div>
             <a
@@ -64,7 +66,8 @@ export default function SupportContact() {
               <svg className="w-5 h-5" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <path d="M2 3C2 2.44772 2.44772 2 3 2H5.15287C5.64171 2 6.0589 2.35341 6.13927 2.8356L6.87858 7.27147C6.95075 7.70451 6.73206 8.13397 6.3394 8.3303L4.79126 9.10437C5.90756 11.8783 8.12168 14.0924 10.8956 15.2087L11.6697 13.6606C11.866 13.2679 12.2955 13.0492 12.7285 13.1214L17.1644 13.8607C17.6466 13.9411 18 14.3583 18 14.8471V17C18 17.5523 17.5523 18 17 18H15C7.8203 18 2 12.1797 2 5V3Z" />
               </svg>
-              +918045604032
+
+              +91 8306453222
             </a>
           </div>
         </div>

@@ -1,4 +1,3 @@
-
 import React from "react";
 import arpitJindal from "../../../public/assets/placed-students-photos/arpitjindal.png";
 import akanshAgarwal from "../../../public/assets/placed-students-photos/akanshagarwal.png";
@@ -13,13 +12,6 @@ import paytm2 from "../../../public/assets/companyLogo/paytm.png"
 import searce2 from "../../../public/assets/companyLogo/searce.png"
 import redhat2 from "../../../public/assets/companyLogo/redhat.png"
 import tcs2 from "../../../public/assets/companyLogo/tcs.png"
-
-
-
-
-
-
-
 
 
 const EmployeeCards = () => {
@@ -163,7 +155,7 @@ const EmployeeCards = () => {
                 } ,
                ];
   return (
-    <div className="bg-[#181A1B]">
+    <div className="bg-[#181A1B]" id="successstories">
     <div className="flex flex-col items-center min-h-screen p-12 bg-[#181A1B]">
       {/* Component Title */}
       <h1 className="text-3xl font-bold text-white">
@@ -172,7 +164,7 @@ const EmployeeCards = () => {
         Rising Engineers,<span className="text-[#ff0000]">Real Heroes</span> 
 
       </h1>
-      <h1 className="text-lg font-bold text-white mb-8"><span className="text-[#ff0000]"> Learn - Build  -</span> Lead with Mr Vimal Daga
+      <h1 className="text-md font-bold text-white mb-8"><span className="text-[#ff0000]"> Learn - Build  -</span> Lead with Mr Vimal Daga
       </h1>
 
       {/* Employee Cards */}
@@ -220,7 +212,7 @@ const EmployeeCards = () => {
             </div>
 
             {/* Company Logo */}
-            <div className="mt-4 m-4">
+            <div className="mt-4 m-4 flex justify-center items-center">
               <img
                 src={employee.companyLogo}
                 alt="Company Logo"

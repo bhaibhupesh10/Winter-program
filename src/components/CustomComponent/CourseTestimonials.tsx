@@ -199,7 +199,7 @@ In these 45 days I have learnt many things it is not about learnt it is about en
     <div className="bg-[#181A1B] p-4 sm:p-6 mx-auto">
       <div className="max-w-[920px] mx-auto">
         <h2 className="text-white text-sm sm:text-md">HEAR IT FROM THEM</h2>
-        <h2 className="text-white text-2xl sm:text-3xl font-bold mb-6 sm:mb-10 mt-2">
+        <h2 className="text-white text-xl sm:text-xl font-bold mb-6 sm:mb-10 mt-2">
           Ambitious People ❤️ <span className="text-[#ff0000]">Linux World</span>
         </h2>
 
@@ -216,7 +216,7 @@ In these 45 days I have learnt many things it is not about learnt it is about en
         <div className="flex justify-center items-center mt-6">
           <button
             onClick={() => setIsExpanded(!isExpanded)}
-            className="bg-white text-[#2C3E50] font-semibold text-lg border-2 border-[#2C3E50] py-3 px-8 rounded-full hover:bg-[#2C3E50] hover:text-white transition-all duration-300"
+            className="bg-white text-[#2C3E50] font-semibold text-md border-2 border-[#2C3E50] py-3 px-8 rounded-full hover:bg-[#2C3E50] hover:text-white transition-all duration-300"
           >
             {isExpanded ? 'Show Less' : 'See our Wall of Love'}
           </button>

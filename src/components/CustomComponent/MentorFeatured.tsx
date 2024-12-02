@@ -22,7 +22,7 @@ const MentorFeatured = () => {
     { src: "/assets/companyLogo/npci.png", alt: "NPCI" },
     // { src: "/assets/companyLogo/accenture.png", alt: "Accenture" },
     // { src: "/assets/companyLogo/jpmorgan.png", alt: "JPMorgan" },
-    { src: "/assets/companyLogo/mircosoft.png", alt: "Microsoft" },
+    // { src: "/assets/companyLogo/mircosoft.png", alt: "Microsoft" },
     { src: "/assets/companyLogo/deloitte.png", alt: "Deloitte" },
     { src: "/assets/companyLogo/dell.png", alt: "Dell" },
     { src: "/assets/companyLogo/ibm.png", alt: "IBM" },
@@ -31,7 +31,7 @@ const MentorFeatured = () => {
   return (
     <div className="relative bg-[#181A1B] overflow-hidden"> {/* Unified background */}
       <div className="flex w-full align-center justify-center mx-auto">
-        <h1 className="text-3xl align-center font-bold text-white mb-8">
+        <h1 className="text-xl align-center font-bold text-white mb-8">
 
         Our alumnus Our <span className="text-[#ff0000]"
           

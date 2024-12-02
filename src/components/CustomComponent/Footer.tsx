@@ -12,7 +12,7 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-8">
         {/* Column 1: Brand Info with Logos */}
         <div>
-          <h2 className="text-xl font-bold text-red-500">
+          <h2 className="text-lg font-bold text-red-500">
           Winter Industrial <span className="text-[#ff0000]">Technical Training Program</span> 
 
             {/* Winter Program<span className="text-white"> - </span> */}

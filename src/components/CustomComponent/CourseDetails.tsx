@@ -110,7 +110,7 @@ const courseData = [
       description: "Building a customer support chatbot using Amazon Lex, which interacts with customers in a natural, conversational manner. AWS Polly can be integrated to provide text-to-speech functionality for voice-based interactions. AWS Lambda automates backend processes such as handling customer queries and retrieving information from the AWS S3 storage.",
       imageSrc: "/assets/technicalSupport.png",
       duration: "5 weeks",
-      difficulty: "Beginner",
+      difficulty: "Advanced",
       technologies: ["AWS", "Lex", "Polly", "Lambda", "S3"],
       progress: 0,
       points: [
@@ -137,7 +137,7 @@ const CourseDetails = () => {
   return (
     <div className="space-y-6 p-4 bg-gradient-to-br from-gray-900 to-gray-800 min-h-screen" id="liveProjects">
 <div className="p-2">
-<h1 className="text-center text-2xl sm:text-3xl md:text-4xl pb-4 font-extrabold text-white pb-0">
+<h1 className="text-center text-xl sm:text-2xl md:text-2xl pb-4 font-extrabold text-white pb-0">
 
 Build Live Project : <span className="text-[#DC2626]"> From Learning to Implementation</span> 
         
@@ -167,11 +167,11 @@ Build Live Project : <span className="text-[#DC2626]"> From Learning to Implemen
 
               {/* Title and Metadata */}
               <div className="flex-1">
-                <h3 className="text-xl font-bold text-white mb-2">{course.title}</h3>
+                <h3 className="text-lg font-bold text-white mb-2">{course.title}</h3>
                 <div className="flex gap-2 mb-3">
-                  <Badge variant="secondary" className="bg-blue-500/20 text-blue-300">
+                  {/* <Badge variant="secondary" className="bg-blue-500/20 text-blue-300">
                     {course.duration}
-                  </Badge>
+                  </Badge> */}
                   <Badge variant="secondary" className="bg-purple-500/20 text-purple-300">
                     {course.difficulty}
                   </Badge>
@@ -241,34 +241,23 @@ Build Live Project : <span className="text-[#DC2626]"> From Learning to Implemen
             {/* Real-World Example with Icon */}
             <div className="mt-6 bg-gray-800/50 p-4 rounded-lg border border-gray-700">
               <div className="flex items-center gap-2 mb-2">
-                {/* <Spring className="w-5 h-5 text-green-400" /> */}
                 <p className="text-sm text-green-400 font-semibold">Real-World Application</p>
               </div>
               <p className="text-sm text-gray-300">{course.realWorldExample}</p>
-              <Accordion type="single" collapsible className="mt-6">
-              <AccordionItem value="points" className="border-gray-700">
-                <AccordionTrigger className="text-sm font-semibold text-white hover:text-blue-400 transition-colors">
-                  <div className="flex items-center gap-2">
-
-                    Key Features
-                  </div>
-                </AccordionTrigger>
-                <AccordionContent>
-                  <ul className="mt-2 space-y-3">
-                    {course.points.map((point, index) => (
-                      <li key={index} className="flex items-start gap-2 text-gray-300">
-                        <span className="inline-block w-1.5 h-1.5 rounded-full bg-blue-400 mt-2"></span>
-                        {point}
-                      </li>
-                    ))}
-                  </ul>
-                </AccordionContent>
-              </AccordionItem>
-            </Accordion>
+              
+              {/* Key Features List */}
+              <div className="mt-4">
+                <p className="text-sm font-semibold text-white mb-3">Key Features</p>
+                <ul className="space-y-3">
+                  {course.points.map((point, index) => (
+                    <li key={index} className="flex items-start gap-2 text-gray-300">
+                      <span className="inline-block w-1.5 h-1.5 rounded-full bg-blue-400 mt-2"></span>
+                      {point}
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
-
-            {/* Enhanced Accordion */}
-           
 
             {/* Call to Action */}
             <div className="mt-6 flex justify-end">

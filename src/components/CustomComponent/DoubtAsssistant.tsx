@@ -89,14 +89,16 @@ export default function DoubtAssistance() {
           <span className="text-[#ff0000]">Discord Community
           </span>
         </h1>
-        <p className="text-xl  text-white">
+        <p className="text-xl  pb-2 text-white">
         Get 1:1 technical doubt support from our team & elite Discord community for lifetime
 
         </p>
-        <button className="bg-red-500 ml-[35%] text-white px-6 py-3 rounded-lg text-lg hover:bg-red-700 transition-all flex items-center">
-          Enroll Now
+        <a href="#bookyourseat" className="pt-4">
+        <button className="bg-red-500  ml-[35%] text-white px-6 py-3 rounded-lg text-lg hover:bg-red-700 transition-all flex items-center">
+        Book Your Seat
           <span className="ml-2">→</span>
         </button>
+        </a>
       </div>
     </div>
     </div>

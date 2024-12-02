@@ -31,7 +31,8 @@ const CompaniesBefefited = () => {
   return (
     <div className="relative bg-[#181A1B] overflow-hidden"> {/* Unified background */}
       <div className="flex w-full align-center justify-center mx-auto">
-        <h1 className="text-3xl align-center font-bold text-white mb-8">
+
+        <h1 className="text-sm align-center font-bold text-white mb-8">
 
 
 
@@ -52,8 +53,8 @@ Companies benefited with his <span className='text-[#ff0000]'>trainings & consul
                 <Image 
                   src={logo.src} 
                   alt={logo.alt} 
-                  width={112}   
-                  height={64} 
+                  width={100}   
+                  height={20} 
                   objectFit="contain" 
                 />
               </div>

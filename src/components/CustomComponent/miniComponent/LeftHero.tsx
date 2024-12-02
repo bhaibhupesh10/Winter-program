@@ -14,7 +14,7 @@ export default function LeftHero() {
               with Indias Most 
               <span className="text-[#DC2626]"> Visionary Mentor</span>
             </h1>
-            <p className="text-lg md:text-lg text-gray-300 max-w-2xl">
+            <p className="text-md md:text-lg text-gray-300 max-w-2xl">
 
             Offline Winter Industrial Training Program on <span className="text-[#ff0000]"> Machine Learning with AWS Cloud</span> 
             {/* In person
@@ -24,12 +24,12 @@ export default function LeftHero() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a href="#liveProjects">
-              <button className="px-8 py-4 bg-[#DC2626] text-white rounded-lg text-lg font-semibold hover:bg-[#-[#DC2626]/90 transition-colors">
+              <button className="px-6 py-4 bg-[#DC2626] text-white rounded-lg text-sm font-semibold hover:bg-[#-[#DC2626]/90 transition-colors">
               Build Live Project
               </button>
               </a>
               <a href="#programcohorts">
-              <button className="px-8 py-4 bg-[#25262B] text-white rounded-lg text-lg font-semibold flex items-center justify-center gap-2 hover:bg-[#25262B]/90 transition-colors">
+              <button className="px-6 py-4 bg-[#25262B] text-white rounded-lg text-sm font-semibold flex items-center justify-center gap-2 hover:bg-[#25262B]/90 transition-colors">
               Starts on 26th Dec, 2024
                 {/* <svg
                   className="w-5 h-5"

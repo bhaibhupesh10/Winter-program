@@ -106,7 +106,12 @@ const MentorProfile = () => {
 
   return (
     <div className='bg-[#181A1B]'>
+
     <div ref={profileRef} className="max-w-6xl pt-12 mx-auto p-6 lg:px-8">
+
+    <h1 className="text-center mb-4  text-lg sm:text-2xl text-white pb-4">
+    Know Your Mentor for Winter Training : <span className="text-[#ff0000]"> Mr Vimal Daga </span>
+          </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {/* Left Column - Image Carousel and Mentor Details */}
         <div className="space-y-6">
@@ -157,11 +162,12 @@ const MentorProfile = () => {
 
         {/* Right Column - Content */}
         <div className="space-y-8">
+       
           <div className="space-y-6 -mb-3">
-            <h1 className="text-3xl font-bold text-white leading-extra-tight -mb-4">
+            {/* <h1 className="text-3xl font-bold text-white leading-extra-tight -mb-4">
             Know Your Mentor for Winter Training : <span className="text-[#ff0000]"> Mr Vimal Daga </span>
-              {/* The Visionary Behind <span className="text-[#ff0000]">Winter Program</span>  */}
-            </h1>
+              The Visionary Behind <span className="text-[#ff0000]">Winter Program</span> 
+            </h1> */}
             <div className="space-y-4 text-black-800">
              
 
@@ -226,7 +232,7 @@ RedHat Certified Architect Level 25 and Enterprise Application Level 11 a global
               His expertise spans Machine Learning, Deep Learning, Delphix, AppDynamics, Docker, DevOps, Cloud Computing, AWS, and more ensuring that every learner is equipped to tackle real-world challenges.
               </p>
 
-              <p className="text-white text-sm pl-6">
+              <p className="text-white text-sm pb-2 pl-6">
               Join Mr. Vimal Daga in this life-changing Winter Training Program and experience firsthand how he transforms potential into industry-ready excellence
               </p>
             </div>
@@ -236,11 +242,11 @@ RedHat Certified Architect Level 25 and Enterprise Application Level 11 a global
           
 
           {/* Enhanced Featured Section */}
-          <div className="border bg-[#181A1B] border-gray-700 rounded-xl p-4 shadow-sm">
+          <div className="border pt-8 mt-8 bg-blue-50 border-gray-700 rounded-xl p-4 shadow-sm">
   <p className="text-white text-sm mb-2">
     
   </p>
-  <CompaniesBefefited />
+  <CompaniesBefefited  />
   {/* <MentorFeatured /> */}
 </div>
         </div>

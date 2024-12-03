@@ -31,9 +31,9 @@ const MentorFeatured = () => {
   return (
     <div className="relative bg-[#181A1B] overflow-hidden"> {/* Unified background */}
       <div className="flex w-full align-center justify-center mx-auto">
-        <h1 className="text-xl align-center font-bold text-white mb-8">
+        <h1 className="text-lg sm:text-2xl align-center  text-white mb-8">
 
-        Our alumnus Our <span className="text-[#ff0000]"
+        Our alumnus <span className="text-[#ff0000]"
           
           >work At</span> 
           {/* Our <span className="text-[#ff0000]"
@@ -43,7 +43,7 @@ const MentorFeatured = () => {
             Placed </span>Students */}
         </h1>
       </div>
-      <div className="w-full overflow-hidden whitespace-nowrap">
+      <div className="w-full bg-white p-2 rounder-xl overflow-hidden whitespace-nowrap">
         {/* Animated scrolling container */}
         <div className="inline-flex items-center animate-scroll w-max">
           {logos.map((logo, index) => (

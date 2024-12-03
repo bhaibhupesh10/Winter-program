@@ -29,10 +29,10 @@ const CompaniesBefefited = () => {
   ];
 
   return (
-    <div className="relative bg-[#181A1B] overflow-hidden"> {/* Unified background */}
+    <div className="relative bg-blue-50 overflow-hidden"> {/* Unified background */}
       <div className="flex w-full align-center justify-center mx-auto">
 
-        <h1 className="text-sm align-center font-bold text-white mb-8">
+        <h1 className="text-sm align-center font-bold text-black mb-8">
 
 
 

@@ -90,8 +90,8 @@ export default function Faq() {
     <div className="bg-[#181A1B]">
     <div className="container mx-auto max-w-6xl px-4 py-12">
       {/* Header */}
-      <h1 className="sm:text-xl lg:text-xl font-bold mb-8 sm:mb-12 text-center sm:text-left">
-        <span className="text-white"> Frequently Asked </span>
+      <h1 className="text-lg sm:text-2xl mb-8 sm:mb-12 text-center sm:text-left">
+        <span className="text-white "> Frequently Asked </span>
         <span className="text-[#ff0000]">Questions</span>
       </h1>
 

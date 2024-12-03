@@ -14,7 +14,7 @@ import lwlogo from "../../../public/assets/LW-white.png";
 const Pricing = () => {
   return (
     <div className="bg-[#181A1B] overflow-x-hidden" id="bookyourseat">
-  <h2 className="text-2xl sm:text-3xl font-bold text-white text-center mb-4 pt-12 px-4">
+  <h2 className="text-lg sm:text-2xl text-white text-center mb-4 pt-8 ">
     Real Skills, Real Projects:{" "}
     <span className="text-[#ff0000]">The Winter Training You Need</span>
   </h2>
@@ -30,8 +30,10 @@ const Pricing = () => {
             alt="Basic to Advance" 
             className="w-24 sm:w-36 h-10 sm:h-20"
           />
-          <h3 className="text-md sm:text-lg font-bold">From Basic to Advance Level</h3>
-          <p className="text-gray-300 text-sm">
+          <h3 className="text-md sm:text-lg font-bold">From Basic to Advance
+            <br></br>
+             Level</h3>
+          <p className="text-gray-300 text-sm sm:text-base">
             Best part about this Winter Training Program, no prior knowledge required, learn from the Best Mentor & 100% practical training
           </p>
         </CardContent>
@@ -40,8 +42,10 @@ const Pricing = () => {
       {/* Career Blueprint Card */}
       <Card className="bg-gray-900 text-white p-6">
         <CardContent className="space-y-4">
-          <h3 className="text-lg sm:text-xl font-bold">Build Live Project</h3>
-          <p className="text-gray-300 text-sm">
+          <h3 className="text-md sm:text-lg font-bold">Build Live Technical
+            <br></br>
+             Project</h3>
+          <p className="text-gray-300 text-sm sm:text-base">
             Learn, Research, Implement & Build a Live project with engineering students from across India using Cloud with AI, the most demanded technologies
           </p>
           <img 
@@ -63,14 +67,14 @@ const Pricing = () => {
           <h2 className="text-lg sm:text-2xl font-bold">
             By <span className="text-[#ff0000]">Mr Vimal Daga</span>
           </h2>
-          <h3 className="text-md sm:text-xl text-[#DC2626]">
+          <h3 className="text-md sm:text-lg font-bold text-white">
             Winter Industrial Training Program
           </h3>
-          <p className="text-gray-300 text-sm">
+          <p className="text-gray-300 text-sm sm:text-base">
             Best Industry Relevant Training Content with real use case based application. In just 10 days with 50+ hours of learning, get to learn what industry is looking for
           </p>
           <a href="https://rzp.io/rzp/K4d2QqC" target="_blank">
-            <button className="bg-[#DC2626] mt-2 text-sm text-white px-4 py-2 sm:px-6 sm:py-3 rounded-lg hover:bg-[#DC2626] transition-colors">
+            <button className="bg-[#DC2626] mt-2 font-bold text-sm text-white px-4 py-2 sm:px-6 sm:py-3 rounded-lg hover:bg-[#DC2626] transition-colors">
               Just @ INR 3,500 + Taxes
             </button>
           </a>
@@ -92,8 +96,10 @@ const Pricing = () => {
             alt="Get Certified" 
             className="w-12 h-12 sm:w-16 sm:h-16"
           />
-          <h4 className="text-lg sm:text-xl font-bold">Get Certified & Recognised</h4>
-          <p className="text-gray-300 text-sm">
+          <h4 className="text-md sm:text-lg font-bold text-white">Get Certified & 
+            <br></br>
+            Recognised</h4>
+          <p className="text-gray-300 text-sm sm:text-base">
             Acquire Industry Relevant Project & Training Certificate once you complete your live project at LW Informatics Pvt Ltd which will help you secure your job
           </p>
         </CardContent>
@@ -107,8 +113,8 @@ const Pricing = () => {
             alt="Discord Logo" 
             className="w-12 h-12 sm:w-16 sm:h-16"
           />
-          <h3 className="text-lg sm:text-xl font-bold">Premium Discord Community</h3>
-          <p className="text-gray-300 text-sm">
+          <h3 className="text-md sm:text-lg font-bold text-white">Premium Discord Community</h3>
+          <p className="text-gray-300 text-sm sm:text-base">
             A community where you meet people from various companies to interact & technical team members to help you solve your doubts
           </p>
         </CardContent>

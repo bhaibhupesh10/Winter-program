@@ -27,20 +27,22 @@ const Section: React.FC<SectionProps> = ({ icon, title, description }) => {
 // Main DataScienceTools Component
 const Tools: React.FC = () => {
   return (
-    <div className="bg-[#181A1B] h-auto"> {/* Use h-auto to let content dictate height */}
-    <div className="flex flex-col lg:flex-row items-center max-w-6xl justify-between mx-auto p-4 sm:p-6 lg:p-8">
+    <div className="bg-[#181A1B] pb-0 h-auto"> {/* Use h-auto to let content dictate height */}
+    <div className="flex flex-col lg:flex-row pb-0 items-center max-w-6xl justify-between mx-auto p-4 sm:p-6 lg:p-8">
       {/* Left Text Content */}
-      <div className="lg:w-1/2 space-y-6 sm:space-y-8">
-        <h2 className="text-gray-700 text-sm font-semibold text-white">
-          Most Hands-On Data Program
-        </h2>
-        <h1 className="text-xl sm:text-xl lg:text-xl font-bold text-white">
+      <div className="lg:w-1/2 space-y-6 sm:space-y-6">
+        
+        <h1 className="text-lg sm:text-2xl  text-white">
 
         Master 15+ Cutting-Edge  <span className="text-[#ff0000]"> AI and Cloud Tools 
           </span>
 
           {/* Master 15+ Cutting-Edge <span className="text-[#ff0000]">Data Science Tools</span> */}
         </h1>
+
+        {/* <h2 className="text-gray-700 text-sm  sm:text-lg text-white">
+          Most Hands-On Data Program
+        </h2> */}
 
         {/* Tool Sections */}
         <Section
@@ -75,7 +77,7 @@ const Tools: React.FC = () => {
       </div>
 
       {/* Right Image Section */}
-      <div className="lg:w-1/2 flex items-center justify-center  p-4 lg:pt-0"> {/* Removed pt-8 */}
+      <div className="lg:w-1/2 flex items-center justify-center pt-2 pb-2  p-4 lg:pt-0"> {/* Removed pt-8 */}
         <div className="relative p-4 sm:p-8 rounded-lg shadow-lg bg-[#242526]">
           <img
             src="/tools.png"

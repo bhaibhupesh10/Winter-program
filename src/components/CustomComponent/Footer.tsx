@@ -12,13 +12,15 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-8">
         {/* Column 1: Brand Info with Logos */}
         <div>
-          <h2 className="text-lg font-bold text-red-500">
-          Winter Industrial <span className="text-[#ff0000]">Technical Training Program</span> 
+          <h2 className="text-lg font-bold text-white text-lg sm:text-2xl">
+          Winter Industrial <span className="text-white">Technical Training Program</span> 
 
             {/* Winter Program<span className="text-white"> - </span> */}
           </h2>
-          <p className="text-lg text-blue-400 mt-2 leading-relaxed text-cyan-400">
-          Chance to meet & learn from Mr Vimal Daga in person at Jaipur
+          <p className="text-sm  sm:text-lgtext-white mt-2  text-white">
+          Chance to meet & learn from
+          <span className="text-[#ff0000] "> Mr Vimal Daga in person at Jaipur</span>
+           
           </p>
 
           <p className="text-sm text-gray-400 font-italic mt-6">Powered By:</p>

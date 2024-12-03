@@ -18,12 +18,13 @@ import SupportContact from '@/components/CustomComponent/Support'
 import ProjectsSection from '@/components/CustomComponent/Projects'
 import Tools from '@/components/CustomComponent/Tools'
 import CourseDetails from '@/components/CustomComponent/CourseDetails'
-
+import NewHero from '@/components/NewHero'
 export default function Home() {
   return (
       <>
      
-      <HeroSection></HeroSection>
+      {/* <HeroSection></HeroSection> */}
+      <NewHero></NewHero>
       {/* Program  cohort */}
       <ProgramCohorts/>
       {/* Technical content */}

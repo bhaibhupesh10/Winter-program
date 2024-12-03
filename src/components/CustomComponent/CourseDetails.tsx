@@ -135,9 +135,10 @@ const courseData = [
     const [isHovered, setIsHovered] = useState(false);
   
     return (
-      <div className="space-y-6 px-4 sm:px-6 bg-gradient-to-br from-gray-900 to-gray-800 min-h-screen" id="liveProjects">
+      <div className="space-y-6 pt-4 px-4 sm:px-6 bg-gradient-to-br from-gray-900 to-gray-800 min-h-screen" id="liveProjects">
         <div className="p-2">
-          <h1 className="text-center text-lg sm:text-xl md:text-2xl font-extrabold text-white pb-4">
+        {/* text-lg sm:text-2xl */}
+          <h1 className="text-center  text-lg sm:text-2xl text-white pb-4">
             Build Live Project:{" "}
             <span className="text-[#DC2626]">From Learning to Implementation</span>
           </h1>
@@ -167,11 +168,12 @@ const courseData = [
   
                 {/* Title and Metadata */}
                 <div className="flex-1">
-                  <h3 className="text-base sm:text-lg font-bold text-white mb-2">{course.title}</h3>
+                
+                  <h3 className="text-sm sm:text-lg  text-white mb-2">{course.title}</h3>
                   <div className="flex flex-wrap gap-2 mb-3">
                     <Badge
                       variant="secondary"
-                      className="bg-purple-500/20 text-purple-300"
+                      className="bg-purple-500/20 text-sm sm:text-base text-purple-300"
                     >
                       {course.difficulty}
                     </Badge>
@@ -217,13 +219,13 @@ const courseData = [
   
               {/* Technology Stack */}
               <div className="mt-6">
-                <p className="text-sm text-gray-400 mb-2">Technologies Used:</p>
+                <p className="text-sm text-gray-400 mb-2 text-sm sm:text-base">Technologies Used:</p>
                 <div className="flex flex-wrap gap-2">
                   {course.technologies.map((tech) => (
                     <Badge
                       key={tech}
                       variant="outline"
-                      className="bg-gray-800/50 border-gray-700 text-gray-300"
+                      className="bg-gray-800/50 text-sm sm:text-base border-gray-700 text-gray-300"
                     >
                       {tech}
                     </Badge>
@@ -233,14 +235,14 @@ const courseData = [
   
               {/* Real-World Example */}
               <div className="mt-6 bg-gray-800/50 p-4 rounded-lg border border-gray-700">
-                <p className="text-sm text-green-400 font-semibold mb-2">
+                <p className="text-sm sm:text-base text-green-400  mb-2">
                   Real-World Application
                 </p>
-                <p className="text-sm text-gray-300">{course.realWorldExample}</p>
+                <p className="text-sm sm:text-base text-gray-300">{course.realWorldExample}</p>
   
                 {/* Key Features */}
                 <div className="mt-4">
-                  <p className="text-sm font-semibold text-white mb-3">
+                  <p className="text-sm sm:text-base text-white mb-3">
                     Key Features
                   </p>
                   <ul className="space-y-3">
@@ -249,7 +251,7 @@ const courseData = [
                         key={index}
                         className="flex items-start gap-2 text-gray-300"
                       >
-                        <span className="inline-block w-1.5 h-1.5 rounded-full bg-blue-400 mt-2"></span>
+                        <span className="inline-block w-1.5 h-1.5 text-sm sm:text-base rounded-full bg-blue-400 mt-2"></span>
                         {point}
                       </li>
                     ))}

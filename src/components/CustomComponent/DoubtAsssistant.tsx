@@ -42,7 +42,7 @@ export default function DoubtAssistance() {
 
   return (
     <div className="bg-[#181A1B]">
-  <div className="container pt-[4%] pb-[4%] px-4 sm:px-6 mx-auto py-20 grid grid-cols-1 lg:grid-cols-2 gap-6 items-center max-w-6xl">
+  <div className="container   sm:px-6 mx-auto pt-12 grid grid-cols-1 lg:grid-cols-2 gap-6 items-center max-w-6xl">
     {/* Left side with code screenshots */}
     <div
         ref={ref}
@@ -85,16 +85,16 @@ export default function DoubtAssistance() {
 
 
     {/* Right side with content */}
-    <div className="space-y-6 text-center px-4 sm:px-0">
-      <h1 className="text-2xl sm:text-3xl text-white font-bold">
+    <div className="space-y-6 text-center  sm:px-0">
+      <h1 className="text-lg sm:text-2xl text-white ">
         Exclusive{" "}
         <span className="text-[#ff0000]">Discord Community</span>
       </h1>
-      <p className="text-lg sm:text-xl pb-2 text-white">
+      <p className="text-sm  sm:text-lg pb-4 text-white">
         Get 1:1 technical doubt support from our team & elite Discord community
         for lifetime
       </p>
-      <a href="#bookyourseat" className="pt-4">
+      <a href="#bookyourseat" className="pt-8">
         <button className="bg-red-500 text-white px-6 py-3 rounded-lg text-base sm:text-lg hover:bg-red-700 transition-all flex items-center justify-center mx-auto">
           Book Your Seat
           <span className="ml-2">→</span>

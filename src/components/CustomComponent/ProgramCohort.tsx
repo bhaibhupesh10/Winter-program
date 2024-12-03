@@ -4,14 +4,17 @@ import { Calendar, Clock, GraduationCap, Briefcase, Code } from 'lucide-react'
 
 export default function ProgramCohorts() {
   return (
-    <div className="bg-[#181A1B]" id="programcohorts">
+    <div className="bg-[#181A1B] pt-4" id="programcohorts">
       <div className="container max-w-6xl mx-auto px-4 sm:px-6 space-y-6">
         {/* Headers */}
         <div className="space-y-2">
           <h1 className="text-lg sm:text-2xl font-semibold text-white">
             Winter Industrial{" "}
             <span className="text-[#ff0000]">Training Program Details</span>
+
           </h1>
+
+
           <h2 className="text-sm sm:text-lg text-white">
             Chance to learn in person with{" "}
             <span className="text-[#ff0000]">Mr Vimal Daga</span>
@@ -23,7 +26,7 @@ export default function ProgramCohorts() {
           <div className="space-y-6">
             {/* Card Header */}
             <div className="flex flex-wrap items-center gap-3">
-              <h3 className="text-sm sm:text-md text-white font-medium">
+              <h3 className="text-sm sm:text-lg text-white ">
                 LW Winter Industrial Training Program 2024
               </h3>
               <span className="px-3 py-1 bg-orange-100 text-orange-600 text-sm rounded-full">
@@ -34,13 +37,13 @@ export default function ProgramCohorts() {
             {/* Schedule Table */}
             <div className="space-y-4">
               <div className="grid grid-cols-1 sm:grid-cols-4 text-sm text-gray-500 pb-2 gap-y-2 sm:gap-y-0">
-                <div className="flex items-center text-white gap-2">Duration</div>
+                <div className="flex items-center text-sm text-white gap-2">Duration</div>
                 <div className="flex text-white items-center gap-2">
-                  <Clock className="w-4 text-white h-4" />
+                  {/* <Clock className="w-4 text-white h-4" /> */}
                   Time
                 </div>
-                <div className="text-white">Location</div>
-                <div className="text-white">Action</div>
+                <div className="text-white text-sm">Location</div>
+                <div className="text-white text-sm">Action</div>
               </div>
 
               {/* Program Induction Row */}
@@ -51,16 +54,16 @@ export default function ProgramCohorts() {
                     className="grid grid-cols-1 sm:grid-cols-4 text-sm border-b pb-4 gap-y-2 sm:gap-y-0"
                   >
                     <div>
-                      <div className="font-medium text-white">
+                      <div className="font-medium text-sm text-white">
                         26th Dec, 2024 - 5th Jan, 2025
                       </div>
                     </div>
-                    <div className="text-white">{time}</div>
-                    <div className="text-white">Jaipur</div>
+                    <div className="text-white text-sm">{time}</div>
+                    <div className="text-white text-sm">Jaipur</div>
                     <div>
                       <a href="#bookyourseat">
-                        <Button className="w-full sm:w-auto bg-red-500 hover:bg-red-600">
-                          Apply Now
+                        <Button className="w-full   sm:w-auto bg-red-500 hover:bg-red-600">
+                          Book your Seat 
                         </Button>
                       </a>
                     </div>

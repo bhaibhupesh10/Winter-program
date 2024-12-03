@@ -158,13 +158,13 @@ const EmployeeCards = () => {
     <div className="bg-[#181A1B]" id="successstories">
     <div className="flex flex-col items-center min-h-screen p-12 bg-[#181A1B]">
       {/* Component Title */}
-      <h1 className="text-3xl font-bold text-white">
+      <h1 className="text-lg sm:text-2xl text-white">
         {/* Our <span className="text-[#ff0000]">Placed </span>Students */}
 
-        Rising Engineers,<span className="text-[#ff0000]">Real Heroes</span> 
+        Rising Engineers, <span className="text-[#ff0000]">Real Heroes</span> 
 
       </h1>
-      <h1 className="text-md font-bold text-white mb-8"><span className="text-[#ff0000]"> Learn - Build  -</span> Lead with Mr Vimal Daga
+      <h1 className="text-sm  sm:text-lg text-white pt-2 mb-8"> Learn - Build - Lead with <span className="text-[#ff0000]"> Mr Vimal Daga</span> 
       </h1>
 
       {/* Employee Cards */}

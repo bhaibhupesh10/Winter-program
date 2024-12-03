@@ -10,6 +10,10 @@ export default function SupportContact() {
   return (
     <>
       <div className="w-full min-h-[20rem] bg-[#181A1B] font-sans p-8 shadow-lg border-0 rounded-none" id="Inquire">
+      <h1 className="text-center mb-4  text-lg sm:text-2xl text-white pb-4">
+      {/* Connect with  */}
+      Connect with : <span className="text-[#ff0000]"> Linux World </span>
+          </h1>
   <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-8">
     {/* Left Section */}
     <div className="flex-1 space-y-4">

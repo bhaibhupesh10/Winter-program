@@ -145,122 +145,115 @@ const courseData = [
         </div>
   
         {courseData.map((course) => (
-          <Card
-            key={course.id}
-            className="max-w-3xl mx-auto shadow-xl rounded-xl border border-gray-700 bg-gradient-to-r from-gray-800 to-gray-900 transform transition-all duration-300 hover:scale-[1.02]"
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
-          >
-            <div className="p-6 sm:p-8">
-              {/* Header Section */}
-              <div className="flex flex-wrap gap-6 items-start">
-                {/* Course Image with Glow Effect */}
-                <div className="relative w-16 h-16 sm:w-20 sm:h-20">
-                  <div className="absolute inset-0 bg-blue-500 rounded-full blur-md opacity-20"></div>
-                  <Image
-                    src={course.imageSrc}
-                    alt={course.title}
-                    width={64}
-                    height={64}
-                    className="rounded-full relative z-10 border-2 border-blue-400"
-                  />
-                </div>
-  
-                {/* Title and Metadata */}
-                <div className="flex-1">
-                
-                  <h3 className="text-sm sm:text-lg  text-white mb-2">{course.title}</h3>
-                  <div className="flex flex-wrap gap-2 mb-3">
-                    <Badge
-                      variant="secondary"
-                      className="bg-purple-500/20 text-sm sm:text-base text-purple-300"
-                    >
-                      {course.difficulty}
-                    </Badge>
+  <Card
+    key={course.id}
+    className="max-w-3xl mx-auto shadow-xl rounded-xl border border-gray-700 bg-gradient-to-r from-gray-800 to-gray-900 transform transition-all duration-300 hover:scale-[1.02]"
+    onMouseEnter={() => setIsHovered(true)}
+    onMouseLeave={() => setIsHovered(false)}
+  >
+    <div className="p-6 sm:p-8">
+      {/* Header Section */}
+      <div className="flex flex-col sm:flex-row flex-wrap gap-6 items-start">
+        {/* Course Image with Glow Effect */}
+        <div className="relative w-16 h-16 sm:w-20 sm:h-20 flex-shrink-0">
+          <div className="absolute inset-0 bg-blue-500 rounded-full blur-md opacity-20"></div>
+          <Image
+            src={course.imageSrc}
+            alt={course.title}
+            width={64}
+            height={64}
+            className="rounded-full inline relative z-10 border-2 border-blue-400"
+          />
+        </div>
+
+        {/* Title and Metadata */}
+        <div className="flex-1 w-full sm:w-auto">
+          <h3 className="text-sm sm:text-lg text-white mb-2">{course.title}</h3>
+          <div className="flex flex-wrap gap-2 mb-3">
+            <Badge
+              variant="secondary"
+              className="bg-purple-500/20 text-sm sm:text-base text-purple-300"
+            >
+              {course.difficulty}
+            </Badge>
+          </div>
+          
+          {/* Description */}
+          <div className="z-40 w-full mt-4 sm:mt-0">
+            <p className="text-gray-300 text-sm sm:text-base leading-normal sm:leading-relaxed">
+              {course.description}
+            </p>
+          </div>
+        </div>
+
+        {/* Mentor Card */}
+        <TooltipProvider>
+          <Tooltip>
+            <TooltipTrigger>
+              <div className="flex-shrink-0 group w-16 h-16 sm:w-20 sm:h-20">
+                <Link href={course.mentor.profile} target="_blank">
+                  <div className="relative">
+                    <div className="absolute inset-0 bg-yellow-500 rounded-full blur-md opacity-20 group-hover:opacity-40 transition-opacity"></div>
+                    <img
+                      src="/mentor.jpeg"
+                      alt="Mr. Vimal Daga"
+                      className="rounded-full border-2 border-yellow-400 p-2 transition-transform duration-300 group-hover:scale-105"
+                    />
                   </div>
-                  <p className="text-gray-300 text-sm sm:text-base leading-normal sm:leading-relaxed">
-                    {course.description}
-                  </p>
-                </div>
-  
-                {/* Mentor Card */}
-                <TooltipProvider>
-                  <Tooltip>
-                    <TooltipTrigger>
-                      <div className="flex-shrink-0 group w-16 h-16 sm:w-20 sm:h-20">
-                        <Link href={course.mentor.profile} target="_blank">
-                          <div className="relative">
-                            <div className="absolute inset-0 bg-yellow-500 rounded-full blur-md opacity-20 group-hover:opacity-40 transition-opacity"></div>
-                            <img
-                              src="/mentor.jpeg"
-                              alt="Mr. Vimal Daga"
-                              className="rounded-full border-2 border-yellow-400 p-2 transition-transform duration-300 group-hover:scale-105"
-                            />
-                          </div>
-                        </Link>
-                      </div>
-                    </TooltipTrigger>
-                    <TooltipContent className="w-full max-w-xs p-4 bg-gray-800 border border-gray-700">
-                      <div className="space-y-2">
-                        <p className="font-semibold text-white">
-                          {course.mentor.name}
-                        </p>
-                        <p className="text-sm text-gray-300">
-                          {course.mentor.expertise}
-                        </p>
-                        <p className="text-sm text-gray-400">
-                          {course.mentor.experience} experience
-                        </p>
-                      </div>
-                    </TooltipContent>
-                  </Tooltip>
-                </TooltipProvider>
+                </Link>
               </div>
-  
-              {/* Technology Stack */}
-              <div className="mt-6">
-                <p className="text-sm text-gray-400 mb-2 text-sm sm:text-base">Technologies Used:</p>
-                <div className="flex flex-wrap gap-2">
-                  {course.technologies.map((tech) => (
-                    <Badge
-                      key={tech}
-                      variant="outline"
-                      className="bg-gray-800/50 text-sm sm:text-base border-gray-700 text-gray-300"
-                    >
-                      {tech}
-                    </Badge>
-                  ))}
-                </div>
+            </TooltipTrigger>
+            <TooltipContent className="w-full max-w-xs p-4 bg-gray-800 border border-gray-700">
+              <div className="space-y-2">
+                <p className="font-semibold text-white">{course.mentor.name}</p>
+                <p className="text-sm text-gray-300">{course.mentor.expertise}</p>
+                <p className="text-sm text-gray-400">{course.mentor.experience} experience</p>
               </div>
-  
-              {/* Real-World Example */}
-              <div className="mt-6 bg-gray-800/50 p-4 rounded-lg border border-gray-700">
-                <p className="text-sm sm:text-base text-green-400  mb-2">
-                  Real-World Application
-                </p>
-                <p className="text-sm sm:text-base text-gray-300">{course.realWorldExample}</p>
-  
-                {/* Key Features */}
-                <div className="mt-4">
-                  <p className="text-sm sm:text-base text-white mb-3">
-                    Key Features
-                  </p>
-                  <ul className="space-y-3">
-                    {course.points.map((point, index) => (
-                      <li
-                        key={index}
-                        className="flex items-start gap-2 text-gray-300"
-                      >
-                        <span className="inline-block w-1.5 h-1.5 text-sm sm:text-base rounded-full bg-blue-400 mt-2"></span>
-                        {point}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </Card>
-        ))}
+            </TooltipContent>
+          </Tooltip>
+        </TooltipProvider>
+      </div>
+
+      {/* Technology Stack */}
+      <div className="mt-6">
+        <p className="text-sm text-gray-400 mb-2 text-sm sm:text-base">Technologies Used:</p>
+        <div className="flex flex-wrap gap-2">
+          {course.technologies.map((tech) => (
+            <Badge
+              key={tech}
+              variant="outline"
+              className="bg-gray-800/50 text-sm sm:text-base border-gray-700 text-gray-300"
+            >
+              {tech}
+            </Badge>
+          ))}
+        </div>
+      </div>
+
+      {/* Real-World Example */}
+      <div className="mt-6 bg-gray-800/50 p-4 rounded-lg border border-gray-700">
+        <p className="text-sm sm:text-base text-green-400 mb-2">Real-World Application</p>
+        <p className="text-sm sm:text-base text-gray-300">{course.realWorldExample}</p>
+
+        {/* Key Features */}
+        <div className="mt-4">
+          <p className="text-sm sm:text-base text-white mb-3">Key Features</p>
+          <ul className="space-y-3">
+            {course.points.map((point, index) => (
+              <li key={index} className="flex items-start gap-2 text-gray-300">
+                <span className="inline-block w-1.5 h-1.5 text-sm sm:text-base rounded-full bg-blue-400 mt-2"></span>
+                {point}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </Card>
+))}
+
+
+
       </div>
     );
   };

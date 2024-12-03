@@ -45,46 +45,44 @@ export default function DoubtAssistance() {
   <div className="container pt-[4%] pb-[4%] px-4 sm:px-6 mx-auto py-20 grid grid-cols-1 lg:grid-cols-2 gap-6 items-center max-w-6xl">
     {/* Left side with code screenshots */}
     <div
-      ref={ref}
-      className={`relative grid grid-cols-2 gap-4 mt-10 sm:mt-20 mb-16 transition-transform duration-1000 ease-out`}
-    >
-      <div className="relative col-span-2 flex flex-col items-center">
-        {/* First card */}
-        <Image
-          src={DiscordImage01}
-          alt="Code editor screenshot"
-          width={200}
-          height={220}
-          className={`rounded-lg shadow-lg transform transition-all duration-1000 ease-out ${
-            isIntersecting ? "translate-y-[-20px]" : "translate-y-[50px]"
-          }`}
-        />
-        {/* Second card */}
-        <Image
-          src={DiscordImage02}
-          alt="Code editor screenshot"
-          width={200}
-          height={220}
-          className={`absolute sm:relative bottom-[60%] sm:bottom-auto right-[20%] sm:right-auto rounded-lg shadow-lg transform transition-all duration-1000 ease-out ${
-            isIntersecting
-              ? "translate-y-[-10px] translate-x-[10px]"
-              : "translate-y-[50px] translate-x-0"
-          } sm:mt-4`}
-        />
-        {/* Third card */}
-        <Image
-          src={DiscordImage03}
-          alt="Code editor screenshot"
-          width={200}
-          height={220}
-          className={`absolute sm:relative top-[60%] sm:top-auto right-[30%] sm:right-auto rounded-lg shadow-lg transform transition-all duration-1000 ease-out ${
-            isIntersecting
-              ? "translate-y-[-15px] translate-x-[-10px]"
-              : "translate-y-[50px] translate-x-0"
-          } sm:mt-4`}
-        />
+        ref={ref}
+        className={`relative grid grid-cols-2 gap-4 mt-20 mb-32 transition-transform duration-1000 ease-out`}
+      >
+        <div className="relative col-span-2">
+          {/* First card */}
+          <Image
+            src={DiscordImage01}
+            alt="Code editor screenshot"
+            width={200}
+            height={220}
+            className={`rounded-lg shadow-lg ml-[20%] transform transition-all duration-1000 ease-out ${
+              isIntersecting ? "translate-y-[-20px]" : "translate-y-[50px]"
+            }`}
+          />
+          {/* Second card */}
+          <Image
+            src={DiscordImage02}
+            alt="Code editor screenshot"
+            width={200}
+            height={220}
+            className={`absolute bottom-[60%] right-[20%] rounded-lg shadow-lg transform transition-all duration-1000 ease-out ${
+              isIntersecting ? "translate-y-[-10px] translate-x-[10px]" : "translate-y-[50px] translate-x-0"
+            }`}
+          />
+          {/* Third card */}
+          <Image
+            src={DiscordImage03}
+            alt="Code editor screenshot"
+            width={200}
+            height={220}
+            className={`absolute top-[60%] right-[30%] rounded-lg shadow-lg transform transition-all duration-1000 ease-out ${
+              isIntersecting ? "translate-y-[-15px] translate-x-[-10px]" : "translate-y-[50px] translate-x-0"
+            }`}
+          />
+        </div>
       </div>
-    </div>
+
+
 
     {/* Right side with content */}
     <div className="space-y-6 text-center px-4 sm:px-0">

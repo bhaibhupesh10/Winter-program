@@ -1,5 +1,6 @@
 "use client";
 import * as React from "react";
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Download } from "lucide-react";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
@@ -399,6 +400,49 @@ const sections =[
 ];
 
 export default function DevOpsCurriculum() {
+  const [fullName, setFullName] = useState("");
+  const [whatsappNumber, setWhatsappNumber] = useState("");
+  const [collegeName, setCollegeName] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
+  const [statusMessage, setStatusMessage] = useState("");
+
+  // Handle form submission
+  const handleSubmit = async (e:any) => {
+    e.preventDefault();
+
+    // Basic client-side validation
+    if (!fullName || !whatsappNumber || !collegeName) {
+      setStatusMessage("Please fill in all fields.");
+      return;
+    }
+
+    const formData = {
+      fullName,
+      whatsappNumber,
+      collegeName,
+    };
+
+    try {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_DOMAIN}/api/contact/`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        setStatusMessage("Your message was sent successfully!");
+      } else {
+        setStatusMessage(result.error || "Something went wrong. Please try again.");
+      }
+    } catch (error) {
+      console.error(error);
+      setStatusMessage("Error sending message. Please try again later.");
+    }
+  };
   return (
     <div className="bg-[#181A1B]" id="trainingcontent">
       <div className="container mx-auto p-6 max-w-6xl bg-[#181A1B]">
@@ -418,7 +462,7 @@ export default function DevOpsCurriculum() {
                 {/* From  <span className="text-[#ff0000]"> Fundamentals </span> to Building a <span className="text-[#ff0000]">Live Project:</span>Your 10-Day Technical Learning    <span className="text-[#ff0000]">Journey </span>  */}
               </h1>
               {/* text-sm sm:text-lg */}
-              <h1 className="text-sm pt-2 sm:text-lg  text-white  leading-snug">From Fundamentals to Building a Live Project:  <span className="text-[#ff0000]"> 10-Day Technical Learning </span>Your Journey</h1>
+              <h1 className="text-sm  sm:text-lg  text-white pt-2  leading-snug">From Fundamentals to Building a Live Project:  <span className="text-[#ff0000]"> 10-Day Technical Learning </span>Your Journey</h1>
               </div>
             </div>
 
@@ -432,41 +476,59 @@ export default function DevOpsCurriculum() {
 
           {/* Right Side - Career Counselling Form */}
           <div className="sticky top-20 h-fit bg-[#181A1B] max-h-[calc(100vh-4rem)]">
-            <Card className="bg-[#181A1B]">
-              <CardHeader>
-              {/* text-sm sm:text-lg */}
-                <CardTitle className="text-lg sm:text-2xl text-white">Confused 🤔about Winter Training ?
-                </CardTitle>
-                <p className="text-sm sm:text-lg text-white">Speak to our Counsellor for guidance</p>
-              </CardHeader>
-              <CardContent>
-                <form className="space-y-4">
-                  <div className="space-y-2">
-                    <Input className="text-white" placeholder="Name" />
-                  </div>
-                  <div className="space-y-2">
-                    <Input className="text-white" placeholder="WhatsApp No" />
-                  </div>
-                  <div className="space-y-2">
-                    <Input className="text-white" placeholder="College Name" />
-                  </div>
-                  <Button className="w-full bg-red-600 hover:bg-red-700">
-                    Submit
-                  </Button>
-                  <p className="text-xs text-white text-center">
-                    By continuing, you agree to our{" "}
-                    <Link href="/terms" className="text-blue-600 hover:underline">
-                      Terms & Conditions
-                    </Link>{" "}
-                    and{" "}
-                    <Link href="/privacy" className="text-blue-600 hover:underline">
-                      Privacy Policy
-                    </Link>
-                  </p>
-                </form>
-              </CardContent>
-            </Card>
-          </div>
+      <Card className="bg-[#181A1B]">
+        <CardHeader>
+          <CardTitle className="text-lg sm:text-2xl text-white">
+            Confused 🤔 about Winter Training?
+          </CardTitle>
+          <p className="text-sm sm:text-lg text-white">Speak to our Counsellor for guidance</p>
+        </CardHeader>
+        <CardContent>
+          <form className="space-y-4" onSubmit={handleSubmit}>
+            <div className="space-y-2">
+              <Input
+                className="text-white"
+                placeholder="Name"
+                value={fullName}
+                onChange={(e) => setFullName(e.target.value)}
+              />
+            </div>
+            <div className="space-y-2">
+              <Input
+                className="text-white"
+                placeholder="WhatsApp No"
+                value={whatsappNumber}
+                onChange={(e) => setWhatsappNumber(e.target.value)}
+              />
+            </div>
+            <div className="space-y-2">
+              <Input
+                className="text-white"
+                placeholder="College Name"
+                value={collegeName}
+                onChange={(e) => setCollegeName(e.target.value)}
+              />
+            </div>
+            <Button className="w-full bg-red-600 hover:bg-red-700" type="submit">
+              Submit
+            </Button>
+            {statusMessage && (
+              <p className="text-xs text-white text-center">{statusMessage}</p>
+            )}
+            <p className="text-xs text-white text-center">
+              By continuing, you agree to our{" "}
+              <Link href="/terms" className="text-blue-600 hover:underline">
+                Terms & Conditions
+              </Link>{" "}
+              and{" "}
+              <Link href="/privacy" className="text-blue-600 hover:underline">
+                Privacy Policy
+              </Link>
+            </p>
+          </form>
+        </CardContent>
+      </Card>
+    </div>
         </div>
       </div>
     </div>

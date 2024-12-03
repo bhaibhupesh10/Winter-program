@@ -23,56 +23,69 @@ export default function ProgramCohorts() {
 
         {/* Cohort Card */}
         <Card className="p-6 bg-[#181A1B]">
-          <div className="space-y-6">
-            {/* Card Header */}
-            <div className="flex flex-wrap items-center gap-3">
-              <h3 className="text-sm sm:text-lg text-white ">
-                LW Winter Industrial Training Program 2024
-              </h3>
-              <span className="px-3 py-1 bg-orange-100 text-orange-600 text-sm rounded-full">
-                Limited Seats available
-              </span>
-            </div>
+      <div className="space-y-6">
+        {/* Card Header */}
+        <div className="flex flex-wrap items-center gap-3">
+          <h3 className="text-sm sm:text-lg text-white ">
+            LW Winter Industrial Training Program 2024
+          </h3>
+          <span className="px-3 py-1 bg-orange-100 text-orange-600 text-sm rounded-full">
+            Limited Seats available
+          </span>
+        </div>
 
-            {/* Schedule Table */}
-            <div className="space-y-4">
-              <div className="grid grid-cols-1 sm:grid-cols-4 text-sm text-gray-500 pb-2 gap-y-2 sm:gap-y-0">
-                <div className="flex items-center text-sm text-white gap-2">Duration</div>
-                <div className="flex text-white items-center gap-2">
-                  {/* <Clock className="w-4 text-white h-4" /> */}
-                  Time
-                </div>
-                <div className="text-white text-sm">Location</div>
-                <div className="text-white text-sm">Action</div>
-              </div>
-
-              {/* Program Induction Row */}
-              {["10:00 am - 3:00 pm IST", "4:00 pm - 9:00 pm IST"].map(
-                (time, index) => (
-                  <div
-                    key={index}
-                    className="grid grid-cols-1 sm:grid-cols-4 text-sm border-b pb-4 gap-y-2 sm:gap-y-0"
-                  >
-                    <div>
-                      <div className="font-medium text-sm text-white">
-                        26th Dec, 2024 - 5th Jan, 2025
-                      </div>
-                    </div>
-                    <div className="text-white text-sm">{time}</div>
-                    <div className="text-white text-sm">Jaipur</div>
-                    <div>
-                      <a href="#bookyourseat">
-                        <Button className="w-full   sm:w-auto bg-red-500 hover:bg-red-600">
-                          Book your Seat 
-                        </Button>
-                      </a>
-                    </div>
-                  </div>
-                )
-              )}
-            </div>
+        {/* Schedule Table */}
+        <div className="space-y-4">
+          {/* Header row - hidden on mobile, visible on desktop */}
+          <div className="hidden sm:grid sm:grid-cols-4 text-sm text-gray-500 pb-2">
+            <div className="flex items-center text-sm text-white gap-2">Duration</div>
+            <div className="flex text-white items-center gap-2">Time</div>
+            <div className="text-white text-sm">Location</div>
+            <div className="text-white text-sm">Action</div>
           </div>
-        </Card>
+
+          {/* Program Induction Rows */}
+          {["10:00 am - 3:00 pm IST", "4:00 pm - 9:00 pm IST"].map(
+            (time, index) => (
+              <div
+                key={index}
+                className="flex flex-col sm:grid sm:grid-cols-4 text-sm border-b pb-4 gap-y-2 sm:gap-y-0"
+              >
+                {/* Mobile: Stacked layout */}
+                <div className="flex flex-col sm:hidden">
+                  <div className="font-medium text-sm text-white">Duration</div>
+                  <div className="text-white text-sm mb-2">26th Dec, 2024 - 5th Jan, 2025</div>
+                  
+                  <div className="font-medium text-sm text-white">Time</div>
+                  <div className="text-white text-sm mb-2">{time}</div>
+                  
+                  <div className="font-medium text-sm text-white">Location</div>
+                  <div className="text-white text-sm mb-2">Jaipur</div>
+                </div>
+
+                {/* Desktop: Grid layout (unchanged) */}
+                <div className="hidden sm:block">
+                  <div className="font-medium text-sm text-white">
+                    26th Dec, 2024 - 5th Jan, 2025
+                  </div>
+                </div>
+                <div className="hidden sm:block text-white text-sm">{time}</div>
+                <div className="hidden sm:block text-white text-sm">Jaipur</div>
+                
+                {/* Action button - same for both mobile and desktop */}
+                <div>
+                  <a href="#bookyourseat">
+                    <Button className="w-full sm:w-auto bg-red-500 hover:bg-red-600">
+                      Book your Seat 
+                    </Button>
+                  </a>
+                </div>
+              </div>
+            )
+          )}
+        </div>
+      </div>
+    </Card>
 
         {/* Bottom Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

@@ -61,7 +61,7 @@ const Pricing = () => {
     <div className="flex flex-col items-center justify-center">
       <Card className="bg-gray-900 text-white p-6 sm:p-8 relative">
         <CardContent className="space-y-6 text-center">
-          <div className="w-20 h-20 sm:w-24 sm:h-24 mx-auto bg-black p-2 rounded-2xl flex items-center justify-center">
+          <div className="w-20 h-20 sm:w-24 sm:h-24 mx-auto bg-[#111827] p-2 rounded-2xl flex items-center justify-center">
             <img src={lwlogo.src.toString()} width={110} height={48} alt="Logo" />
           </div>
           <h2 className="text-lg sm:text-2xl font-bold">

@@ -241,8 +241,10 @@ const courseData = [
           <ul className="space-y-3">
             {course.points.map((point, index) => (
               <li key={index} className="flex items-start gap-2 text-gray-300">
-                <span className="inline-block w-1.5 h-1.5 text-sm sm:text-base rounded-full bg-blue-400 mt-2"></span>
+                <span className="inline-block w-1.5 h-1.5  text-sm/[1px] sm:text-xs rounded-full bg-blue-400 mt-2"></span>
+                <p className="text-sm">
                 {point}
+                </p>
               </li>
             ))}
           </ul>

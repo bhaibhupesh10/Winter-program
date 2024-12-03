@@ -8,7 +8,7 @@ export default function CertificateComponent() {
 
   return (
     <div className="bg-[#181A1B]">
-    <div className="max-w-6xl mx-auto p-6 pb-0 lg:px-8">
+    <div className="max-w-6xl mx-auto p-6 pb-0 pt-0 lg:px-8">
       <div className="container mx-auto px-4 py-12 max-w-7xl">
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           {/* Left content remains the same */}

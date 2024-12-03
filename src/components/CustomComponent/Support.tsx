@@ -5,6 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { PhoneCall } from 'lucide-react';
 import Link from "next/link";
+import { Phone, Mail } from "lucide-react";
 
 export default function SupportContact() {
   return (
@@ -27,38 +28,37 @@ export default function SupportContact() {
             <rect y="21.3333" width="10" height="10" fill="#138808" />
           </svg> */}
           {/* <span className="text-[1.275rem] text-white font-semibold">Management Queries</span> */}
-          <MailCheck size={24}  className="bg-[#181A1B] text-xl text-white "></MailCheck>
-        </div>
-        <a
-          href="mailto:support@lwindia.com"
-          className="inline-flex items-center gap-3 px-4 py-2 rounded-[0.375rem] text-[1.375rem] font-semibold text-white hover:bg-[#3D0707] transition-colors"
-        >
-          support@lwindia.com
-        </a>
-      </div>
+         <div>
 
-      {/* Technical Queries */}
-      <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
-        <div className="flex items-center gap-4">
-          {/* <svg className="w-8 h-8 flex-shrink-0" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="16" cy="16" r="16" fill="#34D399" />
-            <path
-              fillRule="evenodd"
-              clipRule="evenodd"
-              d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28ZM16 26C21.5228 26 26 21.5228 26 16C26 10.4772 21.5228 6 16 6C10.4772 6 6 10.4772 6 16C6 21.5228 10.4772 26 16 26Z"
-              fill="#059669"
-            />
-          </svg> */}
-          {/* <span className="text-[1.275rem] text-white font-semibold">Technical Queries</span> */}
+         <div className="flex items-center space-x-4">
+              <div className="bg-white rounded-full p-3">
+                <Phone className="w-6 h-6 text-zinc-900" />
+              </div>
+              <div className="pt-4">
+                <h3 className="text-cyan-400 text-xl font-semibold mb-1">Phone</h3>
+                <a href="tel:+919773353561" className="text-white hover:underline">
+                  +91 9773353561
+                </a>
+                <br />
+                <a href="tel:+919829105960" className="text-white hover:underline">
+                  +91 9829105960
+                </a>
+              </div>
+            </div>
 
-          <PhoneCall size={24}  className="bg-[#181A1B] text-xl text-white "/>
-        </div>
-        <a
-          href="tel:+918045604032"
-          className="inline-flex items-center gap-3 px-4 py-2 rounded-[0.375rem] text-[1.375rem] font-semibold text-white hover:bg-[#3D0707] transition-colors"
-        >
-          +91 8306453222
-        </a>
+            <div className="flex items-center space-x-4 pt-4">
+              <div className="bg-white rounded-full p-3">
+                <Mail className="w-6 h-6 text-zinc-900" />
+              </div>
+              <div>
+                <h3 className="text-cyan-400 text-xl font-semibold mb-1">Email</h3>
+                <a href="mailto:preeti@lwindia.com" className="text-white hover:underline">
+                  preeti@lwindia.com
+                </a>
+              </div>
+            </div>
+          </div>
+         </div>
 
         
       </div>
@@ -76,14 +76,14 @@ export default function SupportContact() {
           </svg> */}
           {/* <span className="text-[1.275rem] text-white font-semibold">Technical Queries</span> */}
 
-          <PhoneCall size={24}  className="bg-[#181A1B] text-xl text-white "/>
+          {/* <PhoneCall size={24}  className="bg-[#181A1B] text-xl text-white "/> */}
         </div>
-        <a
+        {/* <a
           href="tel:+918045604032"
           className="inline-flex items-center gap-3 px-4 py-2 rounded-[0.375rem] text-[1.375rem] font-semibold text-white hover:bg-[#3D0707] transition-colors"
         >
           +91 97722 01449
-        </a>
+        </a> */}
 
         
       </div>

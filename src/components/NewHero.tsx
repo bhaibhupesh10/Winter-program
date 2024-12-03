@@ -11,13 +11,13 @@ export default function NewHero() {
       {/* Left Column */}
       <div className="space-y-6">
         <h1 className="text-lg md:text-2xl lg:text-3xl font-bold text-white leading-tight">
-          Stay Ahead Of The Curve
+        Technical Winter Industrial 
           <br />
-          With Our{" "}
+          {/* With Our{" "} */}
           <span className="text-[#FF6B6B]">
             {'<'}
             <Typewriter
-            words={['Eat', 'Sleep', 'Code', 'Repeat!']}
+            words={['Practical ', 'Offline ', 'Demanded !']}
             loop={20}
             cursor
             cursorStyle='_'
@@ -29,13 +29,16 @@ export default function NewHero() {
             {'>'}
           </span>
           <br />
-          Courses
+          Training Program 
         </h1>
         <p className="text-md md:text-lg pb-4 text-gray-300 max-w-xl">
-          PW Skills is your one-stop-shop for upscaling. Get maximum value for time
-          and resources you invest, with job-ready courses & high-technology,
-          available at the lowest cost.
+        10 days long complete practical technical learning with project implementation on 
+
+        <span className="text-[#ff0000] font-bold"> Machine Learning with AWS Cloud
+        </span>
         </p>
+
+        <div className="space-x-4">
         <a href="#liveProjects">
         <Button 
         // bg-[#DC2626] text-white rounded-lg text-sm font-semibold hover:bg-[#-[#DC2626]/90
@@ -44,12 +47,25 @@ export default function NewHero() {
                         Build Live Project
         </Button>
         </a>
+
+        <a href="#programcohorts">
+        <Button 
+        // bg-[#DC2626] text-white rounded-lg text-sm font-semibold hover:bg-[#-[#DC2626]/90
+          className="bg-[#25262B]   pt-4 text-white py-6 text-lg rounded-md"
+        >
+Starts on 26th Dec, 2024
+
+        </Button>
+        </a>
+
+       
+        </div>
       </div>
 
       {/* Right Column */}
       <div className="relative">
         <Image
-          src="/newHero2.png"
+          src="/newHero.png"
           alt="Learning collage with tech icons"
           width={500}
           height={600}

@@ -13,8 +13,8 @@ import {
 import lwlogo from "../../../public/assets/LW-white.png";
 const Pricing = () => {
   return (
-    <div className="bg-[#181A1B] overflow-x-hidden" id="bookyourseat">
-  <h2 className="text-lg sm:text-2xl text-white text-center mb-4 pt-8 ">
+    <div className="bg-[#181A1B]  overflow-x-hidden" id="bookyourseat">
+  <h2 className="text-lg pl-4 pr-4  sm:text-2xl text-white text-center mb-4 pt-8 ">
     Real Skills, Real Projects:{" "}
     <span className="text-[#ff0000]">The Winter Training You Need</span>
   </h2>

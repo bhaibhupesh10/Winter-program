@@ -40,18 +40,18 @@ const ImageTile = ({ imageUrl }: { imageUrl: string }) => {
 export default function Hero() {
   // Sample image URLs - replace with your actual image URLs
   const images = [
-    "/assets/backLogo/back1.jpg",
-    "/assets/backLogo/back2.jpg",
-    "/assets/backLogo/back3.jpg",
-    "/assets/backLogo/back4.jpg",
-    "/assets/backLogo/back5.jpg",
-    "/assets/backLogo/back6.jpg",
-    "/assets/backLogo/back7.jpg",
-    "/assets/backLogo/back8.jpg",
-    "/assets/backLogo/back9.jpg",
-    "/assets/backLogo/back10.jpg",
-    "/assets/backLogo/bac11.jpg",
-    "/assets/backLogo/back12.jpg",
+    "https://utfs.io/f/gef40TctqklQwPBs4qHoYgb16KpCZ30lNIPVu5FEchfzB7Tx",
+    "https://utfs.io/f/gef40TctqklQ6xLHOdKDG3Ppwy4QsuZnLq0V197ahzNbxHTC",
+    "https://utfs.io/f/gef40TctqklQQeTkrc63mobcS68p7nDts4ujh0lzwTe9XAxI",
+    "https://utfs.io/f/gef40TctqklQ6XeZT8KDG3Ppwy4QsuZnLq0V197ahzNbxHTC",
+    "https://utfs.io/f/gef40TctqklQUnS8gWayp1jQa0J8Ptm5Zis4XrK6l7VknYGR",
+    "https://utfs.io/f/gef40TctqklQu9IcKSZz3WxswoRpm5DYhSFy7cAKgOe1X2BL",
+    "https://utfs.io/f/gef40TctqklQnrx69U5dWat9V4I3HUwkmrb0A1lGgiDcPBZz",
+    "https://utfs.io/f/gef40TctqklQChBccyGKIMD5qaN6oz9EPZ0c8jg4v7sAyukr",
+    "https://utfs.io/f/gef40TctqklQqi83VEyb6qf4z7EjePN9Uka0mrdnMpT83xyo",
+    "https://utfs.io/f/gef40TctqklQ8C3gICuGM7AjNaVS0yRPWEFJovimtbD1sZ29",
+    "https://utfs.io/f/gef40TctqklQ3e7ofhrq0avlJg9kZ6XTf8HLdj1zKx5t7YhE",
+    "https://utfs.io/f/gef40TctqklQa71elsIOCLM5g1sXyzV6ij7NlFWR8cKTuQmP",
 
   ];
 

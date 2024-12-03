@@ -10,11 +10,11 @@ export default function NewHero() {
     <div className="grid grid-cols-1 gap-12 md:grid-cols-2 items-center">
       {/* Left Column */}
       <div className="space-y-6">
-        <h1 className="text-lg md:text-2xl lg:text-3xl font-bold text-white leading-tight">
+        <h1 className="text-xl md:text-2xl lg:text-3xl font-bold text-white leading-tight">
         Technical Winter Industrial 
           <br />
           {/* With Our{" "} */}
-          <span className="text-[#FF6B6B]">
+          <span className="text-[#ff0000]">
             {'<'}
             <Typewriter
             words={['Practical ', 'Offline ', 'Demanded !']}
@@ -38,22 +38,22 @@ export default function NewHero() {
         </span>
         </p>
 
-        <div className="space-x-4">
+        <div className="space-x-4 flex overflow-hidden">
         <a href="#liveProjects">
         <Button 
         // bg-[#DC2626] text-white rounded-lg text-sm font-semibold hover:bg-[#-[#DC2626]/90
-          className="bg-[#DC2626] hover:bg-[#FF5151]  pt-4 text-white py-6 text-lg rounded-md"
+          className="bg-[#DC2626] hover:bg-[#FF5151]  pt-4 text-white py-6 text-md rounded-md"
         >
-                        Build Live Project
+                        Project Details
         </Button>
         </a>
 
-        <a href="#programcohorts">
+        <a href="#mentorsection">
         <Button 
         // bg-[#DC2626] text-white rounded-lg text-sm font-semibold hover:bg-[#-[#DC2626]/90
-          className="bg-[#25262B]   pt-4 text-white py-6 text-lg rounded-md"
+          className="bg-[#25262B]   pt-4 text-white py-6 px-4 text-md rounded-md"
         >
-Starts on 26th Dec, 2024
+Know Your Mentor
 
         </Button>
         </a>

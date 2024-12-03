@@ -105,7 +105,7 @@ const MentorProfile = () => {
   ];
 
   return (
-    <div className='bg-[#181A1B]'>
+    <div className='bg-[#181A1B]'  id="mentorsection">
 
     <div ref={profileRef} className="max-w-6xl pt-12 mx-auto p-6 lg:px-8">
 

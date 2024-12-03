@@ -122,8 +122,8 @@ const Navbar: React.FC = () => {
               </a>
             </li>
             <li>
-              <a href="#project" className="text-black hover:text-blue-600">
-                Project
+              <a href="#trainingcontent" className="text-black hover:text-blue-600">
+              Training Content
               </a>
             </li>
             <li>
@@ -132,17 +132,19 @@ const Navbar: React.FC = () => {
               </a> */}
             </li>
             <li>
-              <a href="#gallery" className="text-black hover:text-blue-600">
-                Gallery
+              <a href="#liveProjects" className="text-black hover:text-blue-600">
+                
+Live Project
+
               </a>
             </li>
             <li>
-              <a href="#contact" className="text-black hover:text-blue-600">
-                Contact
+              <a href="#successstories" className="text-black hover:text-blue-600">
+              Success Stories
               </a>
             </li>
             <li>
-              <a href="#Inquire" className="text-black hover:text-blue-600">
+              <a href="#trainingcontent" className="text-black hover:text-blue-600">
                 Inquire Now
               </a>
             </li>

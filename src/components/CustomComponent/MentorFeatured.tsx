@@ -9,20 +9,13 @@ const MentorFeatured = () => {
     { src: "/assets/companyLogo/infosys.png", alt: "Infosys" },
     { src: "/assets/companyLogo/salesforce.png", alt: "Salesforce" },
     { src: "/assets/companyLogo/intel.png", alt: "Intel" },
-    // { src: "/assets/companyLogo/redhat.png", alt: "RedHat" },
     { src: "/assets/companyLogo/razorpay.png", alt: "Razorpay" },
     { src: "/assets/companyLogo/wipro.png", alt: "Wipro" },
     { src: "/assets/companyLogo/zoho.png", alt: "Zoho" },
     { src: "/assets/companyLogo/oracle.png", alt: "Oracle" },
-    // { src: "/assets/companyLogo/searce.png", alt: "Searce" },
     { src: "/assets/companyLogo/syfe.png", alt: "Syfe" },
     { src: "/assets/companyLogo/paytm.png", alt: "Paytm" },
-    // { src: "/assets/companyLogo/pwc.png", alt: "PWC" },
     { src: "/assets/companyLogo/nykaa.png", alt: "Nykaa" },
-    { src: "/assets/companyLogo/npci.png", alt: "NPCI" },
-    // { src: "/assets/companyLogo/accenture.png", alt: "Accenture" },
-    // { src: "/assets/companyLogo/jpmorgan.png", alt: "JPMorgan" },
-    // { src: "/assets/companyLogo/mircosoft.png", alt: "Microsoft" },
     { src: "/assets/companyLogo/deloitte.png", alt: "Deloitte" },
     { src: "/assets/companyLogo/dell.png", alt: "Dell" },
     { src: "/assets/companyLogo/ibm.png", alt: "IBM" },
@@ -36,11 +29,7 @@ const MentorFeatured = () => {
         Our alumnus <span className="text-[#ff0000]"
           
           >work At</span> 
-          {/* Our <span className="text-[#ff0000]"
-          
-          >
-            
-            Placed </span>Students */}
+  
         </h1>
       </div>
       <div className="w-full bg-white p-2 rounder-xl overflow-hidden whitespace-nowrap">

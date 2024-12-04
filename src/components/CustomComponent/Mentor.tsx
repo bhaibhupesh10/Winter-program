@@ -171,14 +171,14 @@ const MentorProfile = () => {
             <div className="space-y-4 text-black-800">
              
 
-              <p className="text-white text-sm text-md -mb-2 pl-6">
+              <p className="text-white text-md text-md -mb-2 pl-6">
               Mr. Vimal Daga, a World Record Holder, Technologist, Philanthropist, and 2x TEDx Speaker, is passionately dedicated to his vision of “Making India Future-Ready.
               </p>
 
               <ul className="grid md:grid-cols-1 gap-y-2 list-disc pl-5 text-black -mb-1 list-none sm:grid-cols-1">
                 <li className="leading-relaxed text-sm text-white leading-tight">
                   
-                  <CircleCheck className='inline text-green-400 ml-2' />
+                  <CircleCheck className='inline text-green-400 ml-2 h-5' />
 
                 <div className='p-2 inline text-sm border-lg border-red inline flext item-center '>
 RedHat Certified Architect Level 25 and Enterprise Application Level 11 a global first.
@@ -189,7 +189,7 @@ RedHat Certified Architect Level 25 and Enterprise Application Level 11 a global
 
                 <li className="leading-relaxed text-sm text-white leading-tight">
                   
-                  <CircleCheck className='inline text-green-400 ml-2' />
+                  <CircleCheck className='inline text-green-400 ml-2 h-5' />
 
                 <div className='p-2 inline text-sm border-lg border-red inline flext item-center '>
                 Achieved 11 AWS Global Certifications in just 11 days, a feat others take years to accomplish.
@@ -201,7 +201,7 @@ RedHat Certified Architect Level 25 and Enterprise Application Level 11 a global
                 
                 <li className="leading-relaxed text-sm text-white leading-tight">
                   
-                  <CircleCheck className='inline text-green-400 ml-2' />
+                  <CircleCheck className='inline text-green-400 ml-2 h-5' />
 
                 <div className='p-2 text-sm inline border-lg border-red inline flext item-center '>
                 Known as the “Integration Guru,” mastering 152+ tools and technologies with unmatched expertise in integrating them seamlessly.
@@ -213,9 +213,9 @@ RedHat Certified Architect Level 25 and Enterprise Application Level 11 a global
 
                 <li className="leading-relaxed text-sm text-white leading-tight">
                   
-                  <CircleCheck className='inline text-green-400 ml-2' />
+                  <CircleCheck className='inline text-green-400 ml-2 h-5' />
 
-                <div className='p-2 text-sm inline border-lg border-red inline flext item-center '>
+                <div className='p-2 text-sm inline border-lg border-red inline flext item-center'>
                 A mentor and consultant to Fortune 500 companies, having trained CIOs and CTOs in cutting-edge technologies.
 
 
@@ -228,11 +228,11 @@ RedHat Certified Architect Level 25 and Enterprise Application Level 11 a global
 
               </ul>
 
-              <p className="text-white text-sm pl-6">
+              <p className="text-white text-md pl-6">
               His expertise spans Machine Learning, Deep Learning, Delphix, AppDynamics, Docker, DevOps, Cloud Computing, AWS, and more ensuring that every learner is equipped to tackle real-world challenges.
               </p>
 
-              <p className="text-white text-sm pb-2 pl-6">
+              <p className="text-white text-md pb-2 pl-6">
               Join Mr. Vimal Daga in this life-changing Winter Training Program and experience firsthand how he transforms potential into industry-ready excellence
               </p>
             </div>
@@ -242,10 +242,8 @@ RedHat Certified Architect Level 25 and Enterprise Application Level 11 a global
           
 
           {/* Enhanced Featured Section */}
-          <div className="border pt-8 mt-8 bg-blue-50 border-gray-700 rounded-xl p-4 shadow-sm">
-  <p className="text-white text-sm mb-2">
-    
-  </p>
+          <div className="border   bg-blue-50 border-gray-700 rounded-xl p-4 shadow-sm">
+
   <CompaniesBefefited  />
   {/* <MentorFeatured /> */}
 </div>

@@ -9,39 +9,27 @@ const CompaniesBefefited = () => {
     { src: "/assets/companyLogo/infosys.png", alt: "Infosys" },
     { src: "/assets/companyLogo/salesforce.png", alt: "Salesforce" },
     { src: "/assets/companyLogo/intel.png", alt: "Intel" },
-    // { src: "/assets/companyLogo/redhat.png", alt: "RedHat" },
     { src: "/assets/companyLogo/razorpay.png", alt: "Razorpay" },
     { src: "/assets/companyLogo/wipro.png", alt: "Wipro" },
     { src: "/assets/companyLogo/zoho.png", alt: "Zoho" },
     { src: "/assets/companyLogo/oracle.png", alt: "Oracle" },
-    // { src: "/assets/companyLogo/searce.png", alt: "Searce" },
     { src: "/assets/companyLogo/syfe.png", alt: "Syfe" },
     { src: "/assets/companyLogo/paytm.png", alt: "Paytm" },
-    // { src: "/assets/companyLogo/pwc.png", alt: "PWC" },
     { src: "/assets/companyLogo/nykaa.png", alt: "Nykaa" },
     { src: "/assets/companyLogo/npci.png", alt: "NPCI" },
-    // { src: "/assets/companyLogo/accenture.png", alt: "Accenture" },
-    // { src: "/assets/companyLogo/jpmorgan.png", alt: "JPMorgan" },
-    { src: "/assets/companyLogo/mircosoft.png", alt: "Microsoft" },
+    
     { src: "/assets/companyLogo/deloitte.png", alt: "Deloitte" },
     { src: "/assets/companyLogo/dell.png", alt: "Dell" },
     { src: "/assets/companyLogo/ibm.png", alt: "IBM" },
   ];
 
   return (
-    <div className="relative bg-blue-50 overflow-hidden"> {/* Unified background */}
-      <div className="flex w-full align-center justify-center mx-auto">
+    <div className="relative bg-blue-50 overflow-hidden "> {/* Unified background */}
+      <div className="flex w-full align-center justify-left mx-auto">
 
-        <h1 className="text-sm align-center font-bold text-black mb-8">
-
-
-
+        <h1 className="text-sm font-bold text-black mb-4">
 Companies benefited with his <span className='text-[#ff0000]'>trainings & consultancy</span> 
-          {/* Our <span className="text-[#ff0000]"
           
-          >
-            
-            Placed </span>Students */}
         </h1>
       </div>
       <div className="w-full overflow-hidden whitespace-nowrap">

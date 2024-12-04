@@ -95,7 +95,7 @@ export default function DoubtAssistance() {
         for lifetime
       </p>
       <a href="#bookyourseat" className="pt-8">
-        <button className="bg-red-500 text-white px-6 py-3 rounded-lg text-base sm:text-lg hover:bg-red-700 transition-all flex items-center justify-center mx-auto">
+        <button className="bg-[#ff0000] text-white px-6 py-3 rounded-lg text-base sm:text-lg hover:shadow-white hover:shadow-md transition-all flex items-center justify-center mx-auto">
           Book Your Seat
           <span className="ml-2">→</span>
         </button>

@@ -178,7 +178,7 @@ export default function Component() {
                 </div>
                 <Button
                   type="submit"
-                  className={`w-full bg-[#ff0000] hover:bg-red-500 text-white text-lg ${loading ? "cursor-wait" : ""}`}
+                  className={`w-full bg-[#ff0000] hover:shadow-white hover:shadow-md text-white text-lg ${loading ? "cursor-wait" : ""}`}
                   style={{ letterSpacing: "2px" }}
                   disabled={loading} // Disable the button while loading
                 >

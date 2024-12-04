@@ -107,7 +107,7 @@ export default function SupportContact() {
             <div className="space-y-2">
               <Input className="text-white" placeholder="College Name" />
             </div>
-            <Button className="w-full bg-red-600 hover:bg-red-700">Submit</Button>
+            <Button className="w-full bg-[#ff0000] hover:bg-[#ff0000] hover:shadow-white hover:shadow-md">Submit</Button>
             <p className="text-xs text-white text-center">
               By continuing, you agree to our{" "}
               <Link href="/terms" className="text-blue-600 hover:underline">

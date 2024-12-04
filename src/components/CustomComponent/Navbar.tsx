@@ -102,7 +102,7 @@ const Navbar: React.FC = () => {
         {/* Call to Action Button */}
         <a
           href="#bookyourseat"
-          className="hidden lg:block bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700"
+          className="hidden lg:block bg-[#ff0000] text-white px-4 py-2 rounded-lg hover:shadow-white hover:shadow-md"
         >
           Book Your Seat
         </a>

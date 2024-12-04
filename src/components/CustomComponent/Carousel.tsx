@@ -105,7 +105,7 @@ export default function GalleryCarousel() {
                 key={index}
                 className={cn(
                   "flex-shrink-0 transition-all duration-500 ease-in-out",
-                  isCenter ? "w-80 h-42 border-4 border-red-500" : "mt-6 w-60 h-32 border-none opacity-80 p-2"
+                  isCenter ? "w-80 h-42 border-4 border-[#ff0000]" : "mt-6 w-60 h-32 border-none opacity-80 p-2"
                 )}
                 onClick={() => handleImageClick(image)} // Click to open modal
               >
@@ -131,7 +131,7 @@ export default function GalleryCarousel() {
             className={cn(
               "w-2 h-2 mb-4 mt-2 rounded-full border-2",
               index === currentIndex
-                ? "bg-red-500 border-red-500"
+                ? "bg-[#ff0000] border-[#ff0000]"
                 : "bg-white border-gray-300"
             )}
           />

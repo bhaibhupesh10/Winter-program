@@ -183,7 +183,7 @@ const EmployeeCards = () => {
 
             {/* Profile Image and Name */}
             <div className="flex flex-col items-center w-full mt-6">
-              <div className="w-20 h-20 rounded-full overflow-hidden border-4 border-red-600 flex-shrink-0">
+              <div className="w-20 h-20 rounded-full overflow-hidden border-4 border-[#ff0000] flex-shrink-0">
                 <img
                   src={employee.photo}
                   alt={employee.name}
@@ -191,7 +191,7 @@ const EmployeeCards = () => {
                 />
               </div>
               <div className="mt-4 text-center">
-                <h3 className="text-lg font-bold text-red-600 break-words">
+                <h3 className="text-lg font-bold text-[#ff0000] break-words">
                   {employee.name}
                 </h3>
                 <p className="text-sm text-gray-600 break-words">
@@ -203,7 +203,7 @@ const EmployeeCards = () => {
             {/* Designation */}
             <div className="mt-4 text-center text-gray-800 font-semibold">
               <p>Got Selected as</p>
-              <p className="text-red-600">{employee.designation}</p>
+              <p className="text-[#ff0000]">{employee.designation}</p>
             </div>
 
             {/* Salary Package */}

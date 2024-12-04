@@ -18,7 +18,7 @@ const EmployeeCards = () => {
   const employees = [
         {
           name: "Arpit Jindal",
-          college: "Gautam Buddha University",
+          college: "VIT Vellore",
           designation: "DevOps Consultant",
           package: "12 LPA",
           companyLogo: mercedes.src.toString(),
@@ -64,7 +64,7 @@ const EmployeeCards = () => {
                 },
                 {
                   "name": "Akshit Saini",
-                  "college": "Vellore Institute of Technology, Chennai",
+                  "college": "Gautam Buddha University, UP",
                   "designation": "Associate MLOPS Engineer",
                   "package": "9 LPA",
                   "companyLogo": NPCI.src.toString(),
@@ -74,7 +74,7 @@ const EmployeeCards = () => {
                 
                 {
                   "name": "Aman Dev Verma",
-                  "college": "UPES, Uttarakhand",
+                  "college": "IMS Engineering College, UP",
                   "designation": "Associate Technical Engineer",
                   "package": "9 LPA",
                   "companyLogo":redhat2.src.toString(),
@@ -101,8 +101,8 @@ const EmployeeCards = () => {
                 },
                 {
                   "name": "Ishita Singhal",
-                  "college": "Uttaranchal University, Dehradun",
-                  "designation": "System Engineer",
+                  "college": "UPES, Uttarakhand",
+                  "designation": "Associate MLOPS Engineer",
                   "package": "8 LPA",
                   "companyLogo": NPCI.src.toString(),
                   photo: "https://media.licdn.com/dms/image/v2/D4D03AQHQEAr_DO0Hyg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1681472849074?e=1738195200&v=beta&t=xoZ1ojHtcQK9lnZff6lY0XoVJa2QW2DrFn_-6n-htF0",
@@ -110,7 +110,7 @@ const EmployeeCards = () => {
                 },
                 {
                   "name": "Aditya Joshi",
-                  "college": "Sandeep Institute of Technolgy, Nashik",
+                  "college": "Sandip Institute of Technolgy, Nashik",
                   "designation": "DevOps Engineer",
                   "package": "7.5 LPA",
                   "companyLogo": unthinkable.src.toString(),
@@ -119,8 +119,8 @@ const EmployeeCards = () => {
                 },
                 {
                   "name": "Mohak Gund",
-                  "college": "LNCT University, Bhopal",
-                  "designation": "System Engineer",
+                  "college": "Uttaranchal University, Dehradun",
+                  "designation": "DevOps Engineer",
                   "package": "6 LPA",
                   "companyLogo": searce2.src.toString(),
                   photo: "https://media.licdn.com/dms/image/v2/D4D03AQEJreXf2bPQ2Q/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1700913649608?e=1738195200&v=beta&t=LVGismW4SsIq7RUkktttzQPmpYXk-HcfvZnhrU7sWGk",
@@ -138,7 +138,7 @@ const EmployeeCards = () => {
                 {
                   "name": "Krushna",
                   "college": "KIIT University, Bhubaneswar, Odisha",
-                  "designation": "DevOps Consultant",
+                  "designation": "Junior DevOps Engineer",
                   "package": "8 LPA",
                   "companyLogo": redhat2.src.toString(),
                   photo: "https://media.licdn.com/dms/image/v2/D5603AQFY_HUQibo-0Q/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1708231242198?e=1738195200&v=beta&t=QabBi1UJbpFrq96QIDgYatSx7w7JoPp1V36JtSGAaqo",
@@ -146,9 +146,9 @@ const EmployeeCards = () => {
                 },
                 {
                   "name": "Akshansh Kumar Singh",
-                  "college": "Gautam Buddha University",
+                  "college": "Indian Inst. of info. tech, Ranchi",
                   "designation": "DevOps Engineer",
-                  "package": "10 LPA",
+                  "package": "9 LPA",
                   "companyLogo": tcs2.src.toString(),
                   photo: "https://media.licdn.com/dms/image/v2/D5603AQHdz88Mb13AyQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1678216176636?e=1738195200&v=beta&t=zqzFzpfnTiT-8zJkx1EvfBfKtH5vCmiLIZoKYr5QjsU",
                   linkding:""

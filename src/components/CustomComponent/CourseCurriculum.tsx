@@ -30,12 +30,7 @@ const SubtopicItem = ({ title, lectures }: SubtopicProps) => (
         </div>
         <span className="text-white font-medium text-md">{title}</span>
       </div>
-      {/* {lectures && (
-        <div className="flex items-center gap-2 text-sm text-white bg-gray-800 py-1.5 px-4 rounded-full group-hover:shadow-sm transition-all duration-200">
-          <Clock className="w-4 h-4" />
-          <span>{lectures} lectures</span>
-        </div>
-      )} */}
+   
     </div>
   </div>
 );
@@ -451,7 +446,7 @@ export default function DevOpsCurriculum() {
           <div className="space-y-6">
             {/* Top Section with Heading and Button */}
             <div className="flex flex-col sm:flex-row items-start sm:items-center sm:justify-between space-y-4 sm:space-y-0">
-              <div className="  p-4 rounded-xl shadow-white">
+              <div className="  pt-4 rounded-xl shadow-white">
 
               {/* text-lg sm:text-2xl */}
               <h1 className="text-lg sm:text-2xl  text-white font-semibold leading-snug">

@@ -55,7 +55,7 @@ export default function DoubtAssistance() {
             alt="Code editor screenshot"
             width={200}
             height={220}
-            className={`rounded-lg shadow-lg ml-[20%] transform transition-all duration-1000 ease-out ${
+            className={`border-4 rounded-lg shadow-lg ml-[20%] transform transition-all duration-1000 ease-out ${
               isIntersecting ? "translate-y-[-20px]" : "translate-y-[50px]"
             }`}
           />
@@ -65,7 +65,7 @@ export default function DoubtAssistance() {
             alt="Code editor screenshot"
             width={200}
             height={220}
-            className={`absolute bottom-[60%] right-[20%] rounded-lg shadow-lg transform transition-all duration-1000 ease-out ${
+            className={`border-4 absolute bottom-[60%] right-[20%] rounded-lg shadow-lg transform transition-all duration-1000 ease-out ${
               isIntersecting ? "translate-y-[-10px] translate-x-[10px]" : "translate-y-[50px] translate-x-0"
             }`}
           />
@@ -75,7 +75,7 @@ export default function DoubtAssistance() {
             alt="Code editor screenshot"
             width={200}
             height={220}
-            className={`absolute top-[60%] right-[30%] rounded-lg shadow-lg transform transition-all duration-1000 ease-out ${
+            className={`border-4 absolute top-[60%] right-[30%] rounded-lg shadow-lg transform transition-all duration-1000 ease-out ${
               isIntersecting ? "translate-y-[-15px] translate-x-[-10px]" : "translate-y-[50px] translate-x-0"
             }`}
           />

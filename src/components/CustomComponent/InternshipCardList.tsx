@@ -114,7 +114,7 @@ const EmployeeCards = () => {
                   "designation": "DevOps Engineer",
                   "package": "7.5 LPA",
                   "companyLogo": unthinkable.src.toString(),
-                  photo: "https://media.licdn.com/dms/image/v2/D4D03AQE8qRxBEfFENg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1701884139593?e=1738195200&v=beta&t=_etKEvM3DQITy0hZn9ayEnQraN6-InqSQK_8kxWtWKU,",
+                  photo: "https://media.licdn.com/dms/image/v2/D4D03AQE8qRxBEfFENg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1701884139593?e=1738195200&v=beta&t=_etKEvM3DQITy0hZn9ayEnQraN6-InqSQK_8kxWtWKU",
                   linkding:""
                 },
                 {
@@ -128,12 +128,12 @@ const EmployeeCards = () => {
                 },
                 {
                   "name": "Nischay Mehrotra",
-                  "college": "Indian Institute of Info. tech, Nashik",
-                  "designation": "DevOps Consultant",
+                  "college": "LNCT University Bhopal",
+                  "designation": "Associate MLOPS Engineer",
                   "package": "10.5 LPA",
                   "companyLogo": NPCI.src.toString(),
-                  photo: "https://media.licdn.com/dms/image/v2/D5603AQH0C8r82a1VGw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1724256924576?e=1738195200&v=beta&t=PQ8-fL_hftJPh3DySigC9QETC_sRTQfF-c2hvDrh,EBE",
-                  linkding:""
+                  photo: "https://media.licdn.com/dms/image/v2/D5603AQH0C8r82a1VGw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1724256924608?e=1738800000&v=beta&t=NBSrvNcmnYeDNNPAXmgjRoojA7gsIuGxaGo_ZKnnFzY",
+                  linkding:"https://www.linkedin.com/in/nischay-mehrotra-265828142/"
                 },
                 {
                   "name": "Krushna",
@@ -182,7 +182,7 @@ const EmployeeCards = () => {
             </div>
 
             {/* Profile Image and Name */}
-            <div className="flex flex-col items-center mt-6">
+            <div className="flex flex-col items-center w-full mt-6">
               <div className="w-20 h-20 rounded-full overflow-hidden border-4 border-red-600 flex-shrink-0">
                 <img
                   src={employee.photo}
@@ -207,7 +207,7 @@ const EmployeeCards = () => {
             </div>
 
             {/* Salary Package */}
-            <div className="mt-4 bg-red-600 text-white py-2 px-4 w-full text-center text-lg font-bold">
+            <div className="mt-4 bg-[#ff0000] text-white py-2  w-72 text-center text-lg font-bold">
               {employee.package}
             </div>
 

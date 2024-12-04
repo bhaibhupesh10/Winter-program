@@ -38,11 +38,11 @@ export default function NewHero() {
         </span>
         </p>
 
-        <div className="space-x-4 flex overflow-hidden">
+        <div className="space-x-4 flex overflow-hidden ">
         <a href="#liveProjects">
         <Button 
         // bg-[#DC2626] text-white rounded-lg text-sm font-semibold hover:bg-[#-[#DC2626]/90
-          className="bg-[#DC2626] hover:bg-[#FF5151]  pt-4 text-white py-6 text-md rounded-md"
+          className="bg-[#ff0000] mb-3 hover:bg-[#ff0000] hover:shadow-white hover:shadow-md pt-4 text-white py-6 text-md rounded-md"
         >
                         Project Details
         </Button>

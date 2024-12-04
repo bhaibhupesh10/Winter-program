@@ -504,7 +504,7 @@ export default function DevOpsCurriculum() {
                 onChange={(e) => setCollegeName(e.target.value)}
               />
             </div>
-            <Button className="w-full bg-red-600 hover:bg-red-700" type="submit">
+            <Button className="w-full bg-[#ff0000] hover:shadow-white hover:shadow-md hover:bg-[#ff0000]" type="submit">
               Submit
             </Button>
             {statusMessage && (

@@ -74,7 +74,7 @@ const Pricing = () => {
             Best Industry Relevant Training Content with real use case based application. In just 10 days with 50+ hours of learning, get to learn what industry is looking for
           </p>
           <a href="https://rzp.io/rzp/K4d2QqC" target="_blank">
-            <button className="bg-[#DC2626] mt-2 font-bold text-sm text-white px-4 py-2 sm:px-6 sm:py-3 rounded-lg hover:bg-[#DC2626] transition-colors">
+            <button className="bg-[#ff0000] mt-2 font-bold text-sm text-white px-4 py-2 sm:px-6 sm:py-3 rounded-lg hover:bg-[#ff0000] hover:shadow-white shadow-md transition-colors">
               Just @ INR 3,500 + Taxes
             </button>
           </a>

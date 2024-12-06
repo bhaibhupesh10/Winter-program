@@ -10,7 +10,7 @@ import { Phone, Mail } from "lucide-react";
 export default function SupportContact() {
   return (
     <>
-      <div className="w-full min-h-[20rem] bg-[#181A1B] font-sans p-8 shadow-lg border-0 rounded-none" id="Inquire">
+      <div className="w-full min-h-[20rem] bg-[#181A1B] font-sans p-8 shadow-lg border-0 rounded-none" id="contactus">
       <h1 className="text-center mb-4  text-lg sm:text-2xl text-white pb-4">
       {/* Connect with  */}
       Connect with : <span className="text-[#ff0000]"> Linux World </span>

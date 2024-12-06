@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button"
 import { Typewriter } from 'react-simple-typewriter'
 export default function NewHero() {
   return (
-    <div className="min-h-full pb-8  bg-black">
+    <div className="min-h-full pb-8  bg-black" id="newhero">
   <div className="container max-w-6xl mx-auto px-4 pt-4">
     <div className="grid grid-cols-1 gap-12 md:grid-cols-2 items-center">
       {/* Left Column */}

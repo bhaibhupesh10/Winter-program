@@ -135,12 +135,12 @@ const courseData = [
     const [isHovered, setIsHovered] = useState(false);
   
     return (
-      <div className="space-y-6 pt-4 px-4 sm:px-6 bg-gradient-to-br from-gray-900 to-gray-800 min-h-screen" id="liveProjects">
+      <div className="space-y-6 pt-4 px-4 sm:px-6 bg-gradient-to-br from-gray-900 to-gray-800 min-h-screen p-8" id="liveProjects">
         <div className="p-2">
-        {/* text-lg sm:text-2xl */}
+        
           <h1 className="text-center  text-lg sm:text-2xl text-white pb-4">
             Build Live Project:{" "}
-            <span className="text-[#DC2626]">From Learning to Implementation</span>
+            <span className="text-[#ff0000]">From Learning to Implementation</span>
           </h1>
         </div>
   

@@ -26,7 +26,7 @@ const SubtopicItem = ({ title, lectures }: SubtopicProps) => (
     <div className="flex items-center justify-between group hover:bg-black p-3.5 rounded-xl transition-all duration-200 border border-gray-100 hover:border-gray-200 hover:shadow-sm">
       <div className="flex items-center gap-3">
         <div className="bg-gray-100 p-2 rounded-lg group-hover:shadow-sm transition-all duration-200">
-          <BookOpen className="w-5 h-5 text-white" />
+          <BookOpen className="w-5 h-5 text-[#ff0000]" />
         </div>
         <span className="text-white font-medium text-md">{title}</span>
       </div>

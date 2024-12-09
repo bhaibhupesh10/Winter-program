@@ -454,7 +454,7 @@ export default function DevOpsCurriculum() {
     e.preventDefault();
 
     // Basic client-side validation
-    if (!fullName || !whatsappNumber || !collegeName) {
+    if (!fullName || !whatsappNumber ) {
       setStatusMessage("Please fill in all fields.");
       return;
     }

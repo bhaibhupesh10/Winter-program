@@ -84,7 +84,9 @@ export default function SupportContact() {
             <div className="space-y-2">
               <Input className="text-white" placeholder="Query (if Any)" />
             </div>
-            <Button className="w-full bg-[#ff0000] hover:bg-[#ff0000] hover:shadow-white hover:shadow-md">Submit</Button>
+            <div className="w-full flex mx-auto">
+            <Button className="w-1/3 mx-auto bg-[#ff0000] hover:bg-[#ff0000] hover:shadow-white hover:shadow-md">Submit</Button>
+            </div>
             <p className="text-xs text-white text-center">
               By continuing, you agree to our{" "}
               <Link href="/terms" className="text-blue-600 hover:underline">

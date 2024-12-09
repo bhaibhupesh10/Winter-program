@@ -101,8 +101,7 @@ export default function ProgramCohorts() {
               <div className="flex gap-3">
                 <GraduationCap className="w-5 h-5 text-orange-500 flex-shrink-0" />
                 <p className="text-sm text-white">
-                  Any technical student who is undergoing a degree : BTech | BCA
-                  | MCA | MTech | BScIT
+                Open for technical students (BTech, BCA, MCA, MTech, BScIT) and IT professionals, including software developers and system administrators.
                 </p>
               </div>
               <div className="flex gap-3">

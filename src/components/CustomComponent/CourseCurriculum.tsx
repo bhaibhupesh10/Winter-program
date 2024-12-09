@@ -79,15 +79,54 @@ const ModuleBox = ({ section }: { section: any }) => (
 
 const sections =[
   {
-    "title": "Module 1: Python for AI",
+    "title": "Module 1: Cloud Computing",
     "topics": [
       {
-        "title": "1.1 Python Fundamentals",
+        "title": "1.1 Introduction to Cloud Computing",
         "isHandsOn": true,
         "subtopics": [
           {
-            "title": "Syntax, variables, data types",
+            "title": "Key concepts: Scalability, Reliability, Elasticity, Cost Efficiency",
             "lectures": 2
+          },
+          {
+            "title": "Cloud Deployment Models: Public, Private, Hybrid",
+            "lectures": 4
+          },
+          {
+            "title": "Cloud Service Models: IaaS, PaaS, SaaS",
+            "lectures": 4
+          }
+        ]
+      },
+      {
+        "title": "1.2 Core AWS Cloud Services",
+        "subtopics": [
+          {
+            "title": "Compute Services: Introduction to Amazon EC2",
+            "lectures": 3
+          },
+          {
+            "title": "Storage Services: AWS S3",
+            "lectures": 3
+          },
+          {
+            "title": "Networking Basics: Virtual Private Cloud (VPC), Elastic Load Balancing (ELB), AWS CloudFront",
+            "lectures": 4
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Module 2: Python for AI",
+    "topics": [
+      {
+        "title": "2.1 Python Fundamentals",
+        "subtopics": [
+          {
+            "title": "Syntax, variables, data types",
+            "lectures": 3
           },
           {
             "title": "Conditional statements, loops, functions, modules",
@@ -96,43 +135,282 @@ const sections =[
         ]
       },
       {
-        "title": "1.2 Data Handling",
-        "isHandsOn": true,
+        "title": "2.2 Data Handling",
         "subtopics": [
           {
             "title": "Advanced data structures: Lists, Tuples, Dictionaries, Sets",
-            "lectures": 5
+            "lectures": 4
           },
           {
             "title": "File handling: Reading, writing, manipulating files",
-            "lectures": 2
+            "lectures": 3
           },
           {
             "title": "Data analysis using Pandas, NumPy",
-            "lectures": 4
+            "lectures": 5
           }
         ]
       },
       {
-        "title": "1.3 Data Visualization",
-        "isHandsOn": true,
+        "title": "2.3 Data Visualization",
         "subtopics": [
           {
             "title": "Advanced visualizations with Matplotlib, Seaborn, Plotly",
+            "lectures": 4
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Module 3: Machine Learning (ML)",
+    "topics": [
+      {
+        "title": "3.1 Foundations of Machine Learning",
+        "subtopics": [
+          {
+            "title": "ML Workflow: Data Collection, Preprocessing, Model Building, and Deployment",
+            "lectures": 5
+          },
+          {
+            "title": "Types of ML: Supervised, Unsupervised, and Reinforcement Learning",
+            "lectures": 4
+          },
+          {
+            "title": "Core Algorithms: Linear Regression, Logistic Regression, K-Means, Decision Trees",
+            "lectures": 6
+          }
+        ]
+      },
+      {
+        "title": "3.2 Deep Learning Essentials",
+        "subtopics": [
+          {
+            "title": "Neural Networks: Structure, Activation Functions, and Training Techniques",
+            "lectures": 5
+          },
+          {
+            "title": "Popular Frameworks: TensorFlow, PyTorch",
+            "lectures": 4
+          }
+        ]
+      },
+      {
+        "title": "3.3 Advanced Topics in ML",
+        "subtopics": [
+          {
+            "title": "Hyperparameter Optimization: Grid Search, Random Search",
+            "lectures": 4
+          },
+          {
+            "title": "Ensemble Methods: Random Forest, Gradient Boosting",
+            "lectures": 5
+          },
+          {
+            "title": "Model Evaluation: Accuracy, Precision, Recall, F1 Score",
+            "lectures": 4
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Module 4: Generative AI (GenAI)",
+    "topics": [
+      {
+        "title": "4.1 Introduction to Generative AI",
+        "subtopics": [
+          {
+            "title": "Generative Models: VAEs, GANs",
+            "lectures": 4
+          },
+          {
+            "title": "Transformers and Attention Mechanisms",
+            "lectures": 4
+          },
+          {
+            "title": "Use Cases: Text Generation, Image Synthesis, Audio Creation",
             "lectures": 5
           }
         ]
       },
       {
-        "title": "1.4 Machine Learning with Python",
-        "isHandsOn": true,
+        "title": "4.2 Large Language Models (LLMs)",
         "subtopics": [
           {
-            "title": "Supervised and unsupervised learning",
+            "title": "Overview of GPT, BERT, and other foundation models",
+            "lectures": 4
+          },
+          {
+            "title": "Techniques for Fine-tuning and Customization",
+            "lectures": 5
+          }
+        ]
+      },
+      {
+        "title": "4.3 Advanced Applications",
+        "subtopics": [
+          {
+            "title": "Text-to-Image Models: DALL·E, Stable Diffusion",
             "lectures": 5
           },
           {
-            "title": "Implementing models with scikit-learn",
+            "title": "Real-world Use Cases: Chatbots, Creative Content Generation",
+            "lectures": 4
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Module 5: AWS AI/ML Core Services",
+    "topics": [
+      {
+        "title": "5.1 Amazon SageMaker",
+        "subtopics": [
+          {
+            "title": "Model Building, Training, and Deployment",
+            "lectures": 6
+          },
+          {
+            "title": "AutoML (Autopilot), Feature Store, Data Wrangler, Pipelines",
+            "lectures": 5
+          },
+          {
+            "title": "Real-time inference with endpoints",
+            "lectures": 4
+          }
+        ]
+      },
+      {
+        "title": "5.2 Amazon Rekognition",
+        "subtopics": [
+          {
+            "title": "Image and video analysis (e.g., object detection, facial recognition)",
+            "lectures": 4
+          },
+          {
+            "title": "Custom labels for specialized image recognition tasks",
+            "lectures": 4
+          }
+        ]
+      },
+      {
+        "title": "5.3 Amazon Polly",
+        "subtopics": [
+          {
+            "title": "Text-to-Speech (TTS) service with customizable voice options",
+            "lectures": 4
+          }
+        ]
+      },
+      {
+        "title": "5.4 Amazon Lex",
+        "subtopics": [
+          {
+            "title": "Conversational AI for building chatbots",
+            "lectures": 4
+          },
+          {
+            "title": "Integration with Lambda and S3 for advanced workflows",
+            "lectures": 5
+          }
+        ]
+      },
+      {
+        "title": "5.5 Amazon Comprehend",
+        "subtopics": [
+          {
+            "title": "Natural Language Processing (NLP) for sentiment analysis, topic modeling, and entity recognition",
+            "lectures": 4
+          }
+        ]
+      },
+      {
+        "title": "5.6 Amazon Translate",
+        "subtopics": [
+          {
+            "title": "Language translation for multilingual applications",
+            "lectures": 4
+          }
+        ]
+      },
+      {
+        "title": "5.7 Amazon Transcribe",
+        "subtopics": [
+          {
+            "title": "Automatic Speech Recognition (ASR) for audio-to-text conversion",
+            "lectures": 4
+          }
+        ]
+      },
+      {
+        "title": "5.8 Amazon Forecast",
+        "subtopics": [
+          {
+            "title": "Time series forecasting for demand planning, financial projections, etc.",
+            "lectures": 5
+          }
+        ]
+      },
+      {
+        "title": "5.9 Amazon Personalize",
+        "subtopics": [
+          {
+            "title": "Machine learning-based personalization and recommendation system",
+            "lectures": 5
+          }
+        ]
+      },
+      {
+        "title": "5.10 Amazon Textract",
+        "subtopics": [
+          {
+            "title": "Extract text and data from scanned documents using OCR (Optical Character Recognition)",
+            "lectures": 4
+          }
+        ]
+      },
+      {
+        "title": "5.11 AWS DeepLens",
+        "subtopics": [
+          {
+            "title": "AI-powered video camera for deep learning at the edge",
+            "lectures": 4
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Module 6: AWS SageMaker",
+    "topics": [
+      {
+        "title": "6.1 Introduction to SageMaker",
+        "subtopics": [
+          {
+            "title": "Key Features and Tools",
+            "lectures": 4
+          },
+          {
+            "title": "SageMaker for Model Building: Data Wrangler, Feature Store, AutoML",
+            "lectures": 5
+          },
+          {
+            "title": "Deployment with SageMaker Endpoints",
+            "lectures": 5
+          }
+        ]
+      },
+      {
+        "title": "6.2 Advanced Topics",
+        "subtopics": [
+          {
+            "title": "Hyperparameter Tuning with SageMaker Automatic Model Tuning",
+            "lectures": 5
+          },
+          {
+            "title": "End-to-End AI/ML Pipelines with SageMaker Studio",
             "lectures": 5
           }
         ]
@@ -140,258 +418,28 @@ const sections =[
     ]
   },
   {
-    "title": "Module 2: AWS Cloud AI Services",
+    "title": "Module 7: AWS Bedrock",
     "topics": [
       {
-        "title": "2.1 AWS AI Services",
-        "isHandsOn": true,
+        "title": "7.1 Introduction to Bedrock",
         "subtopics": [
           {
-            "title": "Overview of AWS AI tools: Amazon SageMaker, Rekognition, Polly, Lex, Comprehend",
+            "title": "Accessing Foundation Models via API",
             "lectures": 4
           },
           {
-            "title": "Using AWS cloud services for AI model development and deployment",
-            "lectures": 4
-          }
-        ]
-      },
-      {
-        "title": "2.2 Cloud Storage and Databases",
-        "isHandsOn": true,
-        "subtopics": [
-          {
-            "title": "AWS S3 for data storage",
+            "title": "Supported Models and Use Cases: Text Summarization, Sentiment Analysis, Creative Writing",
             "lectures": 4
           },
           {
-            "title": "DynamoDB, Amazon RDS for cloud databases",
-            "lectures": 4
-          },
-          {
-            "title": "Security and access control with IAM",
-            "lectures": 4
-          }
-        ]
-      },
-      {
-        "title": "2.3 Serverless Computing for AI",
-        "isHandsOn": true,
-        "subtopics": [
-          {
-            "title": "AWS Lambda for serverless architecture",
-            "lectures": 4
-          },
-          {
-            "title": "Integration with AI services like Rekognition and Lex",
-            "lectures": 4
-          }
-        ]
-      },
-      {
-        "title": "2.4 Cloud Environment Setup",
-        "isHandsOn": true,
-        "subtopics": [
-          {
-            "title": "Setting up AWS environment for AI project development",
-            "lectures": 4
-          },
-          {
-            "title": "Accessing and managing AWS services via the CLI and AWS Console",
-            "lectures": 4
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "title": "Module 3: Amazon Rekognition",
-    "topics": [
-      {
-        "title": "3.1 Image and Video Analysis",
-        "isHandsOn": true,
-        "subtopics": [
-          {
-            "title": "Object detection, facial recognition, sentiment analysis",
-            "lectures": 4
-          },
-          {
-            "title": "Video moderation, content analysis",
-            "lectures": 4
-          }
-        ]
-      },
-      {
-        "title": "3.2 Advanced Features of Rekognition",
-        "isHandsOn": true,
-        "subtopics": [
-          {
-            "title": "Custom labels for image recognition",
-            "lectures": 4
-          },
-          {
-            "title": "Real-time video processing for security",
-            "lectures": 4
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "title": "Module 4: Amazon Polly and Lex",
-    "topics": [
-      {
-        "title": "4.1 Amazon Polly",
-        "isHandsOn": true,
-        "subtopics": [
-          {
-            "title": "Text-to-Speech conversion with custom voices",
-            "lectures": 4
-          },
-          {
-            "title": "Integrating Polly with cloud applications",
-            "lectures": 4
-          }
-        ]
-      },
-      {
-        "title": "4.2 Amazon Lex",
-        "isHandsOn": true,
-        "subtopics": [
-          {
-            "title": "Building conversational bots with Lex",
-            "lectures": 4
-          },
-          {
-            "title": "Integration with Lambda and S3 for chatbot functionality",
-            "lectures": 4
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "title": "Module 5: Amazon SageMaker",
-    "topics": [
-      {
-        "title": "5.1 SageMaker Overview",
-        "isHandsOn": true,
-        "subtopics": [
-          {
-            "title": "Features of SageMaker: Data Wrangler, Experiments, Pipelines",
-            "lectures": 4
-          },
-          {
-            "title": "Creating and managing SageMaker notebooks",
-            "lectures": 4
-          }
-        ]
-      },
-      {
-        "title": "5.2 Machine Learning with SageMaker",
-        "isHandsOn": true,
-        "subtopics": [
-          {
-            "title": "Model training and evaluation using SageMaker built-in algorithms",
-            "lectures": 4
-          },
-          {
-            "title": "Hyperparameter tuning with SageMaker Automatic Model Tuning",
-            "lectures": 4
-          }
-        ]
-      },
-      {
-        "title": "5.3 Model Deployment",
-        "isHandsOn": true,
-        "subtopics": [
-          {
-            "title": "Deploying machine learning models with SageMaker endpoints",
-            "lectures": 4
-          },
-          {
-            "title": "Real-time inference and batch processing",
-            "lectures": 4
-          }
-        ]
-      },
-      {
-        "title": "5.4 Advanced Topics in SageMaker",
-        "isHandsOn": true,
-        "subtopics": [
-          {
-            "title": "SageMaker Studio for end-to-end model development",
-            "lectures": 4
-          },
-          {
-            "title": "Using SageMaker for AutoML workflows.",
-            "lectures": 4
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "title": "Module 6: Real-World Use Cases with AWS AI Services",
-    "topics": [
-      {
-        "title": "6.1 Healthcare AI",
-        "isHandsOn": true,
-        "subtopics": [
-          {
-            "title": "AI for diagnostic tools using Amazon Rekognition",
-            "lectures": 4
-          },
-          {
-            "title": "Building predictive models for healthcare with SageMaker",
-            "lectures": 4
-          }
-        ]
-      },
-      {
-        "title": "6.2 Retail AI",
-        "isHandsOn": true,
-        "subtopics": [
-          {
-            "title": "Personalized product recommendations using SageMaker and Lex",
-            "lectures": 4
-          },
-          {
-            "title": "Sentiment analysis for customer feedback using Comprehend",
-            "lectures": 4
-          }
-        ]
-      },
-      {
-        "title": "6.3 Finance AI",
-        "isHandsOn": true,
-        "subtopics": [
-          {
-            "title": "Fraud detection with SageMaker and AWS Lambda",
-            "lectures": 4
-          },
-          {
-            "title": "Risk management through AI-driven insights using Comprehend",
-            "lectures": 4
-          }
-        ]
-      },
-      {
-        "title": "6.4 Customer Support Automation",
-        "isHandsOn": true,
-        "subtopics": [
-          {
-            "title": "Chatbots for customer service using Amazon Lex and Polly",
-            "lectures": 4
-          },
-          {
-            "title": "Integrating chatbots with CRM systems",
-            "lectures": 4
+            "title": "Integration with Other AWS Services: Lambda, S3, SageMaker",
+            "lectures": 5
           }
         ]
       }
     ]
   }
+  
 ];
 
 export default function DevOpsCurriculum() {
@@ -457,7 +505,7 @@ export default function DevOpsCurriculum() {
                 {/* From  <span className="text-[#ff0000]"> Fundamentals </span> to Building a <span className="text-[#ff0000]">Live Project:</span>Your 10-Day Technical Learning    <span className="text-[#ff0000]">Journey </span>  */}
               </h1>
               {/* text-sm sm:text-lg */}
-              <h1 className="text-sm  sm:text-lg  text-white pt-2  leading-snug">From Fundamentals to Building a Live Project:  <span className="text-[#ff0000]"> 10-Day Technical Learning </span>Your Journey</h1>
+              <h1 className="text-sm  sm:text-lg  text-white pt-2  leading-snug">From Fundamentals to Building a Live Project:  <span className="text-[#ff0000]"> 7-Day Technical Learning </span>Your Journey</h1>
               </div>
             </div>
 

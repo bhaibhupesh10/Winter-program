@@ -30,7 +30,7 @@ const faqContent: Record<string, FAQItem[]> = {
     },
     {
       question: "What is the duration of the Winter Training?",
-      answer: "The training typically lasts 10 days.",
+      answer: "The training typically lasts 7 days.",
     },
     {
       question: "Is there a certification provided after completion?",

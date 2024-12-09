@@ -50,7 +50,7 @@ export default function ProgramCohorts() {
                 },
                 {
                   date: "3rd Jan, 2025 - 9th Jan, 2025",
-                  time: "10:00 pm - 07:00 pm IST",
+                  time: "10:00 am - 07:00 pm IST",
                 },
               ].map((program, index) => (
                 <div

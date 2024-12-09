@@ -32,7 +32,7 @@ export default function NewHero() {
           Training Program 
         </h1>
         <p className="text-md md:text-lg pb-4 text-gray-300 max-w-xl">
-        10 days long complete practical technical learning with project implementation on 
+        7 days long complete practical technical learning with project implementation on 
 
         <span className="text-[#ff0000] font-bold"> Machine Learning with AWS Cloud
         </span>

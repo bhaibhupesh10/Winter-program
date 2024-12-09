@@ -17,7 +17,7 @@ export default function NewHero() {
           <span className="text-[#ff0000]">
             {'<'}
             <Typewriter
-            words={['Most Demanded', 'Industry use case Based', 'Uniquely compiled Technical Bootcamp']}
+            words={['Most Demanded', 'Industry use case Based', 'Uniquely compiled']}
             loop={20}
             cursor
             cursorStyle='_'
@@ -29,7 +29,7 @@ export default function NewHero() {
             {'>'}
           </span>
           <br />
-          Training Program 
+          Technical Bootcamp
         </h1>
         <p className="text-md md:text-lg pb-4 text-gray-300 max-w-xl">
         7 days long complete practical technical learning with project implementation on 

@@ -41,7 +41,7 @@ const faqContent: Record<string, FAQItem[]> = {
   sessionDetails: [
     {
       question: "What is the schedule for the Winter Training?",
-      answer: "Winter training will start from (add date of winter training).",
+      answer: "Winter training will start from 26th December 2024.",
     },
     {
       question: "Will there be any projects or hands-on assignments?",

@@ -233,7 +233,7 @@ RedHat Certified Architect Level 25 and Enterprise Application Level 11 a global
               </p>
 
               <p className="text-white text-md pb-2 pl-6">
-              Join Mr. Vimal Daga in this life-changing Winter Training Program and experience firsthand how he transforms potential into industry-ready excellence
+              Join Mr. Vimal Daga in this life-changing 7 days Bootcamp Training Program and experience firsthand how he transforms potential into industry-ready excellence
               </p>
             </div>
           </div>

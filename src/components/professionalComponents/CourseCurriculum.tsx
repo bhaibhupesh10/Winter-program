@@ -555,9 +555,12 @@ export default function DevOpsCurriculum() {
                 onChange={(e) => setCollegeName(e.target.value)}
               />
             </div>
-            <Button className="w-full bg-[#ff0000] hover:shadow-white hover:shadow-md hover:bg-[#ff0000]" type="submit">
+            <div className="w-full flex mx-auto">
+            <Button className="w-1/2 bg-[#ff0000] mx-auto hover:shadow-white hover:shadow-md hover:bg-[#ff0000]" type="submit">
               Submit
             </Button>
+            </div>
+            
             {statusMessage && (
               <p className="text-xs text-white text-center">{statusMessage}</p>
             )}

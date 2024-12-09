@@ -21,7 +21,7 @@ const faqContent: Record<string, FAQItem[]> = {
     },
     {
       question: "Who can participate in the 7 Days Bootcamp Training ?",
-      answer: "The training is open to IT Professionals.",
+      answer: "The training is open to all",
     },
     {
       question: "What topics will be covered in the training?",
@@ -41,7 +41,15 @@ const faqContent: Record<string, FAQItem[]> = {
   sessionDetails: [
     {
       question: "What is the schedule for the 7 Days Bootcamp Training ?",
-      answer: "7 Days Bootcamp Training  will start from 26th Dec, 2024.",
+      answer: (
+        <>
+          7 Days Bootcamp Training has two options:
+          <ul className="list-disc pl-6 mt-2">
+            <li>26th December 2024</li>
+            <li>3rd January 2025</li>
+          </ul>
+        </>
+      ),
     },
     {
       question: "Will there be any projects or hands-on assignments ?",

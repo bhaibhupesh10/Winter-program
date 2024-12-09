@@ -5,7 +5,7 @@ import GalleryCarousel from '@/components/CustomComponent/Carousel'
 import Contact from "@/components/CustomComponent/ContactUs"
 import WhatsAppBot from '@/components/CustomComponent/WhatsAppBot'
 import Testimonials from "@/components/CustomComponent/CourseTestimonials"
-import Faq from '@/components/CustomComponent/Faq'
+import Faq from '@/components/professionalComponents/Faq'
 import CertificateComponent from '@/components/professionalComponents/Cert'
 import Pricing from '@/components/professionalComponents/Pricing'
 import Roadmap from '@/components/CustomComponent/Roadmap'

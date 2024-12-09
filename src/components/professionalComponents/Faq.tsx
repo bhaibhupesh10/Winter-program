@@ -15,66 +15,66 @@ type FAQItem = {
 const faqContent: Record<string, FAQItem[]> = {
   generalInfo: [
     {
-      question: "What is the Winter Training all about?",
+      question: "What is the 7 Days Bootcamp Training  all about?",
       answer:
-        "The Winter Training is a comprehensive program led by World Record Holder, Vimal Daga Sir, focused on AI, ML, and Cloud Services, designed to equip you with the latest skills in these high-demand fields.",
+        "The 7 Days Bootcamp Training  is a comprehensive program led by World Record Holder, Mr. Vimal Daga Sir, focused on AI, ML, and Cloud Services, designed to equip you with the latest skills in these high-demand fields.",
     },
     {
-      question: "Who can participate in the Winter Training?",
-      answer: "The training is open to pursuing graduation students only.",
+      question: "Who can participate in the 7 Days Bootcamp Training ?",
+      answer: "The training is open to IT Professionals.",
     },
     {
       question: "What topics will be covered in the training?",
       answer:
-        "The training covers a deep dive into Artificial Intelligence (AI), Machine Learning (ML), and Cloud Services, including practical applications and real-world scenarios.",
+        "The training covers a deep dive into Artificial Intelligence (AI), Machine Learning (ML), GenAIOps and Cloud Services, including practical applications and real-world scenarios.",
     },
     {
-      question: "What is the duration of the Winter Training?",
+      question: "What is the duration of the 7 Days Bootcamp Training ?",
       answer: "The training typically lasts 7 days.",
     },
     {
-      question: "Is there a certification provided after completion?",
+      question: "Is there a certification provided after completion ?",
       answer:
         "Yes, a certificate of completion will be provided after successfully finishing the training.",
     },
   ],
   sessionDetails: [
     {
-      question: "What is the schedule for the Winter Training?",
-      answer: "Winter training will start from (add date of winter training).",
+      question: "What is the schedule for the 7 Days Bootcamp Training ?",
+      answer: "7 Days Bootcamp Training  will start from 26th Dec, 2024.",
     },
     {
-      question: "Will there be any projects or hands-on assignments?",
+      question: "Will there be any projects or hands-on assignments ?",
       answer: "Yes, multiple projects and hands-on tasks will be covered.",
     },
     {
-      question: "What if I miss a session?",
+      question: "What if I miss a session ?",
       answer:
         "No recordings will be available, so attending on time is crucial to not miss valuable learning.",
     },
     {
-      question: "Do I need any prerequisites to join the training?",
+      question: "Do I need any prerequisites to join the training ?",
       answer: "There is no prerequisite for the training.",
     },
   ],
   postTrainingSupport: [
     {
-      question: "How can I register for the Winter Training?",
+      question: "How can I register for the 7 Days Bootcamp Training ?",
       answer:
-        "Registration details will be available on the official website —make sure to secure your spot.",
+        "Registration details will be available on the official website, make sure to secure your spot.",
     },
     {
-      question: "Is there any support or guidance available after the training?",
+      question: "Is there any support or guidance available after the training ?",
       answer:
         "Yes, you’ll have access to an Elite Discord community.",
     },
     {
-      question: "What are the benefits of attending the Winter Training?",
+      question: "What are the benefits of attending the 7 Days Bootcamp Training ?",
       answer:
-        "Gain in-depth knowledge, hands-on experience, and real-world insights into AI, ML, and Cloud Services to boost your career.",
+        "Gain in-depth knowledge, hands-on experience, and real-world insights into AI, ML, GenAIOps and Cloud Services to boost your career.",
     },
     {
-      question: "How can I get more information about the Winter Training?",
+      question: "How can I get more information about the 7 Days Bootcamp Training ?",
       answer:
         "For more details, please visit the official website or follow us on social media for the latest updates.",
     },

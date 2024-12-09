@@ -47,9 +47,9 @@ export async function POST(request: NextRequest) {
   const { fullName, whatsappNumber, collegeName } = body;
 
   // Validate required fields
-  if (!fullName || !whatsappNumber || !collegeName) {
+  if (!fullName || !whatsappNumber) {
     return NextResponse.json<ResponseData>(
-      { error: "Full name, WhatsApp number, and college name are required." },
+      { error: "Full name and WhatsApp number are required." },
       { status: 400 }
     );
   }

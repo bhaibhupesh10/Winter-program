@@ -18,6 +18,7 @@ import ProjectsSection from '@/components/CustomComponent/Projects'
 import Tools from '@/components/CustomComponent/Tools'
 import CourseDetails from '@/components/CustomComponent/CourseDetails'
 import NewHero from '@/components/NewHero'
+import Footer from '@/components/CustomComponent/Footer'
 export default function Home() {
   return (
       <>
@@ -37,6 +38,7 @@ export default function Home() {
       <MentorFeatured />
       <SupportContact></SupportContact>
       <WhatsAppBot/>
+      <Footer/>
       </>
   )
 }

@@ -47,7 +47,7 @@ const Tools: React.FC = () => {
         {/* Tool Sections */}
         <Section
           icon={<TrendingUp size={24} color="white" />}
-          title="Take your AI and data science skills to the next level with our industry-focused course.
+          title="Take your AI and data science skills to the next level with our industry-focused course. Learn to:
 "
           description="Tools: Python, SQL"
         />

@@ -21,7 +21,7 @@ const faqContent: Record<string, FAQItem[]> = {
     },
     {
       question: "Who can participate in the 7 Days Bootcamp Training ?",
-      answer: "The training is open to all",
+      answer: "The training is open to all.",
     },
     {
       question: "What topics will be covered in the training?",
